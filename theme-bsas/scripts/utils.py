@@ -4,7 +4,7 @@
 input_path = "input"
 output_path = "../data"
 
-clasifications = [
+classifications = [
     # JURISDICCION
     [{
         'entity_name': 'jurisdiccion',
@@ -104,7 +104,7 @@ def map_finalidad(x):
 
 def get_titles(key):
     mylist = ['ejercicio']
-    for clas in clasifications:
+    for clas in classifications:
         if clas[0]['entity_name'] == key:
             for entity in clas:
                 mylist.append(entity['entity_name'])
