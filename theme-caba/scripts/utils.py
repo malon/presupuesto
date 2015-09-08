@@ -2,7 +2,7 @@
 
 
 input_path = "input"
-output_path = "../data"
+output_path = "../data/caba"
 
 classifications = [
     # JURISDICCION

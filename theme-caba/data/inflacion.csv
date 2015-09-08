@@ -1,0 +1,14 @@
+# Datos de prueba, deben ser actualizados con datos reales
+# Las tasas de inflación se refieren a la media de las tasas interanuales durante los 12
+# meses del año.
+# La aplicación calcula internamente un índice de inflación a partir de estas tasas, tal que:
+#    Indice Año Actual = 100
+#    Indice Año N-1 = Indice Año N / (1+Inflación Año N)
+#
+# Nota: los presupuestos de un año X se ajustan con el índice de la inflación del año anterior.
+# Por tanto el índice del año actual no se usa. De hecho sólo se conoce cuando termina el año.
+#
+
+2014,4.5
+2015,0
+
