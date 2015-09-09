@@ -59,6 +59,8 @@ def write_lines(wr, titles, index_entity, array_to_use, line, year):
         # fill with blanks all the positions till description
         fill_blanks(used_line, index_entity, titles)
         used_line.append(a['name'])
+        if titles[1] == 'inciso' or titles[1] == 'fuente_fin':
+            used_line.append('G')
         wr.writerow(used_line)
 
 
@@ -81,7 +83,10 @@ def create_csvs(structure):
                       output_path, year, key), 'w') as f:
                 wr = CSVKitWriter(f, delimiter=';')
                 titles = get_titles(key)
-                wr.writerow(titles)
+                titles_def = titles[:]
+                if titles[1] == 'inciso' or titles[1] == 'fuente_fin':
+                    titles_def.append('gasto/ingreso')
+                wr.writerow(titles_def)
                 # copying value of array not reference
                 array_to_use = year_element[key][:]
                 index_entity = 1

@@ -1,270 +1,270 @@
-ejercicio;inciso;principal;parcial;descripcion
-2014;1;11;111;Retribución del cargo
-2014;1;11;114;Sueldo anual complementario
-2014;1;11;116;Contribuciones patronales
-2014;1;11;117;Complementos
-2014;1;11;113;Retribuciones que no hacen al cargo
-2014;1;11;;Personal permanente
-2014;1;12;121;Retribución del cargo
-2014;1;12;124;Sueldo anual complementario
-2014;1;12;126;Contribuciones patronales
-2014;1;12;127;Complementos
-2014;1;12;;Personal temporario
-2014;1;14;141;Personal Permanente
-2014;1;14;143; Personal de Planta de Gabinete
-2014;1;14;142;Personal Temporario
-2014;1;14;;Asignaciones familiares
-2014;1;16;169;Beneficios y compensaciones sin discriminar
-2014;1;16;161;Retiro voluntario
-2014;1;16;;Beneficios y compensaciones
-2014;1;13;131;Retribuciones extraordinarias
-2014;1;13;133;Contribuciones patronales
-2014;1;13;132;Sueldo anual complementario
-2014;1;13;;Servicios extraordinarios
-2014;1;17;171;Retribución del cargo
-2014;1;17;174;Sueldo anual complementario
-2014;1;17;176;Contribuciones patronales
-2014;1;17;177;Complementos
-2014;1;17;;Gabinete de autoridades superiores
-2014;1;15;151;Seguros de Riesgo de trabajo
-2014;1;15;159;Asistencia social sin discriminar
-2014;1;15;;Asistencia social al personal
-2014;1;18;186;Contribuciones patronales
-2014;1;18;181;Retribución del servicio
-2014;1;18;184;Sueldo Anual Complementario
-2014;1;18;187;Complementos
-2014;1;18;;Contratos por Tiempo Determinado
-2014;1;;;Gastos en personal
-2014;2;21;211;Alimentos para personas
-2014;2;21;215;Madera, corcho y sus manufacturas
-2014;2;21;214;Productos agroforestales
-2014;2;21;219;Otros no especificados precedentemente
-2014;2;21;212;Alimentos para animales
-2014;2;21;213;Productos pecuarios
-2014;2;21;;Productos alimenticios, agropecuarios y forestales
-2014;2;22;222;Prendas de vestir
-2014;2;22;223;Confecciones textiles
-2014;2;22;221;Hilados y telas
-2014;2;22;229;Otros no especificados precedentemente
-2014;2;22;;Textiles y vestuario
-2014;2;23;231;Papel y cartón para oficina
-2014;2;23;232;Papel y cartón para computación
-2014;2;23;234;Manufactura de pulpa, papel y cartíon
-2014;2;23;235;Libros, revistas y periódicos
-2014;2;23;233;Productos de artes gráficas
-2014;2;23;239;Otros no especificados precedentemente
-2014;2;23;236;Textos de enseñanza
-2014;2;23;237;Especies timbradas y valores
-2014;2;23;;Pulpa,papel, cartón y sus productos
-2014;2;25;255;Tintas, pinturas y colorantes
-2014;2;25;256;Combustibles y lubricantes
-2014;2;25;258;Productos de material plástico
-2014;2;25;252;Productos farmacéuticos y medicinales
-2014;2;25;259;Otros no especificados precedentemente
-2014;2;25;253;Abonos y fertilizantes
-2014;2;25;251;Compuestos químicos
-2014;2;25;254;insecticidas, fumigantes y otros
-2014;2;25;257;Asfaltos y Similares
-2014;2;25;;Productos químicos, combustibles y lubricantes
-2014;2;26;262;Productos de vidrio
-2014;2;26;269;Otros no especificados precedentemente
-2014;2;26;261;Productos de arcilla y cerámica
-2014;2;26;265;Cemento, cal y yeso
-2014;2;26;263;Productos de loza y porcelana
-2014;2;26;264;Productos elaborados de cemento y yeso
-2014;2;26;;Productos de minerales no metálicos
-2014;2;27;279;Otros no especificados precedentemente
-2014;2;27;272;Productos no ferrosos
-2014;2;27;274;Estructuras metálicas acabadas
-2014;2;27;271;Productos ferrosos
-2014;2;27;273;Material de guerra
-2014;2;27;275;Herramientas menores
-2014;2;27;;Productos metálicos
-2014;2;28;282;Petróleo crudo y gas natural
-2014;2;28;284;Piedra, arcilla y arena
-2014;2;28;289;Otros no especificados precedentemente
-2014;2;28;283;Carbón mineral
-2014;2;28;281;Minerales metalíferos
-2014;2;28;;Minerales
-2014;2;29;291;Elementos de limpieza
-2014;2;29;292;Útiles de escritorio, oficina y enseñanza
-2014;2;29;293;Útiles y materiales eléctricos
-2014;2;29;296;Repuestos y accesorios
-2014;2;29;297;Herramientas menores
-2014;2;29;299;Otros no especificados precedentemente
-2014;2;29;294;Utensilios de cocina y comedor
-2014;2;29;295;Útiles menores médicos, quirúrgicos y de laboratorio
-2014;2;29;;Otros bienes de consumo
-2014;2;24;249;Otros no especificados precedentemente
-2014;2;24;244;Cubiertas y cámaras de aire
-2014;2;24;241;Cueros y pieles
-2014;2;24;242;Artículos de cuero
-2014;2;24;243;Artículos de caucho
-2014;2;24;;Productos de cuero y caucho
-2014;2;;;Bienes de consumo
-2014;3;31;311;Energía eléctrica
-2014;3;31;312;Agua
-2014;3;31;313;Gas
-2014;3;31;314;Teléfonos, telex y telefax
-2014;3;31;319;Otros no especificados precedentemente
-2014;3;31;315;Correos y Telégrafo
-2014;3;31;318;Internet banda ancha
-2014;3;31;;Servicios básicos
-2014;3;32;321;Alquiler de edificios y locales
-2014;3;32;322;Alquiler de maquinaria, equipo y medios de transporte
-2014;3;32;324;Alquiler de fotocopiadoras
-2014;3;32;329;Otros no especificados precedentemente
-2014;3;32;323;Alquiler de equipos de computación
-2014;3;32;326;Derechos de bienes intangibles
-2014;3;32;;Alquileres y derechos
-2014;3;33;331;Mantenimiento y reparación de edificios y locales
-2014;3;33;332;Mantenimiento y reparación de vehículos
-2014;3;33;333;Mantenimiento y reparación de maquinaria y equipo
-2014;3;33;335;Limpieza, aseo y fumigación
-2014;3;33;339;Otros no especificados precedentemente
-2014;3;33;334;Mantenimiento y reparación de vías de comunicación
-2014;3;33;338;Higiene urbana
-2014;3;33;336;Mantenimiento de espacios verdes
-2014;3;33;;Mantenimiento, reparación y limpieza
-2014;3;34;345;De capacitación
-2014;3;34;349;Otros no especificados precedentemente
-2014;3;34;342;Médicos y sanitarios
-2014;3;34;343;Jurídicos
-2014;3;34;344;Contabilidad y auditoría
-2014;3;34;346;De informática y sistemas computarizados
-2014;3;34;341;Estudios, investigaciones y proyectos de factibilidad
-2014;3;34;347;Artísticos y culturales
-2014;3;34;;Servicios profesionales, técnicos y operativos
-2014;3;35;351;Transporte y almacenamiento
-2014;3;35;352;Servicios Especializados
-2014;3;35;354;Primas y gastos de seguros
-2014;3;35;355;Comisiones y gastos bancarios
-2014;3;35;356;Sistemas informáticos y de registro
-2014;3;35;358;Servicio de vigilancia
-2014;3;35;359;Otros no especificados precedentemente
-2014;3;35;353;Imprenta, publicaciones y reproducciones
-2014;3;35;357;Serv.de acceso a Internet y streaming
-2014;3;35;;Servicios Especializados, Comerciales y Financieros
-2014;3;36;361;Publicidad y propaganda
-2014;3;36;369;Otros no especificados precedentemente
-2014;3;36;;Publicidad y propaganda
-2014;3;37;371;Pasajes
-2014;3;37;372;Viáticos
-2014;3;37;379;Otros no especificados precedentemente
-2014;3;37;378;Movilidad
-2014;3;37;;Pasajes, viáticos y movilidad
-2014;3;38;383;Derechos y tasas
-2014;3;38;389;Otros no especificados precedentemente
-2014;3;38;384;Multas y recargos
-2014;3;38;382;Impuestos directos
-2014;3;38;386;Juicios, mediaciones y otros gastos judiciales
-2014;3;38;385;Regalías
-2014;3;38;381;Impuestos indirectos
-2014;3;38;;Impuestos, derechos,  tasas y juicios
-2014;3;39;391;Servicios de ceremonial
-2014;3;39;398;Premios y reconocimientos
-2014;3;39;399;Otros no especificados precedentemente
-2014;3;39;392;Servicios de comidas, viandas y refrigerios
-2014;3;39;395;Convenios de AsistenciaTécnica
-2014;3;39;396;Servicios de consultoria
-2014;3;39;;Otros servicios
-2014;3;;;Servicios no personales
-2014;4;43;434;Equipo de comunicación y señalamiento
-2014;4;43;435;Equipo educacional, cultural y recreativo
-2014;4;43;436;Equipo para computación
-2014;4;43;437;Equipo de oficina y moblaje
-2014;4;43;438;Herramientas y repuestos mayores
-2014;4;43;439;Equipos varios
-2014;4;43;432;Equipo de transporte, tracción y elevación
-2014;4;43;433;Equipo sanitario y de laboratorio
-2014;4;43;431;Maquinaria y equipo de producción
-2014;4;43;;Maquinaria y equipo
-2014;4;44;441;Equipo de seguridad
-2014;4;44;;Equipo de seguridad
-2014;4;45;451;Libros, revistas y otros elementos de colección
-2014;4;45;452;Obras de arte
-2014;4;45;;Obras de arte, libros y elementos coleccionables
-2014;4;48;481;Programas de computación
-2014;4;48;489;Otros activos intangibles
-2014;4;48;;Activos intangibles
-2014;4;49;491;Otros bienes de uso no especificados precedentemente
-2014;4;49;;Otros bienes de uso e inversiones
-2014;4;42;421;Construcciones en bienes de dominio privado
-2014;4;42;422;Construcciones en bienes de dominio público
-2014;4;42;424;Obras de mejora y ampliación
-2014;4;42;423;Relleno sanitario
-2014;4;42;;Construcciones
-2014;4;41;412;Edificios e instalaciones para el dominio privado de la CABA
-2014;4;41;;Bienes preexistentes
-2014;4;;;Bienes de uso
-2014;5;51;519;Transferencias a empresas privadas
-2014;5;51;516;Transferencias para actividades científicas o académicas
-2014;5;51;517;Transferencias a otras instituciones sin fines de lucro
-2014;5;51;513;Becas y otros subsidios
-2014;5;51;514;Ayudas sociales a personas
-2014;5;51;512;Subsidios, transferencias y apoyos
-2014;5;51;518;Transferencias a cooperativas
-2014;5;51;515;Transferencias a instituciones de enseñanza
-2014;5;51;;Transferencias al sector privado para financiar gastos corrientes
-2014;5;56;561;Transferencias a universidades  para financiar gastos corrientes
-2014;5;56;;Transferencias a Universidades
-2014;5;57;579;Transferencias a otras instituciones públicas municipales
-2014;5;57;574;Transferencias a entes tripartitos
-2014;5;57;573;Transferencias a empresas públicas no financieras provinciales
-2014;5;57;575;Transferencias a otras instituciones públicas provinciales
-2014;5;57;578;Transferencias a empresas públicas no financieras municipales
-2014;5;57;;Transf a instituciones provinciales y municipales para financiar gastos corrientes
-2014;5;59;597;Transf.a organismos internacionales para financiar gastos de capital
-2014;5;59;592;Transf.a organismos internacionales para financiar gastos corrientes
-2014;5;59;596;Transf.a gobiernos extranjeros para financiar gastos de capital
-2014;5;59;;Transferencias al exterior
-2014;5;53;531;A la administración central nacional
-2014;5;53;534;A otras instituciones públicas nacionales
-2014;5;53;;Transf.al Sector Público Nacional para financiar gtos corrientes
-2014;5;55;552;Transf.a empresas pcas no financieras para financiar gtos corrientes
-2014;5;55;554;Transferencias Fondos Fiduciarios para financiar gs cte
-2014;5;55;557;Transf.a empresas pcas no financieras para financiar gtos de capital
-2014;5;55;559;Transferencias Fondos Fiduciarios para financiar gs de capital
-2014;5;55;551;Transf.a instituciones pcas financieras para financiar gtos corrientes
-2014;5;55;;Transferencias al Sector Público empresarial
-2014;5;58;584;Transferencias a entes tripartitos
-2014;5;58;585;Transferencias a otras instituciones públicas provinciales
-2014;5;58;;Transf.a instituciones provinciales y municipales para financiar gastos de capital
-2014;5;52;524;Transferencias a otras instituciones sin fines de lucro
-2014;5;52;523;Transferencias para actividades científicas o académicas
-2014;5;52;521;Transferencias a personas
-2014;5;52;;Transferencias al sector privado para financiar gastos de capital
-2014;5;;;Transferencias
-2014;6;62;621;Préstamos a corto plazo al sector privado
-2014;6;62;;Préstamos a corto plazo
-2014;6;69;699;Fondos Fiduciarios
-2014;6;69;692;Adelantos a proveedores y contratistas a corto plazo
-2014;6;69;697;Adelantos a proveedores y contratistas a largo plazo
-2014;6;69;693;Adelantos a Empr. y Soc. del Estado a CP para Cumpl. Mandas
-2014;6;69;695;Adelantos a Empresas y Sociedades del Estado a cuenta de futuros aportes de capital
-2014;6;69;;Incremento de activos diferidos y adelantos a proveedores y contratistas
-2014;6;63;631;Préstamos a largo plazo al sector privado
-2014;6;63;;Préstamos a largo plazo
-2014;6;;;Activos financieros
-2014;9;91;912; Contribución a organismos descentralizados
-2014;9;91;911;Contribución a la administración central
-2014;9;91;;Gastos figurativos de la administración gubernamental para transacciones corrientes
-2014;9;92;922; Contribución a organismos descentralizados
-2014;9;92;;Gastos figurativos de la administración gubernamental para transacciones de capital
-2014;9;;;Gastos figurativos
-2014;7;71;716;intereses de la deuda interna a largo plazo
-2014;7;71;717;Amortización de la deuda interna a largo plazo
-2014;7;71;;Servicio de la deuda interna
-2014;7;72;726;Intereses de la deuda externa a largo plazo
-2014;7;72;728;Comisiones y otros gastos de la deuda externa a largo plazo
-2014;7;72;727;Amortización de la deuda externa a largo plazo
-2014;7;72;;Servicio de la deuda externa
-2014;7;73;731;Intereses por préstamos del sector privado
-2014;7;73;732;Intereses por préstamos del sector público nacional
-2014;7;73;;Intereses por préstamos y otras deudas
-2014;7;76;761;Disminución de cuentas a pagar comerciales a corto plazo
-2014;7;76;762;Disminución de otras cuentas a pagar a corto plazo
-2014;7;76;764;Disminución de otros documentos a pagar a corto plazo
-2014;7;76;767;Disminución de otras cuentas a pagar a largo plazo
-2014;7;76;;Disminución de cuentas y documentos a pagar
-2014;7;;;Servicio de la deuda y disminución de otros pasivos
+ejercicio;inciso;principal;parcial;descripcion;gasto/ingreso
+2014;1;11;111;Retribución del cargo;G
+2014;1;11;114;Sueldo anual complementario;G
+2014;1;11;116;Contribuciones patronales;G
+2014;1;11;117;Complementos;G
+2014;1;11;113;Retribuciones que no hacen al cargo;G
+2014;1;11;;Personal permanente;G
+2014;1;12;121;Retribución del cargo;G
+2014;1;12;124;Sueldo anual complementario;G
+2014;1;12;126;Contribuciones patronales;G
+2014;1;12;127;Complementos;G
+2014;1;12;;Personal temporario;G
+2014;1;14;141;Personal Permanente;G
+2014;1;14;143; Personal de Planta de Gabinete;G
+2014;1;14;142;Personal Temporario;G
+2014;1;14;;Asignaciones familiares;G
+2014;1;16;169;Beneficios y compensaciones sin discriminar;G
+2014;1;16;161;Retiro voluntario;G
+2014;1;16;;Beneficios y compensaciones;G
+2014;1;13;131;Retribuciones extraordinarias;G
+2014;1;13;133;Contribuciones patronales;G
+2014;1;13;132;Sueldo anual complementario;G
+2014;1;13;;Servicios extraordinarios;G
+2014;1;17;171;Retribución del cargo;G
+2014;1;17;174;Sueldo anual complementario;G
+2014;1;17;176;Contribuciones patronales;G
+2014;1;17;177;Complementos;G
+2014;1;17;;Gabinete de autoridades superiores;G
+2014;1;15;151;Seguros de Riesgo de trabajo;G
+2014;1;15;159;Asistencia social sin discriminar;G
+2014;1;15;;Asistencia social al personal;G
+2014;1;18;186;Contribuciones patronales;G
+2014;1;18;181;Retribución del servicio;G
+2014;1;18;184;Sueldo Anual Complementario;G
+2014;1;18;187;Complementos;G
+2014;1;18;;Contratos por Tiempo Determinado;G
+2014;1;;;Gastos en personal;G
+2014;2;21;211;Alimentos para personas;G
+2014;2;21;215;Madera, corcho y sus manufacturas;G
+2014;2;21;214;Productos agroforestales;G
+2014;2;21;219;Otros no especificados precedentemente;G
+2014;2;21;212;Alimentos para animales;G
+2014;2;21;213;Productos pecuarios;G
+2014;2;21;;Productos alimenticios, agropecuarios y forestales;G
+2014;2;22;222;Prendas de vestir;G
+2014;2;22;223;Confecciones textiles;G
+2014;2;22;221;Hilados y telas;G
+2014;2;22;229;Otros no especificados precedentemente;G
+2014;2;22;;Textiles y vestuario;G
+2014;2;23;231;Papel y cartón para oficina;G
+2014;2;23;232;Papel y cartón para computación;G
+2014;2;23;234;Manufactura de pulpa, papel y cartíon;G
+2014;2;23;235;Libros, revistas y periódicos;G
+2014;2;23;233;Productos de artes gráficas;G
+2014;2;23;239;Otros no especificados precedentemente;G
+2014;2;23;236;Textos de enseñanza;G
+2014;2;23;237;Especies timbradas y valores;G
+2014;2;23;;Pulpa,papel, cartón y sus productos;G
+2014;2;25;255;Tintas, pinturas y colorantes;G
+2014;2;25;256;Combustibles y lubricantes;G
+2014;2;25;258;Productos de material plástico;G
+2014;2;25;252;Productos farmacéuticos y medicinales;G
+2014;2;25;259;Otros no especificados precedentemente;G
+2014;2;25;253;Abonos y fertilizantes;G
+2014;2;25;251;Compuestos químicos;G
+2014;2;25;254;insecticidas, fumigantes y otros;G
+2014;2;25;257;Asfaltos y Similares;G
+2014;2;25;;Productos químicos, combustibles y lubricantes;G
+2014;2;26;262;Productos de vidrio;G
+2014;2;26;269;Otros no especificados precedentemente;G
+2014;2;26;261;Productos de arcilla y cerámica;G
+2014;2;26;265;Cemento, cal y yeso;G
+2014;2;26;263;Productos de loza y porcelana;G
+2014;2;26;264;Productos elaborados de cemento y yeso;G
+2014;2;26;;Productos de minerales no metálicos;G
+2014;2;27;279;Otros no especificados precedentemente;G
+2014;2;27;272;Productos no ferrosos;G
+2014;2;27;274;Estructuras metálicas acabadas;G
+2014;2;27;271;Productos ferrosos;G
+2014;2;27;273;Material de guerra;G
+2014;2;27;275;Herramientas menores;G
+2014;2;27;;Productos metálicos;G
+2014;2;28;282;Petróleo crudo y gas natural;G
+2014;2;28;284;Piedra, arcilla y arena;G
+2014;2;28;289;Otros no especificados precedentemente;G
+2014;2;28;283;Carbón mineral;G
+2014;2;28;281;Minerales metalíferos;G
+2014;2;28;;Minerales;G
+2014;2;29;291;Elementos de limpieza;G
+2014;2;29;292;Útiles de escritorio, oficina y enseñanza;G
+2014;2;29;293;Útiles y materiales eléctricos;G
+2014;2;29;296;Repuestos y accesorios;G
+2014;2;29;297;Herramientas menores;G
+2014;2;29;299;Otros no especificados precedentemente;G
+2014;2;29;294;Utensilios de cocina y comedor;G
+2014;2;29;295;Útiles menores médicos, quirúrgicos y de laboratorio;G
+2014;2;29;;Otros bienes de consumo;G
+2014;2;24;249;Otros no especificados precedentemente;G
+2014;2;24;244;Cubiertas y cámaras de aire;G
+2014;2;24;241;Cueros y pieles;G
+2014;2;24;242;Artículos de cuero;G
+2014;2;24;243;Artículos de caucho;G
+2014;2;24;;Productos de cuero y caucho;G
+2014;2;;;Bienes de consumo;G
+2014;3;31;311;Energía eléctrica;G
+2014;3;31;312;Agua;G
+2014;3;31;313;Gas;G
+2014;3;31;314;Teléfonos, telex y telefax;G
+2014;3;31;319;Otros no especificados precedentemente;G
+2014;3;31;315;Correos y Telégrafo;G
+2014;3;31;318;Internet banda ancha;G
+2014;3;31;;Servicios básicos;G
+2014;3;32;321;Alquiler de edificios y locales;G
+2014;3;32;322;Alquiler de maquinaria, equipo y medios de transporte;G
+2014;3;32;324;Alquiler de fotocopiadoras;G
+2014;3;32;329;Otros no especificados precedentemente;G
+2014;3;32;323;Alquiler de equipos de computación;G
+2014;3;32;326;Derechos de bienes intangibles;G
+2014;3;32;;Alquileres y derechos;G
+2014;3;33;331;Mantenimiento y reparación de edificios y locales;G
+2014;3;33;332;Mantenimiento y reparación de vehículos;G
+2014;3;33;333;Mantenimiento y reparación de maquinaria y equipo;G
+2014;3;33;335;Limpieza, aseo y fumigación;G
+2014;3;33;339;Otros no especificados precedentemente;G
+2014;3;33;334;Mantenimiento y reparación de vías de comunicación;G
+2014;3;33;338;Higiene urbana;G
+2014;3;33;336;Mantenimiento de espacios verdes;G
+2014;3;33;;Mantenimiento, reparación y limpieza;G
+2014;3;34;345;De capacitación;G
+2014;3;34;349;Otros no especificados precedentemente;G
+2014;3;34;342;Médicos y sanitarios;G
+2014;3;34;343;Jurídicos;G
+2014;3;34;344;Contabilidad y auditoría;G
+2014;3;34;346;De informática y sistemas computarizados;G
+2014;3;34;341;Estudios, investigaciones y proyectos de factibilidad;G
+2014;3;34;347;Artísticos y culturales;G
+2014;3;34;;Servicios profesionales, técnicos y operativos;G
+2014;3;35;351;Transporte y almacenamiento;G
+2014;3;35;352;Servicios Especializados;G
+2014;3;35;354;Primas y gastos de seguros;G
+2014;3;35;355;Comisiones y gastos bancarios;G
+2014;3;35;356;Sistemas informáticos y de registro;G
+2014;3;35;358;Servicio de vigilancia;G
+2014;3;35;359;Otros no especificados precedentemente;G
+2014;3;35;353;Imprenta, publicaciones y reproducciones;G
+2014;3;35;357;Serv.de acceso a Internet y streaming;G
+2014;3;35;;Servicios Especializados, Comerciales y Financieros;G
+2014;3;36;361;Publicidad y propaganda;G
+2014;3;36;369;Otros no especificados precedentemente;G
+2014;3;36;;Publicidad y propaganda;G
+2014;3;37;371;Pasajes;G
+2014;3;37;372;Viáticos;G
+2014;3;37;379;Otros no especificados precedentemente;G
+2014;3;37;378;Movilidad;G
+2014;3;37;;Pasajes, viáticos y movilidad;G
+2014;3;38;383;Derechos y tasas;G
+2014;3;38;389;Otros no especificados precedentemente;G
+2014;3;38;384;Multas y recargos;G
+2014;3;38;382;Impuestos directos;G
+2014;3;38;386;Juicios, mediaciones y otros gastos judiciales;G
+2014;3;38;385;Regalías;G
+2014;3;38;381;Impuestos indirectos;G
+2014;3;38;;Impuestos, derechos,  tasas y juicios;G
+2014;3;39;391;Servicios de ceremonial;G
+2014;3;39;398;Premios y reconocimientos;G
+2014;3;39;399;Otros no especificados precedentemente;G
+2014;3;39;392;Servicios de comidas, viandas y refrigerios;G
+2014;3;39;395;Convenios de AsistenciaTécnica;G
+2014;3;39;396;Servicios de consultoria;G
+2014;3;39;;Otros servicios;G
+2014;3;;;Servicios no personales;G
+2014;4;43;434;Equipo de comunicación y señalamiento;G
+2014;4;43;435;Equipo educacional, cultural y recreativo;G
+2014;4;43;436;Equipo para computación;G
+2014;4;43;437;Equipo de oficina y moblaje;G
+2014;4;43;438;Herramientas y repuestos mayores;G
+2014;4;43;439;Equipos varios;G
+2014;4;43;432;Equipo de transporte, tracción y elevación;G
+2014;4;43;433;Equipo sanitario y de laboratorio;G
+2014;4;43;431;Maquinaria y equipo de producción;G
+2014;4;43;;Maquinaria y equipo;G
+2014;4;44;441;Equipo de seguridad;G
+2014;4;44;;Equipo de seguridad;G
+2014;4;45;451;Libros, revistas y otros elementos de colección;G
+2014;4;45;452;Obras de arte;G
+2014;4;45;;Obras de arte, libros y elementos coleccionables;G
+2014;4;48;481;Programas de computación;G
+2014;4;48;489;Otros activos intangibles;G
+2014;4;48;;Activos intangibles;G
+2014;4;49;491;Otros bienes de uso no especificados precedentemente;G
+2014;4;49;;Otros bienes de uso e inversiones;G
+2014;4;42;421;Construcciones en bienes de dominio privado;G
+2014;4;42;422;Construcciones en bienes de dominio público;G
+2014;4;42;424;Obras de mejora y ampliación;G
+2014;4;42;423;Relleno sanitario;G
+2014;4;42;;Construcciones;G
+2014;4;41;412;Edificios e instalaciones para el dominio privado de la CABA;G
+2014;4;41;;Bienes preexistentes;G
+2014;4;;;Bienes de uso;G
+2014;5;51;519;Transferencias a empresas privadas;G
+2014;5;51;516;Transferencias para actividades científicas o académicas;G
+2014;5;51;517;Transferencias a otras instituciones sin fines de lucro;G
+2014;5;51;513;Becas y otros subsidios;G
+2014;5;51;514;Ayudas sociales a personas;G
+2014;5;51;512;Subsidios, transferencias y apoyos;G
+2014;5;51;518;Transferencias a cooperativas;G
+2014;5;51;515;Transferencias a instituciones de enseñanza;G
+2014;5;51;;Transferencias al sector privado para financiar gastos corrientes;G
+2014;5;56;561;Transferencias a universidades  para financiar gastos corrientes;G
+2014;5;56;;Transferencias a Universidades;G
+2014;5;57;579;Transferencias a otras instituciones públicas municipales;G
+2014;5;57;574;Transferencias a entes tripartitos;G
+2014;5;57;573;Transferencias a empresas públicas no financieras provinciales;G
+2014;5;57;575;Transferencias a otras instituciones públicas provinciales;G
+2014;5;57;578;Transferencias a empresas públicas no financieras municipales;G
+2014;5;57;;Transf a instituciones provinciales y municipales para financiar gastos corrientes;G
+2014;5;59;597;Transf.a organismos internacionales para financiar gastos de capital;G
+2014;5;59;592;Transf.a organismos internacionales para financiar gastos corrientes;G
+2014;5;59;596;Transf.a gobiernos extranjeros para financiar gastos de capital;G
+2014;5;59;;Transferencias al exterior;G
+2014;5;53;531;A la administración central nacional;G
+2014;5;53;534;A otras instituciones públicas nacionales;G
+2014;5;53;;Transf.al Sector Público Nacional para financiar gtos corrientes;G
+2014;5;55;552;Transf.a empresas pcas no financieras para financiar gtos corrientes;G
+2014;5;55;554;Transferencias Fondos Fiduciarios para financiar gs cte;G
+2014;5;55;557;Transf.a empresas pcas no financieras para financiar gtos de capital;G
+2014;5;55;559;Transferencias Fondos Fiduciarios para financiar gs de capital;G
+2014;5;55;551;Transf.a instituciones pcas financieras para financiar gtos corrientes;G
+2014;5;55;;Transferencias al Sector Público empresarial;G
+2014;5;58;584;Transferencias a entes tripartitos;G
+2014;5;58;585;Transferencias a otras instituciones públicas provinciales;G
+2014;5;58;;Transf.a instituciones provinciales y municipales para financiar gastos de capital;G
+2014;5;52;524;Transferencias a otras instituciones sin fines de lucro;G
+2014;5;52;523;Transferencias para actividades científicas o académicas;G
+2014;5;52;521;Transferencias a personas;G
+2014;5;52;;Transferencias al sector privado para financiar gastos de capital;G
+2014;5;;;Transferencias;G
+2014;6;62;621;Préstamos a corto plazo al sector privado;G
+2014;6;62;;Préstamos a corto plazo;G
+2014;6;69;699;Fondos Fiduciarios;G
+2014;6;69;692;Adelantos a proveedores y contratistas a corto plazo;G
+2014;6;69;697;Adelantos a proveedores y contratistas a largo plazo;G
+2014;6;69;693;Adelantos a Empr. y Soc. del Estado a CP para Cumpl. Mandas;G
+2014;6;69;695;Adelantos a Empresas y Sociedades del Estado a cuenta de futuros aportes de capital;G
+2014;6;69;;Incremento de activos diferidos y adelantos a proveedores y contratistas;G
+2014;6;63;631;Préstamos a largo plazo al sector privado;G
+2014;6;63;;Préstamos a largo plazo;G
+2014;6;;;Activos financieros;G
+2014;9;91;912; Contribución a organismos descentralizados;G
+2014;9;91;911;Contribución a la administración central;G
+2014;9;91;;Gastos figurativos de la administración gubernamental para transacciones corrientes;G
+2014;9;92;922; Contribución a organismos descentralizados;G
+2014;9;92;;Gastos figurativos de la administración gubernamental para transacciones de capital;G
+2014;9;;;Gastos figurativos;G
+2014;7;71;716;intereses de la deuda interna a largo plazo;G
+2014;7;71;717;Amortización de la deuda interna a largo plazo;G
+2014;7;71;;Servicio de la deuda interna;G
+2014;7;72;726;Intereses de la deuda externa a largo plazo;G
+2014;7;72;728;Comisiones y otros gastos de la deuda externa a largo plazo;G
+2014;7;72;727;Amortización de la deuda externa a largo plazo;G
+2014;7;72;;Servicio de la deuda externa;G
+2014;7;73;731;Intereses por préstamos del sector privado;G
+2014;7;73;732;Intereses por préstamos del sector público nacional;G
+2014;7;73;;Intereses por préstamos y otras deudas;G
+2014;7;76;761;Disminución de cuentas a pagar comerciales a corto plazo;G
+2014;7;76;762;Disminución de otras cuentas a pagar a corto plazo;G
+2014;7;76;764;Disminución de otros documentos a pagar a corto plazo;G
+2014;7;76;767;Disminución de otras cuentas a pagar a largo plazo;G
+2014;7;76;;Disminución de cuentas y documentos a pagar;G
+2014;7;;;Servicio de la deuda y disminución de otros pasivos;G
