@@ -1,8 +1,10 @@
 # -*- coding: UTF-8 -*-
 
 from budget_app.models import *
+from django.conf import settings
 import csv
 import os.path
+
 
 
 class BudgetLoader:
@@ -47,7 +49,7 @@ class BudgetLoader:
 
     def load_institutional_hierarchy(self, budget, path):
         institutional_categories = self.get_default_institutional_categories()
-        institutions_filename = os.path.join(path, 'estructura_organica.csv')
+        institutions_filename = os.path.join(path, settings.INSTITUTIONAL_FILE)
         print "Cargando lista de secciones de %s..." % institutions_filename
         reader = csv.reader(open(institutions_filename, 'rb'), delimiter=';')
         for line in reader:
@@ -81,7 +83,7 @@ class BudgetLoader:
 
     def load_economic_hierarchy(self, budget, path):
         economic_categories = self.get_default_economic_categories()
-        filename = os.path.join(path, 'estructura_economica.csv')
+        filename = os.path.join(path, settings.ECONOMICAL_FILE)
         print "Cargando jerarquía económica de %s..." % filename
         reader = csv.reader(open(filename, 'rb'), delimiter=';')
         for line in reader:
@@ -117,7 +119,7 @@ class BudgetLoader:
     # so we treat it as optional: if the file doesn't exist, continue
     def load_funding_hierarchy(self, budget, path):
         funding_categories = self.get_default_funding_categories()
-        filename = os.path.join(path, 'estructura_financiacion.csv')
+        filename = os.path.join(path, settings.FUNDING_FILE)
         if os.path.isfile(filename):
             print "Cargando jerarquía de financiación de %s..." % filename
             reader = csv.reader(open(filename, 'rb'), delimiter=';')
@@ -159,7 +161,7 @@ class BudgetLoader:
 
     def load_functional_hierarchy(self, budget, path):
         functional_categories = self.get_default_functional_categories()
-        filename = os.path.join(path, 'estructura_funcional.csv')
+        filename = os.path.join(path, settings.FUNCTIONAL_FILE)
         print "Cargando jerarquía funcional de %s..." % filename
         reader = csv.reader(open(filename, 'rb'), delimiter=';')
         for line in reader:

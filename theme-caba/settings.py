@@ -4,6 +4,10 @@ MAIN_ENTITY_LEVEL = 'provincia'
 MAIN_ENTITY_NAME = 'CABA'
 
 BUDGET_LOADER = 'CabaBudgetLoader'
+INSTITUTIONAL_FILE = 'jurisdiccion_clas.csv'
+ECONOMICAL_FILE = 'inciso_clas.csv'
+FUNDING_FILE = 'fuente_fin.csv'
+FUNCTIONAL_FILE = 'finalidad_clas.csv'
 
 # FEATURED_PROGRAMMES = ['24121', '24221', '35131']
 
