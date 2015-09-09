@@ -8,7 +8,7 @@ class FundingCategoriesManager(models.Manager):
 class FundingCategory(models.Model):
     budget = models.ForeignKey('Budget')
     expense = models.BooleanField()
-    source = models.CharField(max_length=1)
+    source = models.CharField(max_length=1, null=True)
     fund_class = models.CharField(max_length=2, null=True)
     fund = models.CharField(max_length=5, null=True)
     description = models.CharField(max_length=200)
