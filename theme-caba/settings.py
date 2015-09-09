@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 
 MAIN_ENTITY_LEVEL = 'provincia'
-MAIN_ENTITY_NAME = 'Caba'
+MAIN_ENTITY_NAME = 'CABA'
 
 BUDGET_LOADER = 'CabaBudgetLoader'
 
