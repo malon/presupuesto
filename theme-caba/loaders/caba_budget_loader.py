@@ -170,7 +170,9 @@ class CabaBudgetLoader(BudgetLoader):
                           expense=is_expense,
                           actual=is_actual,
                           item_number=item['item_number'],
-                          amount=item['amount'],
+                          # float casts exp notation into float
+                          # cannot be casted to int directly
+                          amount=int(float(item['amount'])),
                           description=item['description'],
                           budget=budget).save()
 
