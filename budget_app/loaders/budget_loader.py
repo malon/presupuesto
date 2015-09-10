@@ -53,7 +53,7 @@ class BudgetLoader:
         print "Cargando lista de secciones de %s..." % institutions_filename
         reader = csv.reader(open(institutions_filename, 'rb'), delimiter=';')
         for line in reader:
-            if not line or line[0] == "" or line[0] == 'EJERCICIO':  # Ignore header or empty lines
+            if not line or line[0] == "" or line[0].upper() == 'EJERCICIO':  # Ignore header or empty lines
                 continue
 
             if budget.year != line[0]:
@@ -87,7 +87,7 @@ class BudgetLoader:
         print "Cargando jerarquía económica de %s..." % filename
         reader = csv.reader(open(filename, 'rb'), delimiter=';')
         for line in reader:
-            if not line or line[0] == "" or line[0] == 'EJERCICIO':  # Ignore header or empty lines
+            if not line or line[0] == "" or line[0].upper() == 'EJERCICIO':  # Ignore header or empty lines
                 continue
 
             if budget.year != line[0]:
@@ -124,7 +124,7 @@ class BudgetLoader:
             print "Cargando jerarquía de financiación de %s..." % filename
             reader = csv.reader(open(filename, 'rb'), delimiter=';')
             for line in reader:
-                if not line or line[0] == "" or line[0] == 'EJERCICIO':  # Ignore header or empty lines
+                if not line or line[0] == "" or line[0].upper() == 'EJERCICIO':  # Ignore header or empty lines
                     continue
 
                 if budget.year != line[0]:
@@ -165,7 +165,7 @@ class BudgetLoader:
         print "Cargando jerarquía funcional de %s..." % filename
         reader = csv.reader(open(filename, 'rb'), delimiter=';')
         for line in reader:
-            if not line or line[0] == "" or line[0] == 'EJERCICIO':  # Ignore header or empty lines
+            if not line or line[0] == "" or line[0].upper() == 'EJERCICIO':  # Ignore header or empty lines
                 continue
 
             if budget.year != line[0]:
@@ -182,9 +182,9 @@ class BudgetLoader:
         print "Cargando gastos de %s..." % filename
         self.load_data_file(budget, filename, True, False)
 
-        filename = os.path.join(path, 'ingresos.csv')
-        print "Cargando ingresos de %s..." % filename
-        self.load_data_file(budget, filename, False, False)
+        # filename = os.path.join(path, 'ingresos.csv')
+        # print "Cargando ingresos de %s..." % filename
+        # self.load_data_file(budget, filename, False, False)
 
     def load_execution_data_files(self, budget, path):
         filename = os.path.join(path, 'ejecucion_gastos.csv')

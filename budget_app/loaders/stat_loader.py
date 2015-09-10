@@ -14,7 +14,7 @@ class StatLoader:
     def load_inflation(self, filename):
         print "Cargando estadísticas oficiales de inflación de %s..." % filename
         reader = csv.reader(open(filename, 'rb'))
-        for index, line in enumerate(reader):
+        for index, line in enumerate(reader):            
             if re.match("^#", line[0]):  # Ignore comments
                 continue
 
