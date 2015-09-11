@@ -114,9 +114,9 @@ class CabaBudgetLoader(BudgetLoader):
         for item in items:
             # Match budget item data to existing categories            
             ic = InstitutionalCategory.objects.filter(budget=budget,
-                                            institution=item['ic_code'][0:1],
-                                            section=item['ic_code'][0:2],
-                                            department=item['ic_code'][0:4])            
+                                            institution=item['ic_code'][0:2],
+                                            section=item['ic_code'][0:5],
+                                            department=item['ic_code'][0:9])            
             if not ic:
                 print u"ALERTA: No se encuentra la institución '%s' para '%s': %s€" % (item['ic_code'], item['description'], item['amount'])
                 continue

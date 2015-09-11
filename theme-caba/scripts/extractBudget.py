@@ -5,7 +5,7 @@
 from csvkit.py2 import CSVKitDictReader, CSVKitDictWriter
 from os import listdir, makedirs
 from os.path import join, exists
-from utils import input_path, output_path
+from utils import input_path, output_path, format_zeroes
 
 
 def create_csv_gastos(year, reader):
@@ -23,10 +23,14 @@ def create_csv_gastos(year, reader):
         for row in reader:
             line = {}
             # line.append(year)
+            centro = format_zeroes(
+                    int(row['jurisdiccion']), 2)+format_zeroes(
+                    int(row['ogese']), 3)+format_zeroes(
+                    int(row['unidad_ejecutora']), 4)
+
             line = {
                 'EJERCICIO': year,
-                'CENTRO GESTOR': row[
-                    'jurisdiccion']+row['ogese']+row['unidad_ejecutora'],
+                'CENTRO GESTOR': centro,
                 'FUNCIONAL': row['finalidad']+row['funcion'],
                 'ECONOMICA': row['inciso']+row['principal']+row['parcial'],
                 'FINANCIACION': row['fuente_fin'],

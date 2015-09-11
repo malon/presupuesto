@@ -34,6 +34,7 @@ from os.path import join
 from utils import classifications, map_financiacion
 from utils import map_finalidad, get_titles
 from utils import input_path, output_path
+from utils import format_zeroes
 
 structure = []
 
@@ -116,7 +117,8 @@ def fill_year(year, structure, classification, reader):
                     debug_list.append(entity['entity_name'])
                 if entity['entity_name'] not in starting_point:
                     starting_point[entity['entity_name']] = []
-                id = row[entity['id_title']]
+                id = format_zeroes(
+                    int(row[entity['id_title']]), entity['length'])
                 existing_index = object_exists(
                     starting_point[entity['entity_name']], id, 'id')
                 if existing_index == -1:
@@ -160,5 +162,5 @@ for fname in files:
             fill_year(year, structure, classifications, reader)
 
 print "Entidades completadas", debug_list
-#print structure
+# print structure
 create_csvs(structure)
