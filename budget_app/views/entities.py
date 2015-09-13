@@ -32,7 +32,8 @@ def entities_index(request, c, level, render_callback=None):
 def entities_show(request, c, entity, render_callback=None):
     # Prepare the budget breakdowns
     c['financial_expense_breakdown'] = BudgetBreakdown()
-    c['functional_breakdown'] = BudgetBreakdown(['policy', 'programme'])
+    # c['functional_breakdown'] = BudgetBreakdown(['policy', 'programme'])
+    c['functional_breakdown'] = BudgetBreakdown(['policy'])
     c['include_financial_chapters'] = hasattr(settings, 'INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS') and settings.INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS
     if entity.level == settings.MAIN_ENTITY_LEVEL:
         c['economic_breakdown'] = BudgetBreakdown(['article', 'heading'])
@@ -68,6 +69,7 @@ def entities_show(request, c, entity, render_callback=None):
     populate_years(c, 'economic_breakdown')
     populate_budget_statuses(c, entity.id)
     populate_area_descriptions(c, ['functional', 'income', 'expense'])
+    print "c['functional_areas']--------", c['functional_areas']
     c['display_functional_view'] = True
     _set_full_breakdown(c, entity.level == settings.MAIN_ENTITY_LEVEL)
     c['entity'] = entity
