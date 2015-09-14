@@ -33,6 +33,7 @@ SHOW_FUNDING_TAB = True
 # Include financial income/expenditures in overview
 # and global policy breakdowns. Default: False.
 # INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS = False
+INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS = True
 
 # Search in entity names. Default: True.
 # SEARCH_ENTITIES = True
