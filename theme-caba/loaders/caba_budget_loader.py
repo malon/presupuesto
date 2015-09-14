@@ -106,7 +106,7 @@ class CabaBudgetLoader(BudgetLoader):
                 'ec_code': line[3],                
                 'fdc_code': line[4],
                 'item_number': '',
-                'description': self._escape_unicode(line[5]),
+                'description': line[5],
                 # 'amount': self._read_spanish_number(amount)
                 'amount': amount
             })
@@ -181,7 +181,7 @@ class CabaBudgetLoader(BudgetLoader):
 
     def add_institutional_category(self, items, line):
         description = line[4]
-        description = self._escape_unicode(description)
+        # description = self._escape_unicode(description)        
 
         items.append({
             'institution': (line[1] if line[1] != "" else None),
@@ -192,7 +192,7 @@ class CabaBudgetLoader(BudgetLoader):
 
     def add_economic_category(self, items, line):
         description = line[4]
-        description = self._escape_unicode(description)
+        # description = self._escape_unicode(description)
 
         items.append({
             'expense': (line[5].upper() == 'G'),
@@ -204,7 +204,8 @@ class CabaBudgetLoader(BudgetLoader):
             })
 
     def add_functional_category(self, items, line):
-        description = self._escape_unicode(line[3])
+        description = line[3]
+        # description = self._escape_unicode(line[3])        
 
         items.append({
                 'area': line[1],
@@ -217,7 +218,7 @@ class CabaBudgetLoader(BudgetLoader):
     def add_funding_category(self, items, line):
         # Prefer the long description if it exists, otherwise the short one
         description = line[2]
-        description = self._escape_unicode(description)
+        # description = self._escape_unicode(description)
 
         items.append({
                 'expense': (line[3].upper() == 'G'),
