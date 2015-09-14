@@ -11,29 +11,29 @@ class CabaBudgetLoader(BudgetLoader):
     # quite useless and ugly-sounding), so they've requested - and I've conceded - that
     # the policies are grouped in four areas defined by themselves. It's easier to do it
     # when loading the data, instead of modifying the original budget files, harder to track.
-    def _map_policy_to_new_area(self, policy):
-        map = {
-          '0': ['01'],
-          '1': ['11','12','14','46','55','63','91'],
-          '2': ['13','31','32','41','42','43','44','45'],
-          '3': ['51','53','54','61','62','64','71','72','73','75'],
-        }
+    # def _map_policy_to_new_area(self, policy):
+    #     map = {
+    #       '0': ['01'],
+    #       '1': ['11','12','14','46','55','63','91'],
+    #       '2': ['13','31','32','41','42','43','44','45'],
+    #       '3': ['51','53','54','61','62','64','71','72','73','75'],
+    #     }
 
-        for area, policies in map.iteritems():
-            if policy in policies:
-                return area
-        return ""
+    #     for area, policies in map.iteritems():
+    #         if policy in policies:
+    #             return area
+    #     return ""
 
-    def get_default_functional_categories(self):
-        categories = BudgetLoader.get_default_functional_categories(self)
+    # def get_default_functional_categories(self):
+    #     categories = BudgetLoader.get_default_functional_categories(self)
 
-        # Create custom areas (I could put this in a file, but doesn't feel worth it)
-        categories.append({ 'area':'0', 'description': 'Deuda'})
-        categories.append({ 'area':'1', 'description': 'Administración'})
-        categories.append({ 'area':'2', 'description': 'Bienestar Social'})
-        categories.append({ 'area':'3', 'description': 'Desarrollo Económico'})
+    #     # Create custom areas (I could put this in a file, but doesn't feel worth it)
+    #     categories.append({ 'area':'0', 'description': 'Deuda'})
+    #     categories.append({ 'area':'1', 'description': 'Administración'})
+    #     categories.append({ 'area':'2', 'description': 'Bienestar Social'})
+    #     categories.append({ 'area':'3', 'description': 'Desarrollo Económico'})
 
-        return categories
+    #     return categories
 
     # def add_functional_category(self, items, line):
     #     # Read the description. There are patches to the budget descriptions that are
