@@ -4,37 +4,51 @@
 numeral.language('es');
 
 
+// // Pretty print a number by inserting ',' thousand separator
+// function formatNumber(value, postfix) {
+//   if (value == null) return '';
+
+//   if (postfix) {
+//     return numeral( value ).format( '0,0', Math.floor ) + postfix;
+//   } else {
+//     return numeral( value ).format( '0,0', Math.floor );
+//   }
+// }
+
 // Pretty print a number by inserting ',' thousand separator
-function formatNumber(value, postfix) {
+function formatNumber(value, currency) {
   if (value == null) return '';
 
-  if (postfix) {
-    return numeral( value ).format( '0,0', Math.floor ) + postfix;
+  if (currency) {
+    return numeral( value ).format( '0,0 $', Math.floor);
   } else {
-    return numeral( value ).format( '0,0', Math.floor );
+    return numeral( value ).format( '0,0', Math.floor);
   }
 }
 
 // Format currency amount
 function formatAmount(value) {
   if (value == null) return '';
-  value = Number(value/100); // Also note value is in cents originally
-  return formatNumber(value, '\xA0€');
+  // value = Number(value/100); // Also note value is in cents originally
+  return formatNumber(value, "true");
 }
 
 // Format currency amount
 function formatSimplifiedAmount(value) {
   if (value == null) return '';
-  value = Number(value/100); // Also note value is in cents originally
+  // value = Number(value/100); // Also note value is in cents originally
 
   if (value >= 1000000) {
-    var precision = (value >= 10000000 ? 0 : 1);  // Best-guess number of decimals to show
-    return formatDecimal(value/1000000, precision)+'\xA0mill.\xA0€';
+    // var precision = (value >= 10000000 ? 0 : 1);  // Best-guess number of decimals to show
+    // return formatDecimal(value/1000000, precision)+'\xA0mill.\xA0€';    
+    return formatRuledDecimal(value, '0,000 a $')
   } else if (value >= 1000) {
-    var precision = (value >= 10000 ? 0 : 1);
-    return formatDecimal(value/1000, precision)+'\xA0mil\xA0€';
+    // var precision = (value >= 10000 ? 0 : 1);
+    // return formatDecimal(value/1000, precision)+'\xA0mil\xA0€';
+    return formatRuledDecimal(value, '0,000 a $')
   } else
-    return formatNumber(value, '\xA0€');
+    // return formatNumber(value, '\xA0€');
+    return formatNumber(value, "true")
 }
 
 // Format decimal number
@@ -53,8 +67,14 @@ function formatDecimal(value, precision) {
       rule = '0,0';
     }
   }
-
   return numeral( value ).format( rule, Math.floor );
+}
+
+function formatRuledDecimal(value, rule) {  
+  if (value == null) return '';
+  var numero = numeral( value ).format( rule, Math.floor );
+  // alert ("value:"+value+" -rule:"+rule+" -numero:"+numero)
+  return numero;
 }
 
 // Pretty print a number by inserting ',' thousand separator
