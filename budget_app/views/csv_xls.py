@@ -241,8 +241,10 @@ def write_breakdown_item(writer, year, item, field, ids, descriptions=None):
             values.append( descriptions.get(id, '').encode("utf-8") )
 
     # The original amounts are in cents:
-    values.append( totals[budget_column_name] / 100.0 if budget_column_name in totals else None )
-    values.append( totals[actual_column_name] / 100.0 if actual_column_name in totals else None )
+    # values.append( totals[budget_column_name] / 100.0 if budget_column_name in totals else None )
+    # values.append( totals[actual_column_name] / 100.0 if actual_column_name in totals else None )
+    values.append( totals[budget_column_name] if budget_column_name in totals else None )
+    values.append( totals[actual_column_name] if actual_column_name in totals else None )
 
     writer.writerow(values)
 

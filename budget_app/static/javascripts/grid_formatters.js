@@ -41,14 +41,15 @@ function formatSimplifiedAmount(value) {
   if (value >= 1000000) {
     // var precision = (value >= 10000000 ? 0 : 1);  // Best-guess number of decimals to show
     // return formatDecimal(value/1000000, precision)+'\xA0mill.\xA0€';    
-    return formatRuledDecimal(value, '0,000 a $')
+    // return formatRuledDecimal(value, '0,000 a $')
+    return formatRuledDecimal(value, true, true, 0);
   } else if (value >= 1000) {
     // var precision = (value >= 10000 ? 0 : 1);
     // return formatDecimal(value/1000, precision)+'\xA0mil\xA0€';
-    return formatRuledDecimal(value, '0,000 a $')
+    return formatRuledDecimal(value, true, true, 0);
   } else
     // return formatNumber(value, '\xA0€');
-    return formatNumber(value, "true")
+    return formatNumber(value, true);  
 }
 
 // Format decimal number
@@ -70,8 +71,23 @@ function formatDecimal(value, precision) {
   return numeral( value ).format( rule, Math.floor );
 }
 
-function formatRuledDecimal(value, rule) {  
+function formatRuledDecimal(value, abbr, coin, precision) {  
   if (value == null) return '';
+  rule = '0,000';
+  if ((precision !== undefined) && (precision > 0)) {
+    rule += '.';
+    while (precision > 1) {
+       rule += '0';
+       precision--;
+     }
+  }
+  if (abbr) {
+    rule += ' a'
+  }
+  if (coin) {
+    rule += ' $'
+  }
+
   var numero = numeral( value ).format( rule, Math.floor );
   // alert ("value:"+value+" -rule:"+rule+" -numero:"+numero)
   return numero;
@@ -100,7 +116,8 @@ function formatPercentage(row, cell, value, columnDef, dataContext) {
 function formatPerCapita(row, cell, value, columnDef, dataContext) {
   if (value == null) return '';
   // Note value is in cents originally
-  var realValue = adjustInflation(value/100, columnDef.stats, columnDef.year);
+  // var realValue = adjustInflation(value/100, columnDef.stats, columnDef.year);
+  var realValue = adjustInflation(value, columnDef.stats, columnDef.year);
 
   // Our stats for year X indicate the population for December 31st of that year so,
   // since we're adjusting inflation for January 1st it seems more accurate to use the
