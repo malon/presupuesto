@@ -48,22 +48,22 @@ classifications = [
         'length': '2'
     }],
     # INCISO
-    [{
-        'entity_name': 'inciso',
-        'id_title': 'inciso',
-        'name_title': 'desc_inciso',
-        'length': '1'
-    }, {
-        'entity_name': 'principal',
-        'id_title': 'principal',
-        'name_title': 'desc_principal',
-        'length': '1'
-    }, {
-        'entity_name': 'parcial',
-        'id_title': 'parcial',
-        'name_title': 'desc_parcial',
-        'length': '1'
-    }],
+    # [{
+    #     'entity_name': 'inciso',
+    #     'id_title': 'inciso',
+    #     'name_title': 'desc_inciso',
+    #     'length': '1'
+    # }, {
+    #     'entity_name': 'principal',
+    #     'id_title': 'principal',
+    #     'name_title': 'desc_principal',
+    #     'length': '1'
+    # }, {
+    #     'entity_name': 'parcial',
+    #     'id_title': 'parcial',
+    #     'name_title': 'desc_parcial',
+    #     'length': '1'
+    # }],
     # UBICACION GEOGRÁFICA
     [{
         'entity_name': 'ubicacion_geografica',

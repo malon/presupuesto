@@ -13,9 +13,9 @@ class EconomicCategoriesManager(models.Manager):
 class EconomicCategory(models.Model):
     budget = models.ForeignKey('Budget')
     expense = models.BooleanField()
-    chapter = models.CharField(max_length=1)
-    article = models.CharField(max_length=2, null=True)
-    heading = models.CharField(max_length=9, null=True)     # 9 for PGE: '480/xxxxx' with xxxxx entity_id 
+    chapter = models.CharField(max_length=2)
+    article = models.CharField(max_length=3, null=True)
+    heading = models.CharField(max_length=4, null=True)     # 9 for PGE: '480/xxxxx' with xxxxx entity_id 
     subheading = models.CharField(max_length=9, null=True)  # 6 for Aragon, not used for PGE
     description = models.CharField(max_length=500)          # 500 for PGE
     updated_at = models.DateTimeField(auto_now=True)

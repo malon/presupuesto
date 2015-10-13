@@ -1,0 +1,186 @@
+ejercicio;chapter;article;heading;description;gasto/ingreso
+2015;21;;;Gastos corrientes;G
+2015;21;211;;Gastos de operación de Empresas y Sociedades del Estado;G
+2015;21;211;2110;Gastos de operación de Empresas y Sociedades del Estado;G
+2015;21;211;2111;Remuneraciones;G
+2015;21;211;2112;Bienes y Servicios;G
+2015;21;211;2113;Impuestos indirectos;G
+2015;21;211;2114;Depreciación y amortización;G
+2015;21;211;2115;Previsiones;G
+2015;21;211;2116;Variación de existencias;G
+2015;21;211;2117;Descuentos y bonificaciones;G
+2015;21;211;2118;Intereses de instituciones financieras;G
+2015;21;212;;Remuneraciones al personal;G
+2015;21;212;2120;Remuneraciones al personal;G
+2015;21;213;;Gastos de consumo;G
+2015;21;213;2130;Gastos de consumo;G
+2015;21;213;2131;Bienes de Consumo;G
+2015;21;213;2132;Servicios no Personales;G
+2015;21;213;2133;Impuestos indirectos;G
+2015;21;213;2134;Depreciación y amortización;G
+2015;21;213;2135;Previsiones y reservas técnicas;G
+2015;21;213;2136;Variación de existencias;G
+2015;21;214;;Rentas de la propiedad;G
+2015;21;214;2140;Rentas de la propiedad;G
+2015;21;214;2141;Intereses;G
+2015;21;214;2142;Arrendamientos de tierras y terrenos;G
+2015;21;214;2143;Derechos sobre bienes intangibles;G
+2015;21;215;;Impuestos directos;G
+2015;21;215;2150;Impuestos directos;G
+2015;21;216;;Otras pérdidas;G
+2015;21;216;2160;Otras pérdidas;G
+2015;21;217;;Transferencias corrientes;G
+2015;21;217;2170;Transferencias corrientes;G
+2015;21;217;2171;Al sector privado;G
+2015;21;217;2172;Al sector público;G
+2015;21;217;2173;Al sector externo;G
+2015;21;218;;Gastos figurativos para transacciones corrientes;G
+2015;21;218;2180;Gastos figurativos para transacciones corrientes;G
+2015;21;219;;Crédito adicional para gastos corrientes;G
+2015;21;219;2190;Crédito adicional para gastos corrientes;G
+2015;22;;;Gastos de capital;G
+2015;22;220;;Gastos de capital;G
+2015;22;220;2200;Gastos de capital;G
+2015;22;221;;Inversión real directa por terceros;G
+2015;22;221;2210;Inversión real directa por terceros;G
+2015;22;221;2211;Edificios e instalaciones;G
+2015;22;221;2212;Construcciones del dominio privado;G
+2015;22;221;2213;Construcciones del dominio público;G
+2015;22;221;2214;Maquinaria y equipo;G
+2015;22;221;2217;Incremento de existencias;G
+2015;22;221;2218;Tierras y terrenos;G
+2015;22;221;2219;Activos intangibles;G
+2015;22;222;;Inversión real directa por producción propia;G
+2015;22;222;2220;Inversión real directa por producción propia;G
+2015;22;222;2221;Remuneraciones;G
+2015;22;222;2222;Bienes de Consumo;G
+2015;22;222;2223;Servicios no personales;G
+2015;22;222;2224;Bienes de Uso;G
+2015;22;222;2225;Transferencias;G
+2015;22;222;2226;Activos Financieros;G
+2015;22;222;2228;Otros Gastos;G
+2015;22;223;;Transferencias de capital;G
+2015;22;223;2230;Transferencias de capital;G
+2015;22;223;2231;Al sector privado;G
+2015;22;223;2232;Al sector público;G
+2015;22;223;2233;Al sector externo;G
+2015;22;224;;Inversión financiera;G
+2015;22;224;2240;Inversión financiera;G
+2015;22;224;2241;Aportes de capital;G
+2015;22;224;2242;Concesión de préstamos de corto plazo;G
+2015;22;224;2243;Concesión de préstamos de largo plazo;G
+2015;22;225;;Gastos figurativos para transacciones de capital;G
+2015;22;225;2250;Gastos figurativos para transacciones de capital;G
+2015;22;229;;Crédito adicional para gastos de capital;G
+2015;22;229;2290;Crédito adicional para gastos de capital;G
+2015;23;;;Aplicaciones financieras;G
+2015;23;230;;Aplicaciones financieras;G
+2015;23;230;2300;Aplicaciones financieras;G
+2015;23;231;;Inversión financiera;G
+2015;23;231;2310;Inversión financiera;G
+2015;23;231;2311;Incremento de disponibilidades Saldo Final;G
+2015;23;231;2312;Adquisición de títulos y valores;G
+2015;23;231;2313;Incremento de otros activos financieros;G
+2015;23;231;2316;Aportes de capital;G
+2015;23;231;2317;Concesión de préstamos de corto plazo;G
+2015;23;231;2318;Concesión de préstamos de largo plazo;G
+2015;23;232;;Amortización de la deuda y disminución de otros pasivos;G
+2015;23;232;2320;Amortización de la deuda y disminución de otros pasivos;G
+2015;23;232;2321;Amortización deuda interna a corto plazo;G
+2015;23;232;2322;Amortización deuda externa a corto plazo;G
+2015;23;232;2323;Amortización de préstamos a corto plazo;G
+2015;23;232;2325;Disminución de otros pasivos;G
+2015;23;232;2326;Amortización deuda interna a largo plazo;G
+2015;23;232;2327;Amortización deuda externa a largo plazo;G
+2015;23;232;2328;Amortización de préstamos a largo plazo;G
+2015;23;232;2329;Amortización de deuda no financiera;G
+2015;23;233;;Disminución del patrimonio;G
+2015;23;233;2330;Disminución del patrimonio;G
+2015;23;233;2331;Disminución de capital;G
+2015;23;233;2332;Disminución de reservas;G
+2015;23;233;2333;Disminución de resultados acumulados;G
+2015;23;234;;Conversión de la deuda a largo plazo en a corto plazo;G
+2015;23;234;2340;Conversión de la deuda a largo plazo en a corto plazo;G
+2015;23;234;2341;Conversión de la deuda interna;G
+2015;23;234;2342;Conversión de la deuda externa;G
+2015;23;234;2343;Otros gastos por deuda pública;G
+2015;23;235;;Gastos figurativos para aplicaciones financieras;G
+2015;23;235;2350;Gastos figurativos para aplicaciones financieras;G
+2015;23;239;;Crédito adicional para aplicaciones financieras;G
+2015;23;239;2390;Crédito adicional para aplicaciones financieras;G
+2015;11;;;Ingresos Corrientes;I
+2015;11;111;;Ingresos tributarios;I
+2015;11;111;1110;Ingresos tributarios;I
+2015;11;111;1111;Impuestos Directos;I
+2015;11;111;1112;Impuestos Indirectos;I
+2015;11;111;1113;Impuestos Nacionales;I
+2015;11;112;;Contribuciones a la seguridad social;I
+2015;11;112;1120;Contribuciones a la seguridad social;I
+2015;11;113;;Ingresos no tributarios;I
+2015;11;113;1130;Ingresos no tributarios;I
+2015;11;113;1131;Tasas;I
+2015;11;113;1132;Derechos;I
+2015;11;113;1133;Otros no tributarios;I
+2015;11;114;;Venta de bienes y servicios de las administraciones públicas;I
+2015;11;114;1140;Venta de bienes y servicios de las administraciones públicas;I
+2015;11;115;;Ingresos de operación de Empresas y Sociedades del Estado;I
+2015;11;115;1150;Ingresos de operación de Empresas y Sociedades del Estado;I
+2015;11;115;1151;Ventas brutas;I
+2015;11;115;1152;Ingresos financieros de instituciones financieras;I
+2015;11;115;1153;Otros ingresos de operación;I
+2015;11;116;;Rentas de la propiedad;I
+2015;11;116;1160;Rentas de la propiedad;I
+2015;11;116;1161;Intereses;I
+2015;11;116;1162;Dividendos;I
+2015;11;116;1163;Arrendamientos de tierras y terrenos;I
+2015;11;116;1164;Derechos sobre bienes intangibles;I
+2015;11;117;;Transferencias corrientes;I
+2015;11;117;1170;Transferencias corrientes;I
+2015;11;117;1171;Del sector privado;I
+2015;11;117;1172;Del sector público;I
+2015;11;117;1173;Del sector externo;I
+2015;11;118;;Contribuciones figurativas para financiaciones corrientes;I
+2015;11;118;1180;Contribuciones figurativas para financiaciones corrientes;I
+2015;12;;;Recursos de Capital;I
+2015;12;121;;Recursos propios de capital;I
+2015;12;121;1210;Recursos propios de capital;I
+2015;12;121;1211;Venta de activos;I
+2015;12;121;1212;Disminución de existencias;I
+2015;12;121;1213;Incremento de la depreciación y amortización acumulada;I
+2015;12;122;;Transferencias de capital;I
+2015;12;122;1220;Transferencias de capital;I
+2015;12;122;1221;Del sector privado;I
+2015;12;122;1222;Del sector público;I
+2015;12;122;1223;Del sector externo;I
+2015;12;123;;Disminución de la inversión financiera;I
+2015;12;123;1230;Disminución de la inversión financiera;I
+2015;12;123;1231;Venta de acciones y participaciones de capital;I
+2015;12;123;1232;Recuperación de préstamos de corto plazo;I
+2015;12;123;1236;Recuperación de préstamos de largo plazo;I
+2015;12;124;;Contribuciones figurativas para financiaciones de capital;I
+2015;12;124;1240;Contribuciones figurativas para financiaciones de capital;I
+2015;13;;;Fuentes Financieras;I
+2015;13;131;;Disminución de la inversión financiera;I
+2015;13;131;1310;Disminución de la inversión financiera;I
+2015;13;131;1311;Venta de acciones y participaciones de capital;I
+2015;13;131;1312;Recuperación de préstamos de corto plazo;I
+2015;13;131;1313;Venta de títulos y valores;I
+2015;13;131;1314;Disminución de otros activos financieros;I
+2015;13;131;1316;Recuperación de préstamos de largo plazo;I
+2015;13;132;;Endeudamiento público e incremento de otros pasivos;I
+2015;13;132;1320;Endeudamiento público e incremento de otros pasivos;I
+2015;13;132;1321;Colocación de deuda interna a corto plazo;I
+2015;13;132;1322;Colocación de deuda externa a corto plazo;I
+2015;13;132;1323;Obtención de préstamos a corto plazo;I
+2015;13;132;1325;Incremento de otros pasivos;I
+2015;13;132;1326;Colocación de deuda interna a largo plazo;I
+2015;13;132;1327;Colocación de deuda externa a largo plazo;I
+2015;13;132;1328;Obtención de préstamos a largo plazo;I
+2015;13;132;1329;Conversión de la deuda a corto plazo en a largo plazo por refinanciación;I
+2015;13;133;;Incremento del patrimonio;I
+2015;13;133;1330;Incremento del patrimonio;I
+2015;13;133;1331;Incremento de capital;I
+2015;13;133;1332;Incremento de reservas;I
+2015;13;133;1333;Incremento de resultados acumulados;I
+2015;13;134;;Contribuciones figurativas para aplicaciones financieras;I
+2015;13;134;1340;Contribuciones figurativas para aplicaciones financieras;I

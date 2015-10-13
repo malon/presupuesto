@@ -5,7 +5,7 @@ MAIN_ENTITY_NAME = 'CABA'
 
 BUDGET_LOADER = 'CabaBudgetLoader'
 INSTITUTIONAL_FILE = 'jurisdiccion_clas.csv'
-ECONOMICAL_FILE = 'inciso_clas.csv'
+ECONOMICAL_FILE = 'economico_clas.csv'
 FUNDING_FILE = 'fuente_fin_clas.csv'
 FUNCTIONAL_FILE = 'finalidad_clas.csv'
 

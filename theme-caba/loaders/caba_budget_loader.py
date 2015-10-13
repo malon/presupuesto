@@ -99,17 +99,26 @@ class CabaBudgetLoader(BudgetLoader):
         #     fc_function = 'XXX'
         #     fc_programme = 'XXXX'
 
+        if is_expense:
+            fc_code = line[2]
+            ic_code = line[1]
+            fdc_code = line[4]
+        else:
+            fc_code = 'XX'
+            ic_code = 'XXXXXXXXX'
+            fdc_code = 'XX'
+
         # Gather all the relevant bits and store them to be processed
         items.append({
-                'ic_code': line[1], # Inconsistent 2012-2013
-                'fc_code': line[2],               
+                'ic_code': ic_code, # Inconsistent 2012-2013
+                'fc_code': fc_code,               
                 'ec_code': line[3],                
-                'fdc_code': line[4],
+                'fdc_code': fdc_code,
                 'item_number': '',
                 'description': line[5],
                 # 'amount': self._read_spanish_number(amount)
                 'amount': amount
-            })
+            })        
     def process_data_items(self, budget, items, is_expense, is_actual):
         for item in items:
             # Match budget item data to existing categories            
@@ -136,9 +145,9 @@ class CabaBudgetLoader(BudgetLoader):
 
             ec = EconomicCategory.objects.filter(budget=budget,
                                                 expense=is_expense,
-                                                chapter=item['ec_code'][0:1],
-                                                article=item['ec_code'][0:2],
-                                                heading=item['ec_code'][0:3],
+                                                chapter=item['ec_code'][0:2],
+                                                article=item['ec_code'][0:3],
+                                                heading=item['ec_code'][0:4],
                                                 subheading=None)
             if not ec:
                 print u"ALERTA: No se encuentra la categoría económica '%s' para '%s': %s€" % (item['ec_code'], item['description'], item['amount'])
@@ -227,3 +236,34 @@ class CabaBudgetLoader(BudgetLoader):
                 'fund': (line[1] if line[1] != "" else None),
                 'description': description
             })
+
+    def get_default_institutional_categories(self):
+        # Income data in CABA not classified institutionally, but we need every budget item to be classified
+        # along all dimensions (at least for now), because of the way we denormalize/join the data in the app.
+        # So we create a fake functional category that will contain all the income data.
+        categories = []
+        categories.append({ 'institution':'XX', 
+                            'section': 'XXXXX',
+                            'department': 'XXXXXXXXX',                            
+                            'description': 'Ingresos'})
+        return categories
+
+
+    def get_default_funding_categories(self):
+        # Income data in CABA not classified by funding, but we need every budget item to be classified
+        # along all dimensions (at least for now), because of the way we denormalize/join the data in the app.
+        # So we create a fake functional category that will contain all the income data.
+        categories = []
+        categories.append({ 'fund': 'XX',                        
+                            'description': 'Ingresos'})
+        return categories
+
+    def get_default_functional_categories(self):
+        # Income data in CABA not classified functionally, but we need every budget item to be classified
+        # along all dimensions (at least for now), because of the way we denormalize/join the data in the app.
+        # So we create a fake functional category that will contain all the income data.
+        categories = []
+        categories.append({ 'area':'X', 
+                            'policy': 'XX',                            
+                            'description': 'Ingresos'})
+        return categories

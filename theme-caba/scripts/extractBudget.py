@@ -1,6 +1,6 @@
 #  -*-  coding: utf-8 -*-
 
-# Creates the gastos.csv file from the budget data
+# Creates the gastos.csv file from the budget data stored in input for each year
 
 from csvkit.py2 import CSVKitDictReader, CSVKitDictWriter
 from os import listdir, makedirs
@@ -28,11 +28,13 @@ def create_csv_gastos(year, reader):
                     int(row['ogese']), 3)+format_zeroes(
                     int(row['unidad_ejecutora']), 4)
 
+
             line = {
                 'EJERCICIO': year,
                 'CENTRO GESTOR': centro,
                 'FUNCIONAL': row['finalidad']+row['funcion'],
-                'ECONOMICA': row['inciso']+row['principal']+row['parcial'],
+                # 'ECONOMICA': row['inciso']+row['principal']+row['parcial'],
+                'ECONOMICA': row['clas_economico'][:4],
                 'FINANCIACION': row['fuente_fin'],
                 'DESCRIPCION': row['desc_parcial'],
                 'SANCIONADO': row['sancion']

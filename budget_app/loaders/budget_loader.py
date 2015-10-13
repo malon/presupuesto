@@ -45,7 +45,7 @@ class BudgetLoader:
                 'section': (line[1][0:4] if len(line[1]) > 2 else None),
                 'department': (line[1] if len(line[1]) > 4 else None),
                 'description': description
-            })
+        })
 
     def load_institutional_hierarchy(self, budget, path):
         institutional_categories = self.get_default_institutional_categories()
@@ -182,9 +182,9 @@ class BudgetLoader:
         print "Cargando gastos de %s..." % filename
         self.load_data_file(budget, filename, True, False)
 
-        # filename = os.path.join(path, 'ingresos.csv')
-        # print "Cargando ingresos de %s..." % filename
-        # self.load_data_file(budget, filename, False, False)
+        filename = os.path.join(path, 'ingresos.csv')
+        print "Cargando ingresos de %s..." % filename
+        self.load_data_file(budget, filename, False, False)
 
     def load_execution_data_files(self, budget, path):
         filename = os.path.join(path, 'ejecucion_gastos.csv')
@@ -212,9 +212,9 @@ class BudgetLoader:
                     # la primera columna, pero informamos de ello por pantalla
                     print u"INFO: Usando el año %s para la línea [%s]" % (budget.year, line)
 
-            # Add a null column for income data, so all the indexes below remain constant
-            if not is_expense:
-                line.insert(2, None)
+            # # Add a null column for income data, so all the indexes below remain constant
+            # if not is_expense:
+            #     line.insert(2, None)
 
             self.add_data_item(items, line, is_expense, is_actual)
 
