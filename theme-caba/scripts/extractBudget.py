@@ -34,7 +34,7 @@ def create_csv_gastos(year, reader):
                 'CENTRO GESTOR': centro,
                 'FUNCIONAL': row['finalidad']+row['funcion'],
                 # 'ECONOMICA': row['inciso']+row['principal']+row['parcial'],
-                'ECONOMICA': row['clas_economico'][:4],
+                'ECONOMICA': row['clas_economico'][1:4],
                 'FINANCIACION': row['fuente_fin'],
                 'DESCRIPCION': row['desc_parcial'],
                 'SANCIONADO': row['sancion']

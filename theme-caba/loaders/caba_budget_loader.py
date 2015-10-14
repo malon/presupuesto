@@ -145,9 +145,9 @@ class CabaBudgetLoader(BudgetLoader):
 
             ec = EconomicCategory.objects.filter(budget=budget,
                                                 expense=is_expense,
-                                                chapter=item['ec_code'][0:2],
-                                                article=item['ec_code'][0:3],
-                                                heading=item['ec_code'][0:4],
+                                                chapter=item['ec_code'][0:1],
+                                                article=item['ec_code'][0:2],
+                                                heading=item['ec_code'][0:3],
                                                 subheading=None)
             if not ec:
                 print u"ALERTA: No se encuentra la categoría económica '%s' para '%s': %s€" % (item['ec_code'], item['description'], item['amount'])

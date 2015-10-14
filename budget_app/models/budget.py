@@ -45,10 +45,10 @@ class BudgetManager(models.Manager):
     def _get_economic_descriptions(self, items):
         result = {}
         for item in items:
-            if item.chapter == '4' or item.chapter == '7':
-                result[item.uid()] = item.description + ' (cap. ' + item.chapter + ')'
-            else:
-                result[item.uid()] = item.description
+            # if item.chapter == '4' or item.chapter == '7':
+            #     result[item.uid()] = item.description + ' (cap. ' + item.chapter + ')'
+            # else:
+            result[item.uid()] = item.description
         return result
 
     # Get all descriptions available
