@@ -31,17 +31,18 @@
   <nav role="navigation" class="tab-menu">
     <h2 class="visuallyhidden">{{ _('Menú de programas, entidades y conceptos') }}</h2>
     <ul id="tabs">
-{% if full_breakdown %}
-  {% if programme is not defined and show_side != 'income' %}
+{% if full_breakdown %}  
+  {# {% if programme is not defined and show_side != 'income' %} #}  
+  {% if show_func and show_side != 'income' %}
       <li class="current"><a href="#tab-functional">{{ _(tab_titles['functional']) }}</a></li>
       <li><a href="#tab-economic">{{ _(tab_titles['economic']) }}</a></li>
   {% else %}
       <li class="current"><a href="#tab-economic">{{ _(tab_titles['economic']) }}</a></li>
   {% endif %}
-  {% if show_funding_tab %}
+  {% if show_funding_tab and show_side != 'income' %}
       <li><a href="#tab-funding">{{ tab_titles['funding'] }}</a></li>
   {% endif %}
-  {% if show_institutional_tab %}
+  {% if show_institutional_tab and show_side != 'income' %}
       <li><a href="#tab-institutional">{{ _(tab_titles['institutional']) }}</a></li>
   {% endif %}
 {% else %}
@@ -56,7 +57,8 @@
 
   <div class="tab-contents">
 {% if full_breakdown %}
-  {% if programme is not defined and show_side != 'income' %}
+  {#{% if programme is not defined and show_side != 'income' %}#}
+  {% if show_func and show_side != 'income' %}
     {{ render_tab(_(tab_titles['functional']), 'functional', csv_type, csv_id, 'current') }} 
     {{ render_tab(_(tab_titles['economic']), 'economic', csv_type, csv_id, 'visuallyhidden') }}
   {% else %}

@@ -24,10 +24,11 @@ class FundingCategory(models.Model):
     # Return the 'budget domain' id, used to uniquely identify a category
     # in a budget
     def uid(self):
-        if self.fund_class == None:
-            return self.source
-        elif self.fund == None:
-            return self.fund_class
+        # We are using only the 'fund' category
+        # if self.fund_class == None:
+        #     return self.source
+        # elif self.fund == None:
+        #     return self.fund_class
         return self.fund
 
     def __unicode__(self):

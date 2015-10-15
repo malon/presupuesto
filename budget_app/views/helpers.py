@@ -114,8 +114,13 @@ def add_thousands_separator(number):
 # Retrieve the descriptions for the top level categories, used by visualizations, in JSON
 def _get_area_descriptions(descriptions, category):
     areas = {}
-    for i in range(10):  # 0..9
-        areas[str(i)] = descriptions[category].get(str(i))
+    area_range = 10
+    if (category == "funding"):
+        area_range = 30
+    for i in range(area_range):  # 0..9
+        desc = descriptions[category].get(str(i))
+        if desc is not None:
+            areas[str(i)] = descriptions[category].get(str(i))
     return json.dumps(areas)
 
 # Top level categories descriptions, for visualizations
