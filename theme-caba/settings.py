@@ -13,10 +13,17 @@ FEATURED_PROGRAMMES = ['24121', '24221', '35131']
 
 # # Sobre la Renta, IVA, Impuestos Especiales,
 # # Financiación Autonómica, FEAGA, Capital
-# OVERVIEW_INCOME_NODES = ['10', '21', '22', '40', '49', '11']
+#OVERVIEW_INCOME_NODES = ['10', '21', '22', '40', '49', '11']
+# OVERVIEW_INCOME_NODES = ['10', '11', '12', '13', '14', '15', '16', '17', '18', '20', '21', '22', '23', '24', '30', '31', '32', '33', '34']
+OVERVIEW_INCOME_NODES = ['11', '13', '14', '16', '17', '21', '22', '23']
+# OVERVIEW_INCOME_NODES = ['111','112','113','130','140','160','170','210','220','230']
+#OVERVIEW_INCOME_NODES = ['111','113','114','116','117','121','122','123','131']
 # # Sanidad, Educación, Agricultura, Protección Social,
 # # Deuda Pública, Infraestructuras
-# OVERVIEW_EXPENSE_NODES = ['241', '242', '371', '231', '001', '351']
+#OVERVIEW_EXPENSE_NODES = ['241', '242', '371', '231', '001', '351']
+#OVERVIEW_EXPENSE_NODES = ['11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '29', '30', '31', '32', '33', '34', '35', '39']
+#OVERVIEW_EXPENSE_NODES = ['11', '12', '13', '15', '16', '17', '31', '32', '34', '35', '37', '38', '36', '43', '44', '49', '46', '45', '48', '22', '51', '91']
+OVERVIEW_EXPENSE_NODES = ['1', '2', '3', '4', '5', '9']
 
 # Show an extra tab with institutional breakdown. Default: True.
 # SHOW_INSTITUTIONAL_TAB = True

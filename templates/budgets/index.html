@@ -5,9 +5,9 @@
 <script src="{{ STATIC_URL }}javascripts/vis/budget-sankey.js"></script>
 {% endblock %}
 {% block content %}
-<h1 class="page-title">{{ _('El recorrido de mis impuestos') }}</h1>
+<!--<h1 class="page-title">{{ _('El recorrido de mis impuestos') }}</h1>-->
 
-{% include 'budgets/budgets_intro.html' %}
+{#{% include 'budgets/budgets_intro.html' %}#}
 
 <h1 class="page-title" style="margin-top: 50px">{{ _('Ingresos y gastos en el Gobierno de Aragón') }}</h1>
 
@@ -45,7 +45,7 @@
 <p class="footnote tcenter">{{ _('Se incluyen únicamente los gastos e ingresos no financieros, es decir, capítulos I al VII.') }}</p>
 {% endif %}
 
-{% include 'budgets/budgets_indicators.html' %}
+{#{% include 'budgets/budgets_indicators.html' %}#}
 
 {% include 'shared/social_sharing.html' %}
 
@@ -83,7 +83,7 @@
 
     var functionalBreakdown = {{ functional_breakdown.to_json( labels=descriptions['functional'] )|safe }};
     var economicBreakdown = {{ economic_breakdown.to_json( labels=descriptions['income'] )|safe }};
-    var chapterBreakdown = {{ chapter_breakdown.to_json()|safe }};  // Used for indicators
+    //{# var chapterBreakdown = {{ chapter_breakdown.to_json()|safe }};  // Used for indicators  #}
     var i18n = {
       'other': '{{ _("Otros") }}',
       'government': '{{ _("Gobierno de Aragón") }}',

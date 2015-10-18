@@ -70,10 +70,6 @@ def entities_show(request, c, entity, render_callback=None):
     populate_years(c, 'economic_breakdown')
     populate_budget_statuses(c, entity.id)
     populate_area_descriptions(c, ['functional', 'income', 'expense'])
-    print "c['descriptions']['funding']",c['descriptions']['funding']
-    print "c['functional_areas']--------", c['functional_areas']
-    print "c['income_areas']--------", c['income_areas']
-    print "c['expense_areas']--------", c['expense_areas']
     c['display_functional_view'] = True
     _set_full_breakdown(c, entity.level == settings.MAIN_ENTITY_LEVEL)
     c['entity'] = entity

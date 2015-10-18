@@ -20,6 +20,13 @@ function getPolicyLink(policy_id, title) {
   return url;
 }
 
+
+// Return path to a area page
+function getAreaLink(area_id, title) {
+  var url = "{{ url('budget_app.views.areas_show') }}/"+area_id+'/'+parameterize(title);
+  return url;
+}
+
 // Return path to a programme, inside a policy page
 function getProgrammeLink(programme_id, title) {
   var url = "{{ url('budget_app.views.programmes_show') }}/"+programme_id+'/'+parameterize(title);

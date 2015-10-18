@@ -22,6 +22,11 @@ budget_app_urlpatterns = patterns('budget_app.views',
     url(r'^politicas/(?P<id>[0-9]+)$', 'policies_show'),
     url(r'^politicas/(?P<id>[0-9]+)/(?P<title>.+)$', 'policies_show'),
 
+     # Aragón areas (top)
+    url(r'^areas$', 'areas_show'),
+    url(r'^areas/(?P<id>[0-9]+)$', 'areas_show'),
+    url(r'^areas/(?P<id>[0-9]+)/(?P<title>.+)$', 'areas_show'),
+
     # Aragón programme pages
     url(r'^programas$', 'programmes_show'),
     url(r'^programas/(?P<id>[0-9A-Z]+)$', 'programmes_show'),

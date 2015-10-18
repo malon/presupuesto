@@ -45,8 +45,6 @@ def policies_show(request, id, title, render_callback=None):
     populate_years(c, 'functional_breakdown')
     populate_budget_statuses(c, main_entity.id)
     populate_area_descriptions(c, ['functional', 'funding', show_side])
-    print "c['descriptions']['funding']",c['descriptions']['funding']
-    print "c['funding_areas']", c['funding_areas']
     _populate_csv_settings(c, 'policy', id)
     _set_show_side(c, show_side)
     _set_full_breakdown(c, True)
@@ -54,8 +52,46 @@ def policies_show(request, id, title, render_callback=None):
     c['name'] = c['descriptions']['functional'].get(c['policy_uid'])
     c['title_prefix'] = c['name']
 
-    # print "c",c
-    print "c['show_side']", c['show_side']
+
+    return render(c, render_callback, 'policies/show.html')
+
+
+def areas_show(request, id, title, render_callback=None):
+    # Get request context
+    c = get_context(request, css_class='body-policies', title='')
+    c['policy_uid'] = id
+
+    # Retrieve the entity to display
+    main_entity = get_main_entity(c)
+
+    # Get the budget breakdown
+    c['functional_breakdown'] = BudgetBreakdown(['policy'])
+    c['economic_breakdown'] = BudgetBreakdown(['chapter', 'article', 'heading'])
+    c['funding_breakdown'] = BudgetBreakdown(['fund'])
+    c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
+    get_budget_breakdown(   "fc.area = %s and e.id = %s", [ id, main_entity.id ],
+                            [ 
+                                c['functional_breakdown'], 
+                                c['economic_breakdown'],
+                                c['funding_breakdown'],
+                                c['institutional_breakdown']
+                            ])
+
+    # Additional data needed by the view
+    print "c['functional_breakdown']", c['functional_breakdown']
+    show_side = 'expense'
+    populate_stats(c)
+    populate_entity_descriptions(c, main_entity)
+    populate_years(c, 'functional_breakdown')
+    populate_budget_statuses(c, main_entity.id)
+    populate_area_descriptions(c, ['functional', 'funding', show_side])
+    _populate_csv_settings(c, 'policy', id)
+    _set_show_side(c, show_side)
+    _set_full_breakdown(c, True)
+
+    c['name'] = c['descriptions']['functional'].get(c['policy_uid'])
+    c['title_prefix'] = c['name']
+
 
     return render(c, render_callback, 'policies/show.html')
 

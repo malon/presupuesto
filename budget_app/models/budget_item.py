@@ -6,7 +6,7 @@ class BudgetItemManager(models.Manager):
     def each_denormalized(self, additional_constraints=None, additional_arguments=None):
         sql = \
             "select " \
-                "fc.policy, fc.function, fc.programme, " \
+                "fc.area, fc.policy, fc.function, fc.programme, " \
                 "ec.chapter, ec.article, ec.heading, ec.subheading, " \
                 "ic.institution, ic.department, " \
                 "fdc.source, fdc.fund, "\

@@ -88,7 +88,6 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, th
             var label = item.label;
             var link = linkGenerator(id, label);
           }
-
           nodes.push( { "name": label,
                         "value": amount,
                         "budgeted": amount,
@@ -96,16 +95,14 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, th
                         "link": link } );
         }
       });
-
       // Add an extra node for the remaining amount
       var budgetedRemainder = real(breakdown[field][year]) - accumulatedTotal;
       var actualRemainder = real(breakdown[field]["actual_"+year]) - accumulatedActualTotal;
-      nodes.push( { "name": _['other'],
-                    "value": budgetedRemainder,
-                    "budgeted": budgetedRemainder,
-                    "actual": actualRemainder,
-                    "link": linkGenerator(null, null) });
-
+      // nodes.push( { "name": _['other'],
+      //               "value": budgetedRemainder,
+      //               "budgeted": budgetedRemainder,
+      //               "actual": actualRemainder,
+      //               "link": linkGenerator(null, null) });
       return nodes;
     }
 
@@ -114,7 +111,8 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, th
     }
 
     function getExpenseNodes() {
-      return getNodes(functionalBreakdown, expenseNodes, 'expense', getPolicyLink);
+      //return getNodes(functionalBreakdown, expenseNodes, 'expense', getPolicyLink);
+      return getNodes(functionalBreakdown, expenseNodes, 'expense', getAreaLink);
     }
 
     function addFlow(source, target, node) {

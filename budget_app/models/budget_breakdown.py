@@ -16,7 +16,6 @@ class BudgetBreakdown:
         if not column in self.names:
             self.names.append(column)
             self.years[column] = item.year
-
         # Basic aggregation
         if item.expense:
             if column not in self.total_expense:
@@ -26,7 +25,6 @@ class BudgetBreakdown:
             if column not in self.total_income:
                 self.total_income[column] = 0
             self.total_income[column] += item.amount
-
         # Breakdown aggregation
         if len(self.criteria) > 0:  # We have a criteria to classify on
             # Sometimes the criteria is not a string, but a lambda
