@@ -64,16 +64,18 @@ TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
 # Location of translation files (used by themes to override certain strings)
 LOCALE_PATHS = (
-    os.path.join(os.path.dirname(__file__), '..', THEME, 'locale'),
+    os.path.join(os.path.dirname(__file__), '..', 'locale'),
+    # os.path.join(os.path.dirname(__file__), '..', THEME, 'locale'),
 )
+print "LOCALE_PATHS:", LOCALE_PATHS
 
 # Ensure LANGUAGES is defined for LocaleMiddleware. Multilingual themes
 # will have defined this beforehand with their particular language list.
 if not 'LANGUAGES' in locals():
     # All choices can be found here: http://www.i18nguy.com/unicode/language-identifiers.html
     LANGUAGES = (
-      ('es-AR', 'Castellano'),
-      ('es-ES', 'Castellano'),
+      ('es_AR', 'Castellano'),
+      ('es_ES', 'Castellano'),
     )
 
 # Base language code for this installation. Selects the first from the list of available ones.

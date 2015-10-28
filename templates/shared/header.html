@@ -1,10 +1,24 @@
 <header role="banner" class="hide-when-embedded">
 	<div class="container-fluid">
 		<div class="row-fluid">
-			<div class="span6">
+			<!--<div class="span6">
 				<p class="logo-gobierno-aragon"><a href="http://www.aragon.es/" title="Ir a la home de Gobierno de Aragón"><img src="{{ STATIC_URL }}assets/logo-gobierno-aragon.png" alt="Logo de Gobierno de Aragón"></a></p>
-			</div>
+			</div>-->
+			
 			<div class="span6">
+				<p class="logo-gobierno-aragon"><a href="{{ url('budget_app.views.welcome') }}" title="Ir a la home de A dónde van mis impuestos"><img src="{{ STATIC_URL }}assets/argentina_logo3.png" alt="Logo Argentina"></a></p>
+			</div>			
+      		<div class="span6">
+        		<p class="header-logo">Un proyecto de @malonfe<a href="https://twitter.com/malonfe"> 
+        		<img src="{{ STATIC_URL }}assets/image_twitter40x40.png" alt="Logo Argentina">        
+        		</a></p>
+      		</div>
+      		<div class="span6">
+        		<p class="header-logo">para LNData<a href="http://www.lanacion.com.ar/data">
+          			<img src="{{ STATIC_URL }}assets/ln40x40.jpg" alt="Logo de Civio">
+        		</a></p>
+      		</div>
+			<!--<div class="span6">
 				<nav role="navigation" class="aragon-access">
 					<h1 class="visuallyhidden">Accesos varios de Gobierno de Aragón</h1>
 					<ul>
@@ -15,12 +29,12 @@
 				<p class="aragones"><a href="http://opendata.aragon.es">
 					<img src="{{ STATIC_URL }}assets/logoAragonOpenData.png" alt="Logo de Open Data Aragón">
 				</a></p>
-			</div>
+			</div>-->
 		</div>
 		<h1 class="main-title">
 			<a href="{{ url('budget_app.views.welcome') }}" title="Ir a la home de Presupuestos del Gobierno de Aragón">
-				<img id="title-icon" src="{{ STATIC_URL }}assets/logoAragonOpenBudget.png" alt="Logo de Open Budget Aragón" width="40">
-				Presupuestos de Aragón
+				<!--<img id="title-icon" src="{{ STATIC_URL }}assets/logoAragonOpenBudget.png" alt="Logo de Open Budget Aragón" width="40">-->
+				¿A dónde van mis impuestos?
 			</a>
 		</h1>
 	</div>
