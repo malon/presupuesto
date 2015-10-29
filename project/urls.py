@@ -5,6 +5,7 @@ from django.conf import settings
 from django.views.generic.simple import direct_to_template
 
 budget_app_urlpatterns = patterns('budget_app.views',
+    url(r'^metodologia$', 'metodologia'),
     url(r'^/?$', 'welcome'),
 
     url(r'^resumen$', 'budgets'),
@@ -113,3 +114,6 @@ if hasattr(settings, 'EXTRA_URLS'):
     urlpatterns = settings.EXTRA_URLS + budget_app_urlpatterns
 else:
     urlpatterns = budget_app_urlpatterns
+
+
+print urlpatterns

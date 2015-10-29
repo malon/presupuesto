@@ -3195,14 +3195,15 @@ blockquote p:last-child:after {
   max-width: 59.75em;
 }
 header[role="banner"] {    
-  background: #ffffff url(../assets/sol_header.jpg) no-repeat center;
+  /*background: #ffffff url(../assets/sol_header.jpg) no-repeat center;*/
   /*background: #ffffff url(../assets/logoAragonEs.png) no-repeat center bottom;*/
 
   margin: 0;
   text-align: center;
 }
 .logo-gobierno-aragon {
-  margin: 1.5em 0 1em;
+  /*margin: 1.5em 0 1em;*/
+  margin: 0.5em 0 0.1em;
   text-align: center;
 }
 .aragon-access {
@@ -3247,6 +3248,7 @@ header[role="banner"] {
   vertical-align: middle;
 }
 .header-logo {
+  font-size: .875em;
   display: inline-block;
   margin: 0 0 .25em;
   padding-top: 10px;
