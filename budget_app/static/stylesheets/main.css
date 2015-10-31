@@ -2590,7 +2590,7 @@ h6,
 }
 a,
 a:visited {
-  color: #66a5df;
+  color: #0E61AD;
   text-decoration: none;
 }
 a:hover,
@@ -3342,7 +3342,7 @@ header[role="banner"] {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
-  width: 12em;
+  width: 48em;
 }
 .nav-rwd ul > li {
   list-style: none;
@@ -3373,7 +3373,7 @@ header[role="banner"] {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
 }
 .nav-rwd > li > a:hover {
-  background-color: #f43f00;
+  background-color: #0e61ad;
 }
 .nav-rwd > li.hover > ul {
   left: 0;
@@ -3390,7 +3390,7 @@ header[role="banner"] {
   top: 0;
 }
 .nav-rwd li li a {
-  background: #9e0033;
+  background: #0e61ad;
   border-top: 1px solid #51001a;
   box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.25) inset;
   display: block;
@@ -3576,7 +3576,8 @@ header[role="banner"] {
   background: url(../assets/option-global.png) no-repeat center -35px;
 }
 .home-intro .option-global .icon {
-  color: #b7003c;
+  /*color: #b7003c;*/
+  color: #4199A5;
 }
 .home-intro .option-policies {
   background: url(../assets/option-policies.png) no-repeat center -38px;
@@ -3608,7 +3609,8 @@ header[role="banner"] {
   }
 }
 .button.magenta {
-  background-color: #b7003c;
+  /*background-color: #b7003c;*/
+  background-color: #4199A5
 }
 .button.blue {
   background-color: #b79a00;
