@@ -1,13 +1,29 @@
-# Datos de prueba, deben ser actualizados con datos reales
+# Fuente: Dirección General de Estadística y Censos - Ministerio de Hacienda GCBA.
+# http://www.estadisticaciudad.gob.ar/eyc/?p=47752
 # Las tasas de inflación se refieren a la media de las tasas interanuales durante los 12
 # meses del año.
 # La aplicación calcula internamente un índice de inflación a partir de estas tasas, tal que:
 #    Indice Año Actual = 100
 #    Indice Año N-1 = Indice Año N / (1+Inflación Año N)
+# El índice de N-1 lo calculamos con la inflación del año N por lo que necesitamos la inflación 
+# de cada año que vamos a represetar en la aplicación.
 #
 # Nota: los presupuestos de un año X se ajustan con el índice de la inflación del año anterior.
 # Por tanto el índice del año actual no se usa. De hecho sólo se conoce cuando termina el año.
-#
-2013,3.9
-2014,4.5
+# INDICES GENERALES
+# dec-12 : 122.48
+# jan-13 : 125.29 
+# dec-13 : 155.06
+# jan-14 : 162.50 
+# dec-14 : 214.04
+# jan-15 : 218.23
+
+# jan - jan
+# 2013,29.7
+# 2014,34.3
+# 2015,0
+
+# ene - ene
+2013,26.6
+2014,38.0 
 2015,0
