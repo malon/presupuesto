@@ -14,7 +14,7 @@ def welcome(request):
     populate_latest_budget(c)
     c['featured_programmes'] = list(FunctionalCategory.objects
                                 .filter(budget=c['latest_budget'])
-                                .filter(programme__in=settings.FEATURED_PROGRAMMES))
+                                .filter(policy__in=settings.FEATURED_PROGRAMMES))    
 
     # Decide whether we're going to show budget or execution figures
     use_actual = False
@@ -27,9 +27,9 @@ def welcome(request):
             break
 
     # Calculate subtotals for the selected programmes
-    c['breakdown'] = BudgetBreakdown(['programme'])
+    c['breakdown'] = BudgetBreakdown(['policy'])
     for programme in c['featured_programmes']:
+        #list budget items for the selected programme
         for item in programme.budgetitem_set.filter(actual=use_actual):
-            c['breakdown'].add_item(c['latest_budget'].year, item)
-
+            c['breakdown'].add_item(c['latest_budget'].year, item)    
     return render_to_response('welcome/index.html', c)

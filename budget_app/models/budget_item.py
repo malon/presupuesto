@@ -111,6 +111,9 @@ class BudgetItem(models.Model):
     def programme(self):
         return self.functional_category.programme
 
+    def policy(self):
+        return self.functional_category.policy
+
     # Whether an item is a financial expense (i.e. paying debt, mostly) or income (i.e. new debt).
     # Only works on a denormalized record.
     def is_financial(self):

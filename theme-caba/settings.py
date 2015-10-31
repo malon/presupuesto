@@ -9,7 +9,7 @@ ECONOMICAL_FILE = 'economico_clas.csv'
 FUNDING_FILE = 'fuente_fin_clas.csv'
 FUNCTIONAL_FILE = 'finalidad_clas.csv'
 
-FEATURED_PROGRAMMES = ['24121', '24221', '35131']
+FEATURED_PROGRAMMES = ['31', '34', '35']
 
 # # Sobre la Renta, IVA, Impuestos Especiales,
 # # Financiación Autonómica, FEAGA, Capital

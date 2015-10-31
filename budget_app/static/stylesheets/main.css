@@ -3304,7 +3304,7 @@ header[role="banner"] {
   color: #ffffff;
 }
 .main-menu-toggle:before {
-  content: "⇣";
+  /*content: "⇣";*/
   margin-right: .5em;
 }
 .main-menu-toggle.active {
@@ -3359,7 +3359,7 @@ header[role="banner"] {
   position: relative;
 }
 .nav-rwd > li > .parent:after {
-  content: "⇣";
+  /*content: "⇣";*/
   position: absolute;
   right: 1em;
   top: 1em;
@@ -3454,7 +3454,7 @@ header[role="banner"] {
     z-index: 200;
   }
   .nav-rwd li .more:after {
-    content: "⇣";
+    /*content: "⇣";*/
     left: 50%;
     margin-left: -0.5em;
     position: absolute;
@@ -3514,7 +3514,7 @@ header[role="banner"] {
   clear: both;
 }
 .home-intro .options > div {
-  margin: 0 2% .25em 0;
+  /*margin: 0 2% .25em 0;*/
   padding: 10em 5% 1px;
   width: 90%;
   font-size: 1.143em;
@@ -3617,7 +3617,7 @@ header[role="banner"] {
   background-color: #0088b7;
 }
 .form-search {
-  background: #333333;
+  background: #666666;
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
   margin: 0;
@@ -5613,7 +5613,7 @@ Ese "25" es lo que indenta.
   margin: 0;
 }
 .expense-examples ul li {
-  background: #fff3b7;
+  background: #E8E8E8;
   margin-bottom: .5em;
   padding: .35em 1em;
   text-shadow: 1px 1px 0 #ffffff;
@@ -7015,6 +7015,17 @@ g.bg .chart-container rect {
     left: 60%;
   }
 }
+
+.home-intro .options > div {
+  width: 45%;
+}
+
+#main-menu ul li {
+  border: none;
+  width: 33.33%;
+  text-align: center;
+}
+
 .map-info__title {
   -webkit-border-top-right-radius: 0.5em;
   -webkit-border-bottom-right-radius: 0;

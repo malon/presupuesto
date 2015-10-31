@@ -100,12 +100,9 @@ def _is_proposed_budget():
 # TODO: Is there a core Django/Python replacement for this?
 # TODO: We shouldn't hardcode the thousand separator symbol, should depend on locale
 def add_thousands_separator(number):
-    s = '%d' % number
-    groups = []
-    while s and s[-1].isdigit():
-        groups.append(s[-3:])
-        s = s[:-3]
-    return s + '.'.join(reversed(groups))
+    # quantities are in hundreds of pesos
+    number *= 100
+    return "{:,}".format(int(number)).replace(",",".")
 
 
 #
