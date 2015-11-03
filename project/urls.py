@@ -116,4 +116,4 @@ else:
     urlpatterns = budget_app_urlpatterns
 
 
-print urlpatterns
+# print urlpatterns

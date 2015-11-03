@@ -67,7 +67,7 @@ LOCALE_PATHS = (
     os.path.join(os.path.dirname(__file__), '..', 'locale'),
     # os.path.join(os.path.dirname(__file__), '..', THEME, 'locale'),
 )
-print "LOCALE_PATHS:", LOCALE_PATHS
+# print "LOCALE_PATHS:", LOCALE_PATHS
 
 # Ensure LANGUAGES is defined for LocaleMiddleware. Multilingual themes
 # will have defined this beforehand with their particular language list.
