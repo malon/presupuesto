@@ -58,7 +58,6 @@ def populate_entity_descriptions(c, entity):
 
 def populate_years(c, breakdown_name):
     years = sorted(list(set(c[breakdown_name].years.values())))
-    print "years", years
     c['years'] = json.dumps([str(year) for year in years])
     c['latest_year'] = years[-1]
     c['show_treemap'] = ( len(years) == 1 )
