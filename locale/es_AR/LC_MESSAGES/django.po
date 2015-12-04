@@ -221,11 +221,11 @@ msgstr ""
 
 #: templates/entities/index.html:42 templates/entities/show.html:48
 msgid "Descarga la tabla de <b>Ingresos</b>"
-msgstr ""
+msgstr "Descargá la tabla de <b>Recursos</b>"
 
 #: templates/entities/index.html:48 templates/entities/show.html:60
 msgid "Descarga la tabla de <b>Gastos</b>"
-msgstr ""
+msgstr "Descargá la tabla de <b>Gastos</b>"
 
 #: templates/entities/show.html:31
 msgid "Información no disponible"
@@ -233,7 +233,7 @@ msgstr ""
 
 #: templates/entities/show.html:54
 msgid "Descarga la tabla de <b>Gastos (por programa)</b>"
-msgstr ""
+msgstr "Descargá la tabla de <b>Gastos (por función)</b>"
 
 #: templates/entities/show.html:99 templates/policies/show.html:177
 msgid "Ingresado"
@@ -245,7 +245,7 @@ msgstr "Función"
 
 #: templates/entities/show.html:142
 msgid "Artículo"
-msgstr ""
+msgstr "Principal"
 
 #: templates/entities/show.html:156
 msgid "Gastos (por programa)"
@@ -262,11 +262,11 @@ msgstr ""
 
 #: templates/entities/show.html:168 templates/shared/data_controllers.html:7
 msgid "Ingresos"
-msgstr ""
+msgstr "Recursos"
 
 #: templates/entities/show.html:169 templates/policies/show.html:289
 msgid "Total ingresos"
-msgstr ""
+msgstr "Total recursos"
 
 #: templates/entities/show.html:175 templates/shared/data_controllers.html:12
 msgid "Gastos"
@@ -320,7 +320,7 @@ msgstr ""
 
 #: templates/policies/show.html:23
 msgid "Volver a Políticas"
-msgstr ""
+msgstr "Volver a Funciones"
 
 #: templates/policies/show.html:29
 msgid "Programas, entidades y conceptos"
@@ -411,7 +411,7 @@ msgstr ""
 
 #: templates/shared/data_controllers.html:5
 msgid "Ingresos y gastos"
-msgstr ""
+msgstr "Recursos y gastos"
 
 #: templates/shared/data_controllers.html:9
 msgid "¿Cómo se gasta?"
@@ -463,7 +463,7 @@ msgstr ""
 
 #: templates/shared/social_sharing.html:2
 msgid "Compártelo"
-msgstr ""
+msgstr "Compartilo"
 
 #: templates/tax_receipt/index.html:6
 msgid "Lo que tú aportas"
@@ -519,13 +519,15 @@ msgstr ""
 
 #: templates/welcome/index.html:8
 msgid "¿Cómo y en qué gasta el Gobierno de Aragón?"
-msgstr ""
+msgstr "¿Cómo y en qué gasta el Gobierno de Buenos Aires?"
 
 #: templates/welcome/index.html:9
 msgid ""
 "Te mostramos de un modo claro cómo se distribuye nuestro presupuesto. De "
 "dónde vienen los ingresos y a qué destinamos el gasto"
 msgstr ""
+"Te mostramos de un modo claro cómo se distribuye el presupuesto. De "
+"dónde vienen los recursos y a qué se destina el gasto"
 
 #: templates/welcome/index.html:14
 msgid "Algunos ejemplos"
@@ -540,7 +542,9 @@ msgid ""
 "Para que tengas una idea general de los ingresos y gastos del Gobierno de "
 "Aragón"
 msgstr ""
+"Para que tengás una idea general de los recursos y gastos del Gobierno de "
+"la Ciudad de Buenos Aires"
 
 #: templates/welcome/index.html:38
 msgid "Políticas concretas"
-msgstr ""
+msgstr "Funciones concretas"
