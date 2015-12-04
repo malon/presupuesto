@@ -31,16 +31,16 @@ import xlwt
 # ENTITY BREAKDOWNS
 #
 def write_entity_functional_breakdown(c, writer):
-    writer.writerow(['#Año', 'Id Política', 'Nombre Política', 'Id Programa', 'Nombre Programa', 'Presupuesto Gasto', 'Gasto Real'])
+    writer.writerow(['#Año', 'Id Función', 'Nombre Función', 'Presupuesto Gasto', 'Gasto Real'])
     for year in set(c['functional_breakdown'].years.values()):
         for policy_id, policy in c['functional_breakdown'].subtotals.iteritems():
-            write_breakdown_item(writer, year, policy, 'expense', [policy_id, None], c['descriptions']['functional'])
-            for programme_id, programme in policy.subtotals.iteritems():
-                write_breakdown_item(writer, year, programme, 'expense', [policy_id, programme_id], c['descriptions']['functional'])
+            write_breakdown_item(writer, year, policy, 'expense', [policy_id], c['descriptions']['functional'])
+            # for programme_id, programme in policy.subtotals.iteritems():
+            #     write_breakdown_item(writer, year, programme, 'expense', [policy_id, programme_id], c['descriptions']['functional'])
 
 def write_entity_economic_breakdown(c, field, writer):
     field_username = 'Gastos' if field == 'expense' else 'Ingresos'
-    writer.writerow(['#Año', 'Id Artículo', 'Nombre Artículo', 'Id Concepto', 'Nombre Concepto', 'Presupuesto '+field_username, field_username+' Reales'])
+    writer.writerow(['#Año', 'Id Principal', 'Nombre Principal', 'Id Parcial', 'Nombre Parcial', 'Presupuesto '+field_username, field_username+' Reales'])
     for year in set(c['economic_breakdown'].years.values()):
         for article_id, article in c['economic_breakdown'].subtotals.iteritems():
             write_breakdown_item(writer, year, article, field, [article_id, None], c['descriptions'][field])
@@ -66,7 +66,7 @@ def entity_fexpenses(request, level, slug, format):
 def entity_income(request, level, slug, format):
     c = get_context(request)
     entity = Entity.objects.get(level=level, slug=slug)
-    return entities_show(request, c, entity, _generator('ingresos-%s-%s' % (level, slug), format, write_entity_income_breakdown))
+    return entities_show(request, c, entity, _generator('recursos-%s-%s' % (level, slug), format, write_entity_income_breakdown))
 
 
 
@@ -74,10 +74,10 @@ def entity_income(request, level, slug, format):
 # FUNCTIONAL BREAKDOWN
 #
 def write_functional_breakdown(c, writer):
-    writer.writerow(['#Año', 'Id Política', 'Nombre Política', 'Id Programa', 'Nombre Programa', 'Presupuesto Gastos', 'Gastos Reales'])
+    writer.writerow(['#Año', 'Id Política', 'Nombre Política', 'Presupuesto Gastos', 'Gastos Reales'])
     for year in set(c['functional_breakdown'].years.values()):
         for programme_id, programme in c['functional_breakdown'].subtotals.iteritems():
-            write_breakdown_item(writer, year, programme, 'expense', [c['policy_uid'], programme_id], c['descriptions']['functional'])
+            write_breakdown_item(writer, year, programme, 'expense', [c['policy_uid']], c['descriptions']['functional'])
 
 def functional_policy_breakdown(request, id, format):
     return policies_show(request, id, '', _generator("%s.funcional" % id, format, write_functional_breakdown))
@@ -95,7 +95,7 @@ def entity_article_fexpenses(request, level, slug, id, format):
 # ECONOMIC BREAKDOWN
 #
 def write_economic_breakdown(c, writer):
-    writer.writerow(['#Año', 'Id Capítulo', 'Nombre Capítulo', 'Id Artículo', 'Nombre Artículo', 'Id Concepto', 'Nombre Concepto', 'Presupuesto Gastos', 'Gastos Reales'])
+    writer.writerow(['#Año', 'Id Inciso', 'Nombre Inciso','Id Principal', 'Nombre Principal', 'Id Parcial', 'Nombre Parcial','Presupuesto Gastos', 'Gastos Reales'])
     for year in set(c['economic_breakdown'].years.values()):
         for chapter_id, chapter in c['economic_breakdown'].subtotals.iteritems():
             write_breakdown_item(writer, year, chapter, 'expense', [chapter_id, None, None], c['descriptions']['expense'])
@@ -108,10 +108,10 @@ def economic_policy_breakdown(request, id, format):
     return policies_show(request, id, '', _generator("%s.economica" % id, format, write_economic_breakdown))
 
 def write_detailed_economic_breakdown(c, writer):
-    writer.writerow(['#Año', 'Id Capítulo', 'Nombre Capítulo', 'Id Artículo', 'Nombre Artículo', 'Id Subconcepto', 'Nombre Subconcepto', 'Presupuesto Gastos', 'Gastos Reales'])
+    writer.writerow(['#Año', 'Id Principal', 'Nombre Principal', 'Id Parcial', 'Nombre Parcial', 'Presupuesto Gastos', 'Gastos Reales'])
     for year in set(c['economic_breakdown'].years.values()):
         for chapter_id, chapter in c['economic_breakdown'].subtotals.iteritems():
-            write_breakdown_item(writer, year, chapter, 'expense', [chapter_id, None, None], c['descriptions']['expense'])
+            write_breakdown_item(writer, year, chapter, 'expense', [chapter_id, None], c['descriptions']['expense'])
             for article_id, article in chapter.subtotals.iteritems():
                 write_breakdown_item(writer, year, article, 'expense', [chapter_id, article_id, None], c['descriptions']['expense'])
                 for heading_id, heading in article.subtotals.iteritems():
@@ -127,9 +127,9 @@ def economic_programme_breakdown(request, id, format):
 #
 def write_economic_article_breakdown(c, field, writer):
     field_username = 'Gastos' if field == 'expense' else 'Ingresos'
-    writer.writerow(['#Año', 'Id Artículo', 'Nombre Artículo', 'Id Concepto', 'Nombre Concepto', 'Id Subconcepto', 'Nombre Subconcepto', 'Presupuesto '+field_username, field_username+' Reales'])
+    writer.writerow(['#Año', 'Id Principal', 'Nombre Principal', 'Id Parcial', 'Nombre Parcial', 'Presupuesto '+field_username, field_username+' Reales'])
     for year in set(c['economic_breakdown'].years.values()):
-        write_breakdown_item(writer, year, c['economic_breakdown'], field, [c['article_id'], None, None], c['descriptions'][field])
+        write_breakdown_item(writer, year, c['economic_breakdown'], field, [c['article_id'], None], c['descriptions'][field])
         for heading_id, heading in c['economic_breakdown'].subtotals.iteritems():
             write_breakdown_item(writer, year, heading, field, [c['article_id'], heading_id, None], c['descriptions'][field])
             for item_uid, item in heading.subtotals.iteritems():
@@ -229,7 +229,6 @@ def write_breakdown_item(writer, year, item, field, ids, descriptions=None):
     budget_column_name = str(year)
     actual_column_name = 'actual_'+str(year)
     totals = item.total_expense if field == 'expense' else item.total_income
-
     if not totals.get(budget_column_name) and not totals.get(actual_column_name):
         return
 
@@ -239,13 +238,11 @@ def write_breakdown_item(writer, year, item, field, ids, descriptions=None):
         values.append( id.encode("utf-8") if id!=None else id )
         if descriptions!=None:
             values.append( descriptions.get(id, '').encode("utf-8") )
-
     # The original amounts are in cents:
     # values.append( totals[budget_column_name] / 100.0 if budget_column_name in totals else None )
     # values.append( totals[actual_column_name] / 100.0 if actual_column_name in totals else None )
     values.append( totals[budget_column_name] if budget_column_name in totals else None )
     values.append( totals[actual_column_name] if actual_column_name in totals else None )
-
     writer.writerow(values)
 
 
