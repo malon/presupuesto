@@ -80,7 +80,7 @@ classifications = [
     }, {
         'entity_name': 'funcion',
         'id_title': 'funcion',
-        'name_title': 'desc_fin_func',
+        'name_title': 'desc_fin_fun',
         'length': '1'
     }],
     # FINANCIACION
