@@ -53,20 +53,20 @@ class BudgetManager(models.Manager):
 
     # Get all descriptions available
     def get_all_descriptions(self, entity):
-        cache = get_cache('default')
-        key = "entity_"+entity.code
-        if cache.get(key) == None:
-            descriptions = {
-                'functional': self._to_hash(FunctionalCategory.objects.filter(budget_id__entity=entity)),
-                'income': self._get_economic_descriptions(EconomicCategory.objects.income().filter(budget_id__entity=entity)),
-                'expense': self._get_economic_descriptions(EconomicCategory.objects.expenses().filter(budget_id__entity=entity)),
-                'funding': self._to_hash(FundingCategory.objects.filter(budget_id__entity=entity)),
-                'institutional': self._to_year_tagged_hash(InstitutionalCategory.objects.filter(budget_id__entity=entity))
-            }
-            cache.set(key, descriptions)
-            return descriptions
-        else:
-            return cache.get(key)
+        #cache = get_cache('default')
+        # key = "entity_"+entity.code
+        #if cache.get(key) == None:
+        descriptions = {
+            'functional': self._to_hash(FunctionalCategory.objects.filter(budget_id__entity=entity)),
+            'income': self._get_economic_descriptions(EconomicCategory.objects.income().filter(budget_id__entity=entity)),
+            'expense': self._get_economic_descriptions(EconomicCategory.objects.expenses().filter(budget_id__entity=entity)),
+            'funding': self._to_hash(FundingCategory.objects.filter(budget_id__entity=entity)),
+            'institutional': self._to_year_tagged_hash(InstitutionalCategory.objects.filter(budget_id__entity=entity))
+        }
+        #cache.set(key, descriptions)
+        return descriptions
+        #else:
+        #    return cache.get(key)
 
 
 class Budget(models.Model):
