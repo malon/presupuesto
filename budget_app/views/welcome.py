@@ -4,12 +4,14 @@ from django.utils.translation import ugettext as _
 from budget_app.models import Budget, Entity, FunctionalCategory, BudgetBreakdown
 from helpers import *
 from random import sample
-
+import logging
+logger = logging.getLogger('testlogger')
 
 def welcome(request):
     c = get_context(request, css_class='body-welcome', title=_('Inicio'))
     c['formatter'] = add_thousands_separator
 
+    logger.info('------------This is a simple log message-------------')
     # Retrieve front page examples
     populate_latest_budget(c)
     c['featured_programmes'] = list(FunctionalCategory.objects
