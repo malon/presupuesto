@@ -120,8 +120,8 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(ROOT_PATH, THEME, 'static'),
-    os.path.join(ROOT_PATH, 'budget_app', 'static')
+    # os.path.join(ROOT_PATH, THEME, 'static'),
+    os.path.join(ROOT_PATH, 'budget_app', 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -325,12 +325,12 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
 
-# Static asset configuration
-import os
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
+# # Static asset configuration
+# import os
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# STATIC_ROOT = 'staticfiles'
+# STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
