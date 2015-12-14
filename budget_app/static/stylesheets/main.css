@@ -3197,10 +3197,21 @@ blockquote p:last-child:after {
 header[role="banner"] {    
   /*background: #ffffff url(../assets/sol_header.jpg) no-repeat center;*/
   /*background: #ffffff url(../assets/logoAragonEs.png) no-repeat center bottom;*/
-
+  background: #000000 url(../assets/Buenos_Aires_Panorama2.png) no-repeat center top;
   margin: 0;
   text-align: center;
 }
+/*
+header[role="banner"] > .container-fluid {
+  position: relative;
+}
+header[role="banner"] > .container-fluid > .row-fluid {
+  display: none;
+  margin-top: 30px;
+  padding-top: 41px;
+  background: url(../assets/tituloMostoles.png) no-repeat right top transparent;
+}*/
+
 .logo-gobierno-aragon {
   /*margin: 1.5em 0 1em;*/
   margin: 0.5em 0 0.1em;
@@ -3251,7 +3262,15 @@ header[role="banner"] {
   font-size: .875em;
   display: inline-block;
   margin: 0 0 .25em;
-  padding-top: 10px;
+  padding-left: 10px;*/
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.73);
+}
+.footer-logo {
+  font-size: .875em;
+  display: inline-block;
+  margin: 0 0 .25em;
+  padding-left: 10px;*/
   vertical-align: middle;
 }
 .header-logo img {
@@ -3273,13 +3292,23 @@ header[role="banner"] {
   padding: .25em 0 .5em;
   text-align: center;
 }
-.main-title a {
+/*.main-title a {
   color: #333333;
   display: block;
 }
 .main-title a:hover {
   color: #666666;
+}*/
+
+.main-title a {
+  display: inline;
+  color: white;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 }
+.main-title a:hover {
+  color: #f8c301;
+}
+
 #title-icon {
   width: 44px;
   height: 44px;
@@ -3312,7 +3341,8 @@ header[role="banner"] {
   color: #ffffff;
 }
 #main-menu {
-  background: #66a5df;
+  /*background: #66a5df;*/
+  background: #f8c301;
   line-height: 1.25;
   margin: 0;
   text-align: left;
@@ -3365,15 +3395,18 @@ header[role="banner"] {
   top: 1em;
 }
 .nav-rwd > li > a {
-  background-color: #66a5df;
+  /*background-color: #66a5df;*/
+  background-color: #f8c301;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25) inset;
-  color: white;
+  /*color: white;*/
+  color: black;
   display: block;
   padding: .75em 2.5em .75em .75em;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+  /*text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);*/
 }
 .nav-rwd > li > a:hover {
-  background-color: #0e61ad;
+  /*background-color: #0e61ad;*/
+  background-color: #f8e18b;
 }
 .nav-rwd > li.hover > ul {
   left: 0;
@@ -7153,4 +7186,18 @@ g.bg .chart-container rect {
 #map-legend line {
   stroke: #000;
   shape-rendering: crispEdges;
+}
+
+.icon-mostoles {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -50px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: url(../assets/LOGO-GCBA_only_peq.jpg) no-repeat left bottom transparent;
+  z-index: 90;
 }
