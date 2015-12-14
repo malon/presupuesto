@@ -2,6 +2,7 @@
 
 
 input_path = "input"
+input_path_actual = "input_actual"
 output_path = "../data/provincia"
 
 classifications = [

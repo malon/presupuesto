@@ -77,11 +77,12 @@ class CabaBudgetLoader(BudgetLoader):
     def add_data_item(self, items, line, is_expense, is_actual):
         # Get the amount. For execution data, pick "Obligaciones/Créditos reconocidas/os"
         if is_actual:
-            if (is_expense and len(line) < 11) or (not is_expense and len(line) < 10):
+            if (is_expense and len(line) < 6): 
+            # or (not is_expense and len(line) < 10):
                 print "ALERTA: Faltan campos en la línea: %s" % line
                 return
             else:
-                amount = line[10 if is_expense else 9]
+                amount = line[6]
 
         else:
             amount = line[6]
