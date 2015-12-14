@@ -152,10 +152,16 @@
 
       // Update labels and show/hide totals plus download links based on view
       var executionLabelPostfix = getExecutionTotalLabel(budgetStatuses[uiState.year], budgetStatusLabels);
+      var breakdown = breakdowns[uiState.view],
+          hasActualData = breakdown[uiState.field]['actual_'+uiState.year];
       if ( uiState.view == 'fexpense' ) {
         $(".page-title").text("{{ entity.name }}: "+'{{ _("Gastos (por programa)") }}');
         if ( includeFinancialChapters ) {
-          $("#main-total .main-label").html('{{ _("Total gastos") }}'+executionLabelPostfix);
+          if (hasActualData) {
+            $("#main-total .main-label").html('{{ _("Total gastado") }}'+executionLabelPostfix);
+          } else {
+            $("#main-total .main-label").html('{{ _("Total previsto") }}'+executionLabelPostfix);
+          }
         } else {
           $("#main-total .main-label").html('{{ _("Total gastos no financieros") }}'+executionLabelPostfix);
           $("#including-financial-total .main-label").html('{{ _("Total gastos") }}'+executionLabelPostfix);
@@ -173,7 +179,11 @@
 
       } else {
         $(".page-title").text("{{ entity.name }}: "+'{{ _("Gastos") }}');
-        $("#main-total .main-label").html('{{ _("Total gastos") }}'+executionLabelPostfix);
+        if (hasActualData) {
+            $("#main-total .main-label").html('{{ _("Total gastado") }}'+executionLabelPostfix);
+          } else {
+            $("#main-total .main-label").html('{{ _("Total previsto") }}'+executionLabelPostfix);
+          }
         $("#income-downloads").hide();
         $("#fexpense-downloads").hide();
         $("#expense-downloads").show();
@@ -191,8 +201,8 @@
 
       // Show actual/budgeted split only when there's data available
       // (and the field format is not '% of total', gets confusing otherwise)
-      var breakdown = breakdowns[uiState.view],
-          hasActualData = breakdown[uiState.field]['actual_'+uiState.year];
+      // var breakdown = breakdowns[uiState.view],
+      //     hasActualData = breakdown[uiState.field]['actual_'+uiState.year];
       if ( hasActualData && uiState.format!='percentage' ) {
         $('.secondary-label, .secondary-amount').show();
       } else {
