@@ -3264,15 +3264,15 @@ header[role="banner"] > .container-fluid > .row-fluid {
   margin: 0 0 .25em;
   padding-left: 10px;*/
   vertical-align: middle;
-  background-color: rgba(255, 255, 255, 0.73);
+  /*background-color: rgba(255, 255, 255, 0.73);*/
 }
-.footer-logo {
+/*.footer-logo {
   font-size: .875em;
   display: inline-block;
   margin: 0 0 .25em;
-  padding-left: 10px;*/
+  padding-left: 10px;
   vertical-align: middle;
-}
+}*/
 .header-logo img {
   vertical-align: middle;
   margin-left: 5px;
@@ -7200,4 +7200,8 @@ g.bg .chart-container rect {
   text-indent: -9999px;
   background: url(../assets/LOGO-GCBA_only_peq.jpg) no-repeat left bottom transparent;
   z-index: 90;
+}
+
+.ln-logo {
+  margin: 0px !important;
 }
