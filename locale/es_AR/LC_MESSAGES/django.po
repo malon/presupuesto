@@ -533,8 +533,9 @@ msgid ""
 "Te mostramos de un modo claro cómo se distribuye nuestro presupuesto. De "
 "dónde vienen los ingresos y a qué destinamos el gasto"
 msgstr ""
-"Te mostramos de un modo claro cómo se distribuye el presupuesto. De "
-"dónde vienen los recursos y a qué se destina el gasto"
+"Te mostramos cómo se distribuye el presupuesto. De "
+"dónde vienen los recursos y a qué se destina el gasto del Gobierno "
+"de la ciudad de Buenos Aires."
 
 #: templates/welcome/index.html:14
 msgid "Algunos ejemplos"
