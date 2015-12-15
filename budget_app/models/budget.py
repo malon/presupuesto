@@ -38,6 +38,15 @@ class BudgetManager(models.Manager):
         for item in items:
             result[str(item.budget.year) + '/' + item.uid()] = item.description
         return result
+    # We do not have that problem
+    def _get_institutional_descriptions(self, items):
+        result = {}
+        for item in items:
+            # if item.chapter == '4' or item.chapter == '7':
+            #     result[item.uid()] = item.description + ' (cap. ' + item.chapter + ')'
+            # else:
+            result[item.uid()] = item.description
+        return result
 
     # We need to differentiate between items with the same name in chapters 4 and 7,
     # which have the same structure. We should probably do this during the loading 
@@ -61,7 +70,8 @@ class BudgetManager(models.Manager):
             'income': self._get_economic_descriptions(EconomicCategory.objects.income().filter(budget_id__entity=entity)),
             'expense': self._get_economic_descriptions(EconomicCategory.objects.expenses().filter(budget_id__entity=entity)),
             'funding': self._to_hash(FundingCategory.objects.filter(budget_id__entity=entity)),
-            'institutional': self._to_year_tagged_hash(InstitutionalCategory.objects.filter(budget_id__entity=entity))
+            # 'institutional': self._to_year_tagged_hash(InstitutionalCategory.objects.filter(budget_id__entity=entity))
+            'institutional': self._get_institutional_descriptions(InstitutionalCategory.objects.filter(budget_id__entity=entity))
         }
         #cache.set(key, descriptions)
         return descriptions

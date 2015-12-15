@@ -29,7 +29,8 @@ def policies_show(request, id, title, render_callback=None):
     c['functional_breakdown'] = BudgetBreakdown(['programme'])
     c['economic_breakdown'] = BudgetBreakdown(['chapter', 'article', 'heading'])
     c['funding_breakdown'] = BudgetBreakdown(['fund'])
-    c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
+    # c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
+    c['institutional_breakdown'] = BudgetBreakdown(['institution', 'section', 'department'])
     get_budget_breakdown(   "fc.policy = %s and e.id = %s", [ id, main_entity.id ],
                             [ 
                                 c['functional_breakdown'], 
@@ -68,7 +69,8 @@ def areas_show(request, id, title, render_callback=None):
     c['functional_breakdown'] = BudgetBreakdown(['policy'])
     c['economic_breakdown'] = BudgetBreakdown(['chapter', 'article', 'heading'])
     c['funding_breakdown'] = BudgetBreakdown(['fund'])
-    c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
+    # c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
+    c['institutional_breakdown'] = BudgetBreakdown(['institution', 'section', 'department'])
     get_budget_breakdown(   "fc.area = %s and e.id = %s", [ id, main_entity.id ],
                             [ 
                                 c['functional_breakdown'], 
@@ -123,7 +125,8 @@ def programmes_show(request, id, title, render_callback=None):
     c['functional_breakdown'] = BudgetBreakdown([])
     c['economic_breakdown'] = BudgetBreakdown(['chapter', 'article', 'heading', 'uid'])
     c['funding_breakdown'] = BudgetBreakdown(['source', 'fund'])
-    c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
+    # c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
+    c['institutional_breakdown'] = BudgetBreakdown(['institution', 'section', 'department'])
     get_budget_breakdown(   "fc.programme = %s and e.id = %s", [ id, main_entity.id ],
                             [ 
                                 c['economic_breakdown'],
@@ -186,7 +189,8 @@ def articles_show(request, id, title, show_side, render_callback=None):
     c['functional_breakdown'] = BudgetBreakdown(['policy', 'programme'])
     c['economic_breakdown'] = BudgetBreakdown(['heading', 'uid'])
     c['funding_breakdown'] = BudgetBreakdown(['fund'])
-    c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
+    # c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
+    c['institutional_breakdown'] = BudgetBreakdown(['institution', 'section', 'department'])
     get_budget_breakdown(   "ec.article = %s and e.id = %s", [ id, main_entity.id ],
                             [ 
                                 c['functional_breakdown'],

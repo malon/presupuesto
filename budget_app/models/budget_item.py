@@ -8,7 +8,7 @@ class BudgetItemManager(models.Manager):
             "select " \
                 "fc.area, fc.policy, fc.function, fc.programme, " \
                 "ec.chapter, ec.article, ec.heading, ec.subheading, " \
-                "ic.institution, ic.department, " \
+                "ic.institution, ic.section, ic.department, " \
                 "fdc.source, fdc.fund, "\
                 "i.id, i.item_number, i.description, i.expense, i.actual, i.amount, " \
                 "b.year, " \
@@ -42,7 +42,7 @@ class BudgetItemManager(models.Manager):
             "e.name, e.level, " \
             "i.id, i.description, i.amount, i.expense, " \
             "ec.article, ec.heading, ec.subheading, " \
-            "ic.institution, ic.department, " \
+            "ic.institution, ic.section, ic.department, " \
             "fc.policy, fc.programme " \
           "from " \
             "budget_items i, " \
