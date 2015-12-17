@@ -3285,7 +3285,7 @@ header[role="banner"] > .container-fluid > .row-fluid {
   }
 }
 .main-title {
-  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
   font-size: 1.5em;
   font-weight: 700;
   margin: 0;
@@ -3307,6 +3307,17 @@ header[role="banner"] > .container-fluid > .row-fluid {
 }
 .main-title a:hover {
   color: #f8c301;
+}
+
+.sub-title {  
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #f8c301;
+  margin: 12px;
+  padding: .25em 0 .5em;
+  text-align: center;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+  /*background: black;*/
 }
 
 #title-icon {
