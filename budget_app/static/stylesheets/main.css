@@ -3197,7 +3197,7 @@ blockquote p:last-child:after {
 header[role="banner"] {    
   /*background: #ffffff url(../assets/sol_header.jpg) no-repeat center;*/
   /*background: #ffffff url(../assets/logoAragonEs.png) no-repeat center bottom;*/
-  background: #000000 url(../assets/Buenos_Aires_Panorama2.png) no-repeat center top;
+  background: #000000 url(../assets/Buenos_Aires_Panorama2.jpg) no-repeat center top;
   margin: 0;
   text-align: center;
 }
