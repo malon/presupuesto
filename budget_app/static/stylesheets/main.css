@@ -7213,6 +7213,9 @@ g.bg .chart-container rect {
   z-index: 90;
 }
 
-.ln-logo {
+.no-margin-logo {
   margin: 0px !important;
+}
+.margin-logo {
+  margin-left: 32px;
 }
