@@ -90,9 +90,9 @@ $(window).bind('resize orientationchange', function() {
 var adjustMenu = function() {
 	if (ww < 768) {
 		// if "more" link not in DOM, add it
-		if (!$(".more")[0]) {
-			$('<div class="more">&nbsp;</div>').insertBefore('.parent');
-		}
+		// if (!$(".more")[0]) {
+		// 	$('<div class="more">&nbsp;</div>').insertBefore('.parent');
+		// }
 
 		$(".main-menu-toggle").css("display", "inline-block");
 
@@ -106,9 +106,9 @@ var adjustMenu = function() {
 
 		$(".nav-rwd li a.parent").unbind('click');
 
-		$(".nav-rwd li .more").unbind('click').bind('click', function() {
-			$(this).parent("li").toggleClass("hover");
-		});
+		// $(".nav-rwd li .more").unbind('click').bind('click', function() {
+		// 	$(this).parent("li").toggleClass("hover");
+		// });
 	} else if (ww >= 768) {
     	// remove .more link in desktop view
     	$('.more').remove(); 
