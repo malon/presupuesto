@@ -3,7 +3,7 @@
 
 ENV = {
 
-  'THEME': 'theme-aragon',
+  'THEME': 'theme-caba',
 
 #  'DEBUG': True,
 #  'TEMPLATE_DEBUG': True,
@@ -15,11 +15,11 @@ ENV = {
 #  'SEARCH_CONFIG': 'unaccent_spa',
 
   # Caching
-#  'CACHES': {
-#      'default': {
-#          'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-#          'LOCATION': '/tmp'
-#      }
-#  }
+  'CACHES': {
+      'default': {
+          'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+          'LOCATION': '/tmp'
+      }
+  }
 
 }
