@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-28 03:33-0300\n"
+"POT-Creation-Date: 2015-12-21 00:51-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,30 +150,31 @@ msgstr ""
 msgid "Otros"
 msgstr ""
 
-#: templates/welcome/index.html:39
-msgid "Educación, protección y bienestar social, cultura... ¿Qué área te interesa?"
-msgstr "Mirá cómo se reparte el presupuesto: Educación, seguridad, salud, cultura... ¿Qué te interesá más?"
+#: templates/budgets/index.html:91
+#, fuzzy
+msgid "Gobierno de Aragón"
+msgstr "Presupuestos del Gobierno de CABA"
 
 #: templates/budgets/index.html:93
 msgid "Ejecutado"
-msgstr "Devengado"
+msgstr "Ejecutado"
 
-#: templates/budgets/index.html:94 templates/entities/show.html:319
+#: templates/budgets/index.html:94 templates/entities/show.html:329
 #: templates/policies/show.html:311
 msgid "hasta el primer trimestre"
 msgstr ""
 
-#: templates/budgets/index.html:95 templates/entities/show.html:320
+#: templates/budgets/index.html:95 templates/entities/show.html:330
 #: templates/policies/show.html:312
 msgid "hasta el segundo trimestre"
 msgstr ""
 
-#: templates/budgets/index.html:96 templates/entities/show.html:321
+#: templates/budgets/index.html:96 templates/entities/show.html:331
 #: templates/policies/show.html:313
 msgid "hasta el tercer trimestre"
 msgstr ""
 
-#: templates/budgets/index.html:97 templates/entities/show.html:322
+#: templates/budgets/index.html:97 templates/entities/show.html:332
 #: templates/policies/show.html:314
 msgid "a día de hoy"
 msgstr ""
@@ -198,11 +199,11 @@ msgstr ""
 msgid "Políticas"
 msgstr "Funciones"
 
-#: templates/entities/index.html:11 templates/welcome/index.html:41
+#: templates/entities/index.html:11
 msgid "Comarcas"
 msgstr ""
 
-#: templates/entities/index.html:13 templates/welcome/index.html:42
+#: templates/entities/index.html:13
 msgid "Municipios"
 msgstr ""
 
@@ -212,12 +213,12 @@ msgstr ""
 
 #: templates/entities/index.html:30 templates/entities/show.html:84
 msgid "Previsto"
-msgstr ""
+msgstr "Sancionado"
 
 #: templates/entities/index.html:31 templates/entities/show.html:99
 #: templates/policies/show.html:177
 msgid "Gastado"
-msgstr ""
+msgstr "Ejecutado"
 
 #: templates/entities/index.html:42 templates/entities/show.html:48
 msgid "Descarga la tabla de <b>Ingresos</b>"
@@ -247,42 +248,42 @@ msgstr "Función"
 msgid "Artículo"
 msgstr "Principal"
 
-#: templates/entities/show.html:156
+#: templates/entities/show.html:158
 msgid "Gastos (por programa)"
 msgstr "Gastos (por función)"
 
-#: templates/entities/show.html:165 templates/entities/show.html.py:161
-msgid "Total gastos"
-msgstr ""
-
-#: templates/entities/show.html:159 templates/entities/show.html:181
+#: templates/entities/show.html:161 templates/entities/show.html.py:183
 msgid "Total gastado"
-msgstr ""
+msgstr "Total ejecutado"
 
-#: templates/entities/show.html:161 templates/entities/show.html:183
+#: templates/entities/show.html:163 templates/entities/show.html.py:185
 msgid "Total previsto"
-msgstr ""
+msgstr "Total sancionado"
 
-#: templates/entities/show.html:160
+#: templates/entities/show.html:166
 msgid "Total gastos no financieros"
 msgstr ""
 
-#: templates/entities/show.html:172 templates/shared/data_controllers.html:7
+#: templates/entities/show.html:167 templates/policies/show.html:289
+msgid "Total gastos"
+msgstr "Total ejecutado"
+
+#: templates/entities/show.html:174 templates/shared/data_controllers.html:7
 msgid "Ingresos"
 msgstr "Recursos"
 
-#: templates/entities/show.html:173 templates/policies/show.html:289
+#: templates/entities/show.html:175 templates/policies/show.html:289
 msgid "Total ingresos"
 msgstr "Total recursos"
 
-#: templates/entities/show.html:179 templates/shared/data_controllers.html:12
+#: templates/entities/show.html:181 templates/shared/data_controllers.html:12
 msgid "Gastos"
 msgstr ""
 
 #: templates/entities/totals.html:5 templates/entities/totals.html.py:10
 #: templates/policies/show.html:114
 msgid "Presupuestados"
-msgstr "Previstos"
+msgstr "Sancionado"
 
 #: templates/payments/index.html:4
 msgid "Inversiones y pagos"
@@ -336,6 +337,10 @@ msgstr ""
 #: templates/policies/show.html:32
 msgid "Menú de programas, entidades y conceptos"
 msgstr ""
+
+#: templates/policies/show.html:159
+msgid "Presupuesto"
+msgstr "Sancionado"
 
 #: templates/search/index.html:4
 msgid "Resultados"
@@ -460,6 +465,14 @@ msgstr ""
 msgid "Nota"
 msgstr ""
 
+#: templates/shared/header.html:56
+msgid "Menú Políticas"
+msgstr "Detalle"
+
+#: templates/shared/header.html:62
+msgid "¿Qué significa...?"
+msgstr "¿Qué significa...?"
+
 #: templates/shared/pagination.html:5 templates/shared/pagination.html.py:7
 msgid "Anterior"
 msgstr ""
@@ -533,9 +546,8 @@ msgid ""
 "Te mostramos de un modo claro cómo se distribuye nuestro presupuesto. De "
 "dónde vienen los ingresos y a qué destinamos el gasto"
 msgstr ""
-"Te mostramos cómo se distribuye el presupuesto. De "
-"dónde vienen los recursos y a qué se destina el gasto del Gobierno "
-"de la ciudad de Buenos Aires."
+"Te mostramos cómo se distribuye el presupuesto. De dónde vienen los recursos "
+"y a qué se destina el gasto del Gobierno de la Ciudad de Buenos Aires"
 
 #: templates/welcome/index.html:14
 msgid "Algunos ejemplos"
@@ -550,20 +562,16 @@ msgid ""
 "Para que tengas una idea general de los ingresos y gastos del Gobierno de "
 "Aragón"
 msgstr ""
-"Para que tengás una idea general de los recursos y gestos del Gobierno de la Ciudad de Buenos Aires"
+"Para que tengás una idea general de los recursos y gestos del Gobierno de la "
+"Ciudad de Buenos Aires"
 
 #: templates/welcome/index.html:38
 msgid "Políticas concretas"
 msgstr "Funciones concretas"
 
-#: templates/shared/header.html:51
-msgid "Menú Políticas"
-msgstr "Funciones"
-
-#: templates/shared/header.html:35
-msgid "Title tooltip"
-msgstr "Ir a la home"
-
-#: templates/shared/header.html:57
-msgid "¿Qué significa...?"
-msgstr "¿Qué significa...?"
+#: templates/welcome/index.html:39
+msgid ""
+"Educación, protección y bienestar social, cultura... ¿Qué área te interesa?"
+msgstr ""
+"Mirá cómo se reparte el presupuesto: Educación, seguridad, salud, cultura... "
+"¿Qué te interesá más?"
