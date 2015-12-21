@@ -76,7 +76,7 @@ function formatRuledDecimal(value, abbr, coin, precision) {
   rule = '0,000';
   if ((precision !== undefined) && (precision > 0)) {
     rule += '.';
-    while (precision > 1) {
+    while (precision > 0) {
        rule += '0';
        precision--;
      }
@@ -126,7 +126,9 @@ function formatPerCapita(row, cell, value, columnDef, dataContext) {
   // would like to recheck it.
   var population = getPopulationFigure(columnDef.stats, columnDef.year, dataContext.key);
 
-  return formatDecimal(realValue / population) + " €";
+  // return formatDecimal(realValue / population) + " €";
+  debugger;
+  return formatRuledDecimal(realValue / population, false, true, 2);
 }
 
 // Convenience methods
