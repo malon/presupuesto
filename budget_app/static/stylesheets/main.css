@@ -3194,23 +3194,11 @@ blockquote p:last-child:after {
   padding: 0 1em;
   max-width: 59.75em;
 }
-header[role="banner"] {    
-  /*background: #ffffff url(../assets/sol_header.jpg) no-repeat center;*/
-  /*background: #ffffff url(../assets/logoAragonEs.png) no-repeat center bottom;*/
+header[role="banner"] {     
   background: #000000 url(../assets/Buenos_Aires_Panorama2.jpg) no-repeat center top;
   margin: 0;
   text-align: center;
 }
-/*
-header[role="banner"] > .container-fluid {
-  position: relative;
-}
-header[role="banner"] > .container-fluid > .row-fluid {
-  display: none;
-  margin-top: 30px;
-  padding-top: 41px;
-  background: url(../assets/tituloMostoles.png) no-repeat right top transparent;
-}*/
 
 .logo-gobierno-aragon {
   /*margin: 1.5em 0 1em;*/
@@ -3264,15 +3252,8 @@ header[role="banner"] > .container-fluid > .row-fluid {
   margin: 0 0 .25em;
   padding-left: 10px;*/
   vertical-align: middle;
-  /*background-color: rgba(255, 255, 255, 0.73);*/
 }
-/*.footer-logo {
-  font-size: .875em;
-  display: inline-block;
-  margin: 0 0 .25em;
-  padding-left: 10px;
-  vertical-align: middle;
-}*/
+
 .header-logo img {
   vertical-align: middle;
   margin-left: 5px;
@@ -3292,13 +3273,6 @@ header[role="banner"] > .container-fluid > .row-fluid {
   padding: .25em 0 .5em;
   text-align: center;
 }
-/*.main-title a {
-  color: #333333;
-  display: block;
-}
-.main-title a:hover {
-  color: #666666;
-}*/
 
 .main-title a {
   display: inline;
@@ -3316,8 +3290,7 @@ header[role="banner"] > .container-fluid > .row-fluid {
   margin: 12px;
   padding: .25em 0 .5em;
   text-align: center;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
-  /*background: black;*/
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);  
 }
 
 #title-icon {
@@ -3351,8 +3324,7 @@ header[role="banner"] > .container-fluid > .row-fluid {
   background-color: #66a5df;
   color: #ffffff;
 }
-#main-menu {
-  /*background: #66a5df;*/
+#main-menu {  
   background: #f8c301;
   line-height: 1.25;
   margin: 0;
@@ -3406,17 +3378,14 @@ header[role="banner"] > .container-fluid > .row-fluid {
   top: 1em;
 }
 .nav-rwd > li > a {
-  /*background-color: #66a5df;*/
   background-color: #f8c301;
-  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25) inset;
-  /*color: white;*/
+  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25) inset;  
   color: black;
   display: block;
   padding: .75em 2.5em .75em .75em;
   /*text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);*/
 }
-.nav-rwd > li > a:hover {
-  /*background-color: #0e61ad;*/
+.nav-rwd > li > a:hover {  
   background-color: #f8e18b;
 }
 .nav-rwd > li.hover > ul {
@@ -3433,22 +3402,22 @@ header[role="banner"] > .container-fluid > .row-fluid {
   left: 100%;
   top: 0;
 }
-.nav-rwd li li a {
-  background: #0e61ad;
+.nav-rwd li li a {  
+  background: #f8c301;
   border-top: 1px solid #51001a;
   box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.25) inset;
   display: block;
   font-size: 1em;
   font-weight: 700;
   position: relative;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  /*text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);*/
   z-index: 100;
 }
-.nav-rwd li li a:hover {
-  background: #d10044;
+.nav-rwd li li a:hover {  
+  background: #f8e18b;
 }
 .nav-rwd a {
-  color: #ffffff;
+  color: #000000;
   padding: .75em;
 }
 @media screen and (max-width: 768px) {
@@ -3620,7 +3589,6 @@ header[role="banner"] > .container-fluid > .row-fluid {
   background: url(../assets/option-global.png) no-repeat center -35px;
 }
 .home-intro .option-global .icon {
-  /*color: #b7003c;*/
   color: #4199A5;
 }
 .home-intro .option-policies {
@@ -7068,7 +7036,7 @@ g.bg .chart-container rect {
 
 #main-menu ul li {
   border: none;
-  width: 33.33%;
+  width: 25%;
   text-align: center;
 }
 

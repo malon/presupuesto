@@ -53,7 +53,6 @@ def policies_show(request, id, title, render_callback=None):
     c['name'] = c['descriptions']['functional'].get(c['policy_uid'])
     c['title_prefix'] = c['name']
 
-
     return render(c, render_callback, 'policies/show.html')
 
 
@@ -187,6 +186,7 @@ def articles_show(request, id, title, show_side, render_callback=None):
     # Get the budget breakdown.
     # The functional one is used only when showing expenses.
     c['functional_breakdown'] = BudgetBreakdown(['policy', 'programme'])
+    # Adding uid we are including 'parcial' from 'objeto del gasto' as the lowest level of economical
     c['economic_breakdown'] = BudgetBreakdown(['heading', 'uid'])
     c['funding_breakdown'] = BudgetBreakdown(['fund'])
     # c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
@@ -216,6 +216,7 @@ def articles_show(request, id, title, show_side, render_callback=None):
     _populate_csv_settings(c, 'article', id)
     _set_show_side(c, show_side)
     _set_full_breakdown(c, True)
+
 
     return render(c, render_callback, 'policies/show.html')
 

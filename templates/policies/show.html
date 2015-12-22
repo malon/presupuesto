@@ -197,7 +197,7 @@
                           functionalGridData, [
                             {
                               field: "label", 
-                              name: 'Programa', 
+                              name: 'Función', 
 {% if full_breakdown %}
                               formatter: policyLinkFormatter, 
 {% else %}
@@ -224,10 +224,10 @@
                             {
                               field: "label",
 {% if is_chapter %}
-                              name: 'Principal',
+                              name: 'Clasificador Económico',
                               formatter: articleLinkFormatter
 {% else %}
-                              name: 'Inciso',
+                              name: 'Clasificador Económico',
                               formatter: rowNameFormatter
 {% endif %}
                             },
@@ -286,7 +286,10 @@
         $('.secondary-label, .secondary-amount').hide();
         $("#main-total .main-amount").text(format(getTotal(breakdown)));
       }
-      var label = uiState.view == 'income' ? '{{ _("Total ingresos") }}' : '{{ _("Total gastos") }}';
+      var label = uiState.view == 'income' ? '{{ _("Total ingresos") }}' : '{{ _("Total previsto") }}';
+      if ( hasActualData ) {
+        label = '{{ _("Total gastado") }}'
+      }
       $("#main-total .main-label").html(label+getExecutionTotalLabel(budgetStatuses[uiState.year], budgetStatusLabels))
 
       onTabSwitch();

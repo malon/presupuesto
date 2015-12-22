@@ -127,9 +127,9 @@ def economic_programme_breakdown(request, id, format):
 #
 def write_economic_article_breakdown(c, field, writer):
     field_username = 'Gastos' if field == 'expense' else 'Ingresos'
-    writer.writerow(['#Año', 'Id Principal', 'Nombre Principal', 'Id Parcial', 'Nombre Parcial', 'Sanción '+field_username, field_username+' Ejecución'])
+    writer.writerow(['#Año', 'Id Principal', 'Nombre Principal', 'Id Parcial', 'Nombre Parcial','Id Objeto Parcial', 'Nombre Objeto Parcial', 'Sanción '+field_username, field_username+' Ejecución'])
     for year in set(c['economic_breakdown'].years.values()):
-        write_breakdown_item(writer, year, c['economic_breakdown'], field, [c['article_id'], None], c['descriptions'][field])
+        write_breakdown_item(writer, year, c['economic_breakdown'], field, [c['article_id'], None, None], c['descriptions'][field])
         for heading_id, heading in c['economic_breakdown'].subtotals.iteritems():
             write_breakdown_item(writer, year, heading, field, [c['article_id'], heading_id, None], c['descriptions'][field])
             for item_uid, item in heading.subtotals.iteritems():
@@ -142,7 +142,8 @@ def write_economic_article_income_breakdown(c, writer):
     return write_economic_article_breakdown(c, 'income', writer);
 
 def economic_article_breakdown(request, id, format):
-    return income_articles_show(request, id, format, _generator("%s.economica" % id, format, write_economic_article_income_breakdown))
+    # return income_articles_show(request, id, format, _generator("%s.economica" % id, format, write_economic_article_income_breakdown))
+    return expense_articles_show(request, id, format, _generator("%s.economica" % id, format,write_economic_article_expense_breakdown))
 
 def entity_article_expenses(request, level, slug, id, format):
     c = get_context(request)
@@ -174,7 +175,8 @@ def funding_programme_breakdown(request, id, format):
     return programmes_show(request, id, '', _generator("%s.financiacion" % id, format, write_funding_breakdown))
 
 def funding_article_breakdown(request, id, format):
-    return income_articles_show(request, id, '', _generator("%s.financiacion" % id, format, write_funding_breakdown))
+    # return income_articles_show(request, id, '', _generator("%s.financiacion" % id, format, write_funding_breakdown))
+    return expense_articles_show(request, id, '', _generator("%s.financiacion" % id, format, write_funding_breakdown))
 
 
 #
@@ -198,7 +200,9 @@ def institutional_programme_breakdown(request, id, format):
     return programmes_show(request, id, '', _generator("%s.jurisdiccion" % id, format, write_institutional_breakdown))
 
 def institutional_article_breakdown(request, id, format):
-    return income_articles_show(request, id, '', _generator("%s.jurisdiccion" % id, format, write_institutional_breakdown))
+    # return income_articles_show(request, id, '', _generator("%s.jurisdiccion" % id, format, write_institutional_breakdown))
+    return expense_articles_show(request, id, '', _generator("%s.jurisdiccion" % id, format, write_institutional_breakdown))
+
 
 
 #

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-21 00:51-0300\n"
+"POT-Creation-Date: 2015-12-22 00:23-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,22 +160,22 @@ msgid "Ejecutado"
 msgstr "Ejecutado"
 
 #: templates/budgets/index.html:94 templates/entities/show.html:329
-#: templates/policies/show.html:311
+#: templates/policies/show.html:314
 msgid "hasta el primer trimestre"
 msgstr ""
 
 #: templates/budgets/index.html:95 templates/entities/show.html:330
-#: templates/policies/show.html:312
+#: templates/policies/show.html:315
 msgid "hasta el segundo trimestre"
 msgstr ""
 
 #: templates/budgets/index.html:96 templates/entities/show.html:331
-#: templates/policies/show.html:313
+#: templates/policies/show.html:316
 msgid "hasta el tercer trimestre"
 msgstr ""
 
 #: templates/budgets/index.html:97 templates/entities/show.html:332
-#: templates/policies/show.html:314
+#: templates/policies/show.html:317
 msgid "a día de hoy"
 msgstr ""
 
@@ -222,11 +222,11 @@ msgstr "Ejecutado"
 
 #: templates/entities/index.html:42 templates/entities/show.html:48
 msgid "Descarga la tabla de <b>Ingresos</b>"
-msgstr "Descargá la tabla de <b>Recursos</b>"
+msgstr "Descargá la tabla (valores nominales) de <b>Recursos</b>"
 
 #: templates/entities/index.html:48 templates/entities/show.html:60
 msgid "Descarga la tabla de <b>Gastos</b>"
-msgstr "Descargá la tabla de <b>Gastos</b>"
+msgstr "Descargá la tabla (valores nominales) de <b>Gastos</b>"
 
 #: templates/entities/show.html:31
 msgid "Información no disponible"
@@ -234,7 +234,7 @@ msgstr ""
 
 #: templates/entities/show.html:54
 msgid "Descarga la tabla de <b>Gastos (por programa)</b>"
-msgstr "Descargá la tabla de <b>Gastos (por función)</b>"
+msgstr "Descargá la tabla (valores nominales) de <b>Gastos (por función)</b>"
 
 #: templates/entities/show.html:99 templates/policies/show.html:177
 msgid "Ingresado"
@@ -253,10 +253,12 @@ msgid "Gastos (por programa)"
 msgstr "Gastos (por función)"
 
 #: templates/entities/show.html:161 templates/entities/show.html.py:183
+#: templates/policies/show.html:291
 msgid "Total gastado"
 msgstr "Total ejecutado"
 
 #: templates/entities/show.html:163 templates/entities/show.html.py:185
+#: templates/policies/show.html:289
 msgid "Total previsto"
 msgstr "Total sancionado"
 
@@ -264,9 +266,9 @@ msgstr "Total sancionado"
 msgid "Total gastos no financieros"
 msgstr ""
 
-#: templates/entities/show.html:167 templates/policies/show.html:289
+#: templates/entities/show.html:167
 msgid "Total gastos"
-msgstr "Total ejecutado"
+msgstr "Total gastos"
 
 #: templates/entities/show.html:174 templates/shared/data_controllers.html:7
 msgid "Ingresos"
