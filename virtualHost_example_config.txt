@@ -1,0 +1,23 @@
+<VirtualHost *:80>
+        DirectoryIndex index.html index.php
+        ServerName dev_presupuesto.lanacion.com.ar
+        ServerAlias dev_presupuesto.lanacion.com.ar server2_presupuesto.lanacion.com.ar
+
+        Alias /static/ /path_to_project/presupuesto/static/
+        # Alias /media/ /var/www/vozdata/media/
+        LogLevel warn
+        ErrorLog /var/log/apache2/presupuesto_error.log
+        CustomLog /var/log/apache2/presupuesto_access.log common
+        Options FollowSymlinks
+
+        WSGIScriptAlias / /path_to_project/presupuesto/project/wsgi.py
+        WSGIDaemonProcess presupuesto python-path=/path_to_project/presupuesto:/home/USER:/path_to_virtuan_env/venv_presupuesto/lib/python2.7/site-packages
+        WSGIProcessGroup presupuesto
+        WSGIApplicationGroup %{GLOBAL}
+
+        <Directory />
+            Order deny,allow
+            # AllowOverride All
+            Require all granted
+        </Directory>
+</VirtualHost>
