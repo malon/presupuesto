@@ -22,7 +22,7 @@ Para instalar la aplicación en local es necesario seguir los siguientes pasos:
 
 * Copiar `local_settings.py-example` a `local_settings.py` y modificar las credenciales de la base de datos.
 
-* Crear el esquema de la base de datos y cargar los datos básicos:
+* Crear el esquema de la base de datos y cargar los datos básicos (ejemplo cargando datos 2014):
 
         $ python manage.py syncdb
 
@@ -30,6 +30,7 @@ Para instalar la aplicación en local es necesario seguir los siguientes pasos:
         $ python manage.py load_entities
         $ python manage.py load_stats
         $ python manage.py load_budget 2014
+        $ python manage.py load_execution 2014
 
 * Arrancar el servidor
 
