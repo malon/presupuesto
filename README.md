@@ -1,4 +1,4 @@
-![Logo de La Nación Data](budget_app/static/assets/ln70x70.jpg)
+![Logo de La Nación Data](budget_app/static/assets/LNdata70x70.jpg)
 
 ###Presupuestos de la Ciudad Autónoma de Buenos Aires
 
