@@ -222,11 +222,11 @@ msgstr "Ejecutado"
 
 #: templates/entities/index.html:42 templates/entities/show.html:48
 msgid "Descarga la tabla de <b>Ingresos</b>"
-msgstr "Descargá la tabla de <b>Recursos</b>"
+msgstr "Descargá la tabla (valores nominales) de <b>Recursos</b>"
 
 #: templates/entities/index.html:48 templates/entities/show.html:60
 msgid "Descarga la tabla de <b>Gastos</b>"
-msgstr "Descargá la tabla de <b>Gastos</b>"
+msgstr "Descargá la tabla (valores nominales) de <b>Gastos</b>"
 
 #: templates/entities/show.html:31
 msgid "Información no disponible"
@@ -234,7 +234,7 @@ msgstr ""
 
 #: templates/entities/show.html:54
 msgid "Descarga la tabla de <b>Gastos (por programa)</b>"
-msgstr "Descargá la tabla de <b>Gastos (por función)</b>"
+msgstr "Descargá la tabla (valores nominales) de <b>Gastos (por función)</b>"
 
 #: templates/entities/show.html:99 templates/policies/show.html:177
 msgid "Ingresado"
