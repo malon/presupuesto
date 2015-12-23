@@ -18,6 +18,9 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(BASE_DIR, '..'))
+#production path to append
+sys.path.append(os.path.join(BASE_DIR, '../../env_presupuestos/lib/python2.7/site-packages'))
+
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'project.settings'
 
