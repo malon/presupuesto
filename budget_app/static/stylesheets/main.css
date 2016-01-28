@@ -3195,7 +3195,7 @@ blockquote p:last-child:after {
   max-width: 59.75em;
 }
 header[role="banner"] {     
-  background: #000000 url(../assets/Buenos_Aires_Panorama2.jpg) no-repeat center top;
+  /*background: #000000 url(../assets/Buenos_Aires_Panorama2.jpg) no-repeat center top;*/
   margin: 0;
   text-align: center;
 }
@@ -3266,31 +3266,31 @@ header[role="banner"] {
   }
 }
 .main-title {
-  border-bottom: 1px solid #e6e6e6;
+  /*border-bottom: 1px solid #e6e6e6;*/
   font-size: 1.5em;
   font-weight: 700;
   margin: 0;
-  padding: .25em 0 .5em;
+  padding: .7em 0 .5em 0;
   text-align: center;
 }
 
 .main-title a {
   display: inline;
-  color: white;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+  color: black;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
 }
 .main-title a:hover {
-  color: #f8c301;
+  color: #7B7B7B;
 }
 
 .sub-title {  
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 700;
-  color: #f8c301;
+  color: #006699;
   margin: 12px;
   padding: .25em 0 .5em;
   text-align: center;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);  
+  /*text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);  */
 }
 
 #title-icon {
@@ -3325,7 +3325,7 @@ header[role="banner"] {
   color: #ffffff;
 }
 #main-menu {  
-  background: #f8c301;
+  background: #006699;
   line-height: 1.25;
   margin: 0;
   text-align: left;
@@ -3378,15 +3378,15 @@ header[role="banner"] {
   top: 1em;
 }
 .nav-rwd > li > a {
-  background-color: #f8c301;
+  background-color: #006699;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25) inset;  
-  color: black;
+  color: white;
   display: block;
   padding: .75em 2.5em .75em .75em;
   /*text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);*/
 }
 .nav-rwd > li > a:hover {  
-  background-color: #f8e18b;
+  background-color: #0084b5;
 }
 .nav-rwd > li.hover > ul {
   left: 0;
@@ -3403,7 +3403,7 @@ header[role="banner"] {
   top: 0;
 }
 .nav-rwd li li a {  
-  background: #f8c301;
+  background: #006699;
   border-top: 1px solid #51001a;
   box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.25) inset;
   display: block;
@@ -3414,7 +3414,7 @@ header[role="banner"] {
   z-index: 100;
 }
 .nav-rwd li li a:hover {  
-  background: #f8e18b;
+  background: #0084b5;
 }
 .nav-rwd a {
   color: #000000;
@@ -7181,9 +7181,13 @@ g.bg .chart-container rect {
   z-index: 90;
 }
 
-.no-margin-logo {
+/*.no-margin-logo {
   margin: 0px !important;
 }
 .margin-logo {
   margin-left: 32px;
+}*/
+
+.footer-logo{
+  padding-top: 10px;
 }

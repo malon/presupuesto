@@ -8,11 +8,11 @@
 
   <h2>Extracción de datos</h2>
   
-  <p>Los Presupuestos de la Ciudad de Buenos Aires se encuentran disponibles en el portal <a href="http://data.buenosaires.gob.ar/">Buenos Aires Data</a> del Gobierno de la Ciudad Autónoma de Buenos Aires (CABA), de dónde se pueden descargar en formato CSV (<i>comma separated values</i>). Se han utilizado, tanto los datos de presupuesto sancionado, que representan la ley presupuestaria aprobada por el gobierno para cada año, como los datos del presupuesto ejecutado, es decir, el gasto real calculado al cuarto cuatrimestre del correspondiente año.
+  <p>Los Presupuestos de la Ciudad de Buenos Aires se encuentran disponibles en el portal <a href="http://data.buenosaires.gob.ar/">Buenos Aires Data</a> del Gobierno de la Ciudad Autónoma de Buenos Aires (CABA), de dónde se pueden descargar en formato CSV (<i>comma separated values</i>). Se han utilizado, tanto los datos de presupuesto sancionado, que representan la ley presupuestaria aprobada por el gobierno para cada año, como los datos del presupuesto ejecutado, es decir, el gasto real calculado al cuarto cuatrimestre de cada año.
 
   <p>El presupuesto para gastos se ha tomado de dichos CSVs de los que se han seleccionado las siguientes clasificaciones: 
       <ul>
-        <li><b>NATURALEZA</b> (finalidad y función</li>
+        <li><b>NATURALEZA</b> (finalidad y función)</li>
         <li><b>JURISDICCIONAL</b> (quién realiza el gasto)</li>
         <li><b>FINANCIAMIENTO</b> (cómo se financia ese gasto)</li>
         <li><b>ECONÓMICO</b> (categorización económica del gasto)</li>
@@ -20,36 +20,69 @@
   
   <p>Para poder contraponer los gastos a los recursos (ingresos realizados) se han obtenido los datos de los recursos obtenidos por el Gobierno de su página de <a href="http://www.buenosaires.gob.ar/hacienda/presupuesto/estadistica-presupuestaria"> Estadística Presupuestaria</a>, utilizando, en este caso, solamente la clasificación <b>ECONÓMICA</b> de dichos recursos.</p>
 
-  <p>La aplicación ¿Dónde van mis impuestos? requiere de un formato CSV específico de entrada tanto de gastos y recursos (sancionados y ejecutados), como de las clasficiaciones presupuestarias empleadas. El código para extraer dichos archivos a partir de los CSVs proporcionados por el Gobierno se incluye también el <a href="https://github.com/malon/presupuesto">código</a> del proyecto. Así como una explicación sobre el proceso de carga y actualización de nuevos datos.</p>
+  <p>La aplicación ¿Dónde van mis impuestos? requiere de un formato CSV específico de entrada, tanto de gastos y recursos (sancionados y ejecutados), como de las clasficiaciones presupuestarias empleadas. El código para extraer dichos archivos a partir de los CSVs proporcionados por el Gobierno se incluye también el <a href="https://github.com/malon/presupuesto">código</a> del proyecto. Así como una explicación sobre el proceso de carga y actualización de nuevos datos.</p>
 
-  <p>Los gastos de ejecución del año en curso aparecerán en blanco ya que no se conocerán hasta el cierre del año, en cuanto a los datos ejecutados (reales) de los recursos (ingresos realizados) aparecen también a 0 ya que se han tomado los datos disponibles por datos teóricos (presupuestados).</p>
+  <p>Los gastos de ejecución del año en curso aparecerán en blanco ya que no se conocerán hasta el cierre del año, en cuanto a los datos ejecutados (reales) de los recursos (ingresos realizados) aparecen también a 0 ya que se han tomado los datos disponibles como datos sancionados (presupuestados).</p>
 
 
   <h2>Presentación de los datos</h2>
-  <p>La página web está desarrollada en Python (Django) y es una adaptación de la que David Cabo (<a href="http://twitter.com/dcabo" target="_blank">@dcabo</a>) realizó para el <a href="http://presupuesto.aragon.es/" target="_blank">Gobierno de Aragón</a> con el diseño de <a href="http://lapersonnalite.com" target="_blank">La Personnalité</a>, y <a href="http://www.civio.es/">La Fundación ciudadana Civio</a> realizó posteriormenete para los presupuestos generales de España y otras comunidades autónomas. Todas las visualizaciones están hechas con la librería D3 de javascript. El código del presente proyecto está disponible en <a href="https://github.com/malon/presupuesto" target="_blank">Github</a>.</p>
+  <p>La página web está desarrollada en Python (Django) y es una adaptación de la que David Cabo (<a href="http://twitter.com/dcabo" target="_blank">@dcabo</a>) realizó para el <a href="http://presupuesto.aragon.es/" target="_blank">Gobierno de Aragón</a> con el diseño de <a href="http://lapersonnalite.com" target="_blank">La Personnalité</a>, y <a href="http://www.civio.es/">La Fundación ciudadana Civio</a> realizó posteriormenete para los presupuestos generales de España y otras comunidades autónomas. Todas las visualizaciones están hechas con la librería D3 de javascript. </p>
+ </p>
+
+<h2>Código fuente</h2>
+<p>El código del presente proyecto está disponible en <a href="https://github.com/malon/presupuesto" target="_blank">Github</a>.</p>
+
+<h2 id="credits">Agradecimientos y créditos</h2>
+
+ <p>Esta versión de ¿Dónde van mis Impuestos? para CABA ha sido llevada a cabo por Marta Alonso (<a href="http://twitter.com/malonfe" target="_blank">@malonfe</a>) y el equipo de <a href="http://www.lanacion.com.ar/data">La Nación Data</a>, dentro del cual agradecemos especialmente a: </p>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <a href="http://www.lanacion.com.ar/data" target="_blank" title="LN DATA">
+          <img src="{{ STATIC_URL }}assets/LNdata70x70.jpg" alt="Logo de LN DATA">
+          </a>
+    </div>
+    <div class="span10">
+      <ul>
+        <li><strong>Momi Peralta</strong> (<a href="http://twitter.com/momiperalta" target="_blank">@momiperalta</a>) por su gestión, sus aportaciones y su impulso para sacar el proyecto adelante.</li>
+        <li><strong>Gaby Bouret</strong> (<a href="http://twitter.com/gabybouret" target="_blank">@gabybouret</a>) por su conocimiento presupuestario y su contribución a desenmarañar y obtener todos los datos necesarios.</li>
+        <li><strong>Cristian Bertelegni</strong> (<a href="http://twitter.com/cbertelegni" target="_blank">@cbertelegni</a>) por su inestimable contribución en el despliegue.</li>    
+      </ul>
+    </div>
+  </div>
+  <p>A todos ellos, y al resto del fantástico equipo, ¡gracias!</p>
+
+  <div class="row-fluid">
+    <div class="span2">
+      <a href="http://www.civio.es/" target="_blank" title="Fundación Ciudadana Civio">
+          <img src="{{ STATIC_URL }}assets/logo-civio-black.png" alt="Logo de la Fundación Ciudadana Civio">
+          </a>
+      <a href="http://opendata.aragon.es" target="_blank"><img src="{{ STATIC_URL }}assets/logoAragonOpenData.png" title="Portal de datos abiertos del Gobierno de Aragón" alt="Open Data Aragón"></a>
+    </div>
+    <div class="span10">
+      <p>No hubiera sido posible llevar a cabo este proyecto de no ser por las anteriores versiones de ¿Dónde van mis impuestos?, por lo que queremos agradecer a la <a href="http://www.civio.es/">La Fundación Ciudadana Civio</a> y al <a href="http://presupuesto.aragon.es/" target="_blank">Gobierno de Aragón</a> por liberar el código original, y a su autor <strong>David Cabo</strong> (<a href="http://twitter.com/dcabo" target="_blank">@dcabo</a>) por su ayuda y soporte durante el desarrollo de la presente versión.
+    </div>
+    
+  </div>
+  <div class="row-fluid">
+    <div class="span2">
+      <a href="http://data.buenosaires.gob.ar/" target="_blank" title="Laboratorio de Datos del Gobierno de CABA">
+          <img src="{{ STATIC_URL }}assets/laboratorioGobierno70x70.png" alt="Logo de Laboratorio de Gobierno de Benos Aires">
+          </a>
+    </div>
+    <div class="span10">
+      <p>También merece un agradecimiento especial el equipo del <a href="http://data.buenosaires.gob.ar/about">Laboratorio de Datos</a> del Gobierno de la Ciudad de Buenos Aires <a href="https://twitter.com/LABgcba">(@LABgcba)</a>, por su inestimable colaboración en la consecución de los datos presupuestarios, y en particular <b>Natalia Sampietro</b>, por aguantar nuestras incesantes preguntas y por su total disposición y paciencia.
+    </div>
+  </div>
+</div>
 
 
-  <h2 id="credits">Agradecimientos</h2>
-
-  <p>Esta versión de ¿Dónde van mis Impuestos? para CABA ha sido llevada a cabo por Marta Alonso (<a href="http://twitter.com/malonfe" target="_blank">@malonfe</a>) en colaboración con el equipo de <a href="http://www.lanacion.com.ar/data">La Nación Data</a> y en especial de:
-  <ul>
-    <li><strong>Momi Peralta</strong> (<a href="http://twitter.com/momiperalta" target="_blank">@momiperalta</a>) por su gestión, sus aportaciones y su impulso para sacar el proyecto adelante.</li>
-    <li><strong>Gaby Bouret</strong> (<a href="http://twitter.com/gabybouret" target="_blank">@gabybouret</a>) por su conocimiento presupuestario y su contribución a desenmarañar y obtener todos los datos necesarios.</li>
-    <li><strong>Cristian Bertelegni</strong> (<a href="http://twitter.com/cbertelegni" target="_blank">@cbertelegni</a>) por pegarse con los sistemas y ayudar en el despliegue.</li>    
-  </ul>
-  A todos ellos, y al resto del fantástico equipo, ¡gracias!.
-  </p>
-
-  <p>También quiero agradecer a <strong>David Cabo</strong> (<a href="http://twitter.com/dcabo" target="_blank">@dcabo</a>), el autor del proyecto original, por su ayuda y soporte durante el desarrollo del mismo.</p>
-
-  <p>Y por último, pero no menos importante, quiero agradecer al equipo del <a href="http://data.buenosaires.gob.ar/about">Laboratorio de Datos</a> del Gobierno de la Ciudad de Buenos Aires <a href="https://twitter.com/LABgcba">(@LABgcba)</a> por su inestimable colaboración, y en especial a <b>Natalia Sampietro</b> por aguantar nuestras incesantes preguntas y por su total disposición y paciencia.
-
-
-  <h3>Créditos de imágenes</h3>
+  {# <h3>Créditos de imágenes</h3>
   <ul>
     <li>Fondo de cabecera: <a href="http://www.flickr.com/photos/29638083@N00/3248212758/">Buenos Aires Panorama</a>, por <a href="https://www.flickr.com/people/29638083@N00" target="_blank">Luis Argerich</a> (modificada)</li>   
   </ul>
-
+ #}
 </div>
 
 {% endblock %}

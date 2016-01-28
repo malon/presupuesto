@@ -1,6 +1,6 @@
 <header role="banner" class="hide-when-embedded">
 	<div class="container-fluid">
-		<div class="row-fluid">
+		{# <div class="row-fluid"> #}
 			<!--<div class="span6">
 				<p class="logo-gobierno-aragon"><a href="http://www.aragon.es/" title="Ir a la home de Gobierno de Aragón"><img src="{{ STATIC_URL }}assets/logo-gobierno-aragon.png" alt="Logo de Gobierno de Aragón"></a></p>
 			</div>-->
@@ -31,18 +31,41 @@
 					<img src="{{ STATIC_URL }}assets/logoAragonOpenData.png" alt="Logo de Open Data Aragón">
 				</a></p>
 			</div>-->
-		</div>
+		{# </div> #}
 		
-		<h1 class="main-title">
+	    <div class="row-fluid">
+    	  <div class="span4 offset8">
+        	<p class="header-logo">Un proyecto de <a href="http://www.lanacion.com.ar/data" title="La Nación DATA">
+        	  	<img src="{{ STATIC_URL }}assets/lanaciondata_logo.png" alt="LN DATA">
+        	</a></p>
+      	  </div>
+      	  {# <div class="span4 offset8">
+        	<p class="header-logo">y de LNDATA <a href="http://www.civio.es">
+        	  	<img src="{{ STATIC_URL }}assets/logo-civio.png" alt="Logo de Civio">
+        	</a></p>
+      	  </div> #}
+    	</div>
+    	<h1 class="main-title">
+      		<a href="{{ url('budget_app.views.welcome') }}" title="Ir a la home de Dónde van mis impuestos">
+        		¿Dónde van mis impuestos?
+      		</a>
+    	</h1>
+    	<h2 class="sub-title">			
+				Te mostramos a dónde van los impuestos de los porteños
+			
+		</h2>
+
+
+{# 		<h1 class="main-title">
 			<a href="{{ url('budget_app.views.welcome') }}" title="Ir a la home">				
 				¿Dónde van mis impuestos?
 			</a>
 		</h1>
 		<h2 class="sub-title">			
-				Ciudad Autónoma de Buenos Aires
+				Te mostramos dónde van los impuestos de los porteños
 			
 		</h2>
-	</div>
+ #}	</div>
 
 	<a class="main-menu-toggle" href="main-menu">Menú principal</a>
 	
