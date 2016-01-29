@@ -3279,9 +3279,9 @@ header[role="banner"] {
   color: black;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
 }
-.main-title a:hover {
+/*.main-title a:hover {
   color: #7B7B7B;
-}
+}*/
 
 .sub-title {  
   font-size: 1.3em;
