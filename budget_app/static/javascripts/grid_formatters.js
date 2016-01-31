@@ -127,7 +127,6 @@ function formatPerCapita(row, cell, value, columnDef, dataContext) {
   var population = getPopulationFigure(columnDef.stats, columnDef.year, dataContext.key);
 
   // return formatDecimal(realValue / population) + " €";
-  debugger;
   return formatRuledDecimal(realValue / population, false, true, 2);
 }
 
