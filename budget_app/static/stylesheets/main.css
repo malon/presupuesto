@@ -3612,7 +3612,18 @@ header[role="banner"] {
 @media screen and (min-width: 48em) {
   .home-intro .options > div {
     float: left;
-    width: 28%;
+    width: 45%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .home-intro .option-policies {
+    background-position: 20px -20px;
+  }
+}
+@media screen and (max-width: 48em) {
+  .home-intro .options > div {
+    float: left;
+    width: 95%;
     padding-left: 2%;
     padding-right: 2%;
   }
@@ -7030,15 +7041,28 @@ g.bg .chart-container rect {
   }
 }
 
-.home-intro .options > div {
+/*.home-intro .options > div {
   width: 45%;
-}
+}*/
 
 #main-menu ul li {
   border: none;
-  width: 25%;
+  /*width: 25%;*/
   text-align: center;
 }
+
+@media screen and (min-width: 846px) {
+  #main-menu ul li {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  #main-menu ul li {
+    width: 100%;
+  }
+}
+
 
 .map-info__title {
   -webkit-border-top-right-radius: 0.5em;
