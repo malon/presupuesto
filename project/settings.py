@@ -302,7 +302,7 @@ DEFAULT_CACHES = {
 CACHES = ENV.get('CACHES', DEFAULT_CACHES)
 
 CACHE_MIDDLEWARE_ALIAS = 'default'
-CACHE_MIDDLEWARE_SECONDS = 60 * 60 * 24  # 1 Day: data doesn't actually change
+CACHE_MIDDLEWARE_SECONDS = 60 * 60 * 24 * 365 # 1 Year: data doesn't actually change, till next budget
 CACHE_MIDDLEWARE_KEY_PREFIX = 'budget_app'
 
 # # HEROKU CONFIGURATION
