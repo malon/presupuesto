@@ -7204,14 +7204,6 @@ g.bg .chart-container rect {
   background: url(../assets/LOGO-GCBA_only_peq.jpg) no-repeat left bottom transparent;
   z-index: 90;
 }
-
-/*.no-margin-logo {
-  margin: 0px !important;
-}
-.margin-logo {
-  margin-left: 32px;
-}*/
-
 .footer-logo{
   padding-top: 10px;
 }
