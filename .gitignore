@@ -6,5 +6,6 @@ local_settings*py
 fabfile.*
 presupuesto-*
 *config.codekit
+project/cache/
 
 budget_app/static/stylesheets/config.codekit
