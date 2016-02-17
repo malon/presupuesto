@@ -5,7 +5,15 @@
 <!--<p class="intro-text">Dónde van mis impuestos se ha levantado sobre dos piezas: la primera es un parser que recorre las páginas publicadas por el Ministerio de Hacienda y Administraciones Públicas, extrae la información que queremos tratar y la convierte en reutilizable. Sobre esta parte trabaja la segunda pieza del proyecto, una web que lee esos presupuestos en formato abierto y los visualiza.</p>
 -->
 <div class="article">
+  <h2>Fuentes de datos</h2>
+    <ul class="source-list">
+      <li>Datos presupuestarios (gastos): <a href="http://data.buenosaires.gob.ar/dataset#query=presupuesto" target="_blank"><b>Buenos Aires Data</b></a></li>
+      <li>Datos presupuestarios (recursos): <a href="http://www.buenosaires.gob.ar/hacienda/presupuesto/estadistica-presupuestaria" target="_blank"><b>Página de Estadística Presupuestaria - Ministerio de Hacienda GCBA</b></a></li>
+      <li>Datos de población (Censo Nacional 2010): <a href="http://www.estadisticaciudad.gob.ar/eyc/?p=47439" target="_blank"><b>Dirección General de Estadística y Censos - Ministerio de Hacienda GCBA</b></a></li>
+      <li>Datos de inflación (Medias anuales del Índice de Precios al Consumidor – IPCBA): <a href="http://www.estadisticaciudad.gob.ar/eyc/?cat=124" target="_blank"><b>Dirección General de Estadística y Censos - Ministerio de Hacienda GCBA.</b></a></li>
+    </ul>
 
+  <br>
   <h2>Extracción de datos</h2>
   
   <p>Los Presupuestos de la Ciudad de Buenos Aires se encuentran disponibles en el portal <a href="http://data.buenosaires.gob.ar/">Buenos Aires Data</a> del Gobierno de la Ciudad Autónoma de Buenos Aires (CABA), de dónde se pueden descargar en formato CSV (<i>comma separated values</i>). Se han utilizado, tanto los datos de presupuesto sancionado, que representan la ley presupuestaria aprobada por el gobierno para cada año, como los datos del presupuesto ejecutado, es decir, el gasto real calculado al cuarto cuatrimestre de cada año.
@@ -23,14 +31,6 @@
   <p>La aplicación ¿Dónde van mis impuestos? requiere de un formato CSV específico de entrada, tanto de gastos y recursos (sancionados y ejecutados), como de las clasficiaciones presupuestarias empleadas. El código para extraer dichos archivos a partir de los CSVs proporcionados por el Gobierno se incluye también el <a href="https://github.com/malon/presupuesto">código</a> del proyecto. Así como una explicación sobre el proceso de carga y actualización de nuevos datos.</p>
 
   <p>Los gastos de ejecución del año en curso aparecerán en blanco ya que no se conocerán hasta el cierre del año, en cuanto a los datos ejecutados (reales) de los recursos (ingresos realizados) aparecen también a 0 ya que se han tomado los datos disponibles como datos sancionados (presupuestados).</p>
-
-  <h2>Fuentes de datos</h2>
-  <ul class="source-list">
-      <li>Datos presupuestarios (gastos): <a href="http://data.buenosaires.gob.ar/dataset#query=presupuesto" target="_blank"><b>Buenos Aires Data</b></a></li>
-      <li>Datos presupuestarios (recursos): <a href="http://www.buenosaires.gob.ar/hacienda/presupuesto/estadistica-presupuestaria" target="_blank"><b>Página de Estadística Presupuestaria - Ministerio de Hacienda GCBA</b></a></li>
-      <li>Datos de población (Censo Nacional 2010): <a href="http://www.estadisticaciudad.gob.ar/eyc/?p=47439" target="_blank"><b>Dirección General de Estadística y Censos - Ministerio de Hacienda GCBA</b></a></li>
-      <li>Datos de inflación (Medias anuales del Índice de Precios al Consumidor – IPCBA): <a href="http://www.estadisticaciudad.gob.ar/eyc/?cat=124" target="_blank"><b>Dirección General de Estadística y Censos - Ministerio de Hacienda GCBA.</b></a></li>
-    </ul>
 
   <h2>Presentación de los datos</h2>
   <p>La página web está desarrollada en Python (Django) y es una adaptación de la que David Cabo (<a href="http://twitter.com/dcabo" target="_blank">@dcabo</a>) realizó para el <a href="http://presupuesto.aragon.es/" target="_blank">Gobierno de Aragón</a> con el diseño de <a href="http://lapersonnalite.com" target="_blank">La Personnalité</a>, y <a href="http://www.civio.es/">La Fundación ciudadana Civio</a> realizó posteriormenete para los presupuestos generales de España y otras comunidades autónomas. Todas las visualizaciones están hechas con la librería D3 de javascript. </p>
