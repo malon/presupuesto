@@ -1,30 +1,32 @@
 #  -*-  coding: utf-8 -*-
 
-# Goes thru the input files creating a structure like this
-# [
-#    {
-#       "jurisdiccion":[  ],
-#       "inciso":[  ],
-#       "ubicacion_geografica":[  ],
-#       "fuente_fin":[  ],
-#       "finalidad":[
-#          {
-#             "funcion":[
-#                {
-#                   "id":"1",
-#                   "name":"Salud"
-#                }
-#             ],
-#             "id":"3",
-#             "name":"Servicios sociales"
-#          }
-#       ],
-#       "programa":[  ],
-#       "year":"2015"
-#    },{..}]
-# Then one file per classification is created grouped in a folder per year
-# in the ouput folder.
-# Check the classifications array in utils.py
+'''
+Goes through the input files creating a structure like this
+[
+   {
+      "jurisdiccion":[  ],
+      "inciso":[  ],
+      "ubicacion_geografica":[  ],
+      "fuente_fin":[  ],
+      "finalidad":[
+         {
+            "funcion":[
+               {
+                  "id":"1",
+                  "name":"Salud"
+               }
+            ],
+            "id":"3",
+            "name":"Servicios sociales"
+         }
+      ],
+      "programa":[  ],
+      "year":"2015"
+   },{..}]
+Then one file per classification is created grouped in a folder per year
+in the ouput folder.
+Check the classifications array in utils.py
+'''
 
 import os
 
@@ -99,7 +101,28 @@ debug_list = []
 
 def fill_year(year, structure, classification, reader):
     """
-    starting point is a pointer where the previous entity was created
+    Fill the whole structure.
+    Starting point is a pointer where the previous entity was created.
+    "finalidad":[
+         {
+            "funcion":[
+               {
+                  "id":"1",
+                  "name":"Salud"
+               }
+            ],
+            "id":"3",
+            "name":"Servicios sociales"
+         }
+      ],
+    For example if we just created "finalidad" with id=3, which is
+    index=0 from the "finalidad" array, starting point will be 0
+    in order to keep adding to this element of the array the nested
+    entities, like "funcion" in this case.
+
+    We are reading line by line of the dictreader, and for each line
+    we go through all the entities of the classificactions arrays
+    (see utils.py).
     """
     index_year = object_exists(structure, year, 'year')
     if index_year == -1:
@@ -122,14 +145,15 @@ def fill_year(year, structure, classification, reader):
                 existing_index = object_exists(
                     starting_point[entity['entity_name']], id, 'id')
                 if existing_index == -1:
+                    ''' This id was not added yet to this entity.
+                    First we search for special cases where the values
+                    have to be mmaped manually, check utils.py for info.
+                    If not a special case we take the id from the file. 
+                    Starting point will point to the one we are just adding.'''
                     if 'desc_fuente_fin' == entity['name_title']:
                         name = map_financiacion(id)
-                        # print "name financ----,", name
-                        # print "id financ-----", id
                     elif 'desc_finalidad' == entity['name_title']:
                         name = map_finalidad(id)
-                        # print "name finalid----,", name
-                        # print "id finalid-----", id
                     elif entity['name_title'] in row.keys():
                         name = row[entity['name_title']]
                     else:
@@ -142,6 +166,8 @@ def fill_year(year, structure, classification, reader):
                     starting_point = starting_point[
                         entity['entity_name']][index_to_use]
                 else:
+                    ''' This id already existed for that entity
+                    starting point will point to it'''
                     starting_point = starting_point[
                         entity['entity_name']][existing_index]
             # pointer

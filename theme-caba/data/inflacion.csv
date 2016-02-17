@@ -4,7 +4,7 @@
 # meses del año.
 # La aplicación calcula internamente un índice de inflación a partir de estas tasas, tal que:
 #    Indice Año Actual = 100
-#    Indice Año N-1 = Indice Año N / (1+Inflación Año N)
+#    Indice Año N-1 = Indice Año N / (1+Inflación Año N/100)
 # El índice de N-1 lo calculamos con la inflación del año N por lo que necesitamos la inflación 
 # de cada año que vamos a represetar en la aplicación.
 #
@@ -21,7 +21,7 @@
 # 2013,29.7
 # 2014,34.3
 # 2015,0
-# ene - ene
+# dec - dec (value for 2013 = ((dec-13/dec-12) - 1 ) * 100 )
 # 2012 value is not used, but it has to be there
 2012,1
 2013,26.6
