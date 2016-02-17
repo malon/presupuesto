@@ -1,6 +1,6 @@
 <select id="select-format">
-  <option value="nominal">{{ _('Nominales') }}</option>
-  <option selected="selected" value="real">{{ _('Reales (ajustadas a inflación)') }}</option>
+  <option selected="selected" value="nominal">{{ _('Nominales') }}</option>
+  <option value="real">{{ _('Reales (ajustadas a inflación)') }}</option>
   {% if not hide_percentage_format %}
   <option value="percentage">{{ _('Porcentaje sobre el total') }}</option>
   {% endif %}
