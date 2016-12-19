@@ -1,8 +1,8 @@
 ejercicio;fuente_fin;descripcion;gasto/ingreso
-2015;11;Tesoro de la Ciudad;G
-2015;13;Recursos con afectación específica;G
-2015;21;Transferencias externas;G
-2015;22;Crédito externo;G
-2015;14;Transferencias internas;G
-2015;15;Crédito interno;G
-2015;12;Recursos propios;G
+2015;11;TESORO DE LA CIUDAD;G
+2015;13;RECURSOS CON AFECTACION ESPECIFICA;G
+2015;21;FINANCIAMIENTO INTERNO;G
+2015;22;FINANCIAMIENTO EXTERNO;G
+2015;14;TRANSFERENCIAS AFECTADAS;G
+2015;15;TRANSFERENCIAS INTERNAS;G
+2015;12;RECURSOS PROPIOS;G

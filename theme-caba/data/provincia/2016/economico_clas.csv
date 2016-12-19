@@ -1,0 +1,187 @@
+ejercicio;chapter;article;heading;description;gasto/ingreso
+2016;1;;;Gastos corrientes;G
+2016;1;11;;Gastos de operación de Empresas y Sociedades del Estado;G
+2016;1;11;110;Gastos de operación de Empresas y Sociedades del Estado;G
+2016;1;11;111;Remuneraciones;G
+2016;1;11;112;Bienes y Servicios;G
+2016;1;11;113;Impuestos indirectos;G
+2016;1;11;114;Depreciación y amortización;G
+2016;1;11;115;Previsiones;G
+2016;1;11;116;Variación de existencias;G
+2016;1;11;117;Descuentos y bonificaciones;G
+2016;1;11;118;Intereses de instituciones financieras;G
+2016;1;12;;Remuneraciones al personal;G
+2016;1;12;120;Remuneraciones al personal;G
+2016;1;13;;Gastos de consumo;G
+2016;1;13;130;Gastos de consumo;G
+2016;1;13;131;Bienes de Consumo;G
+2016;1;13;132;Servicios no Personales;G
+2016;1;13;133;Impuestos indirectos;G
+2016;1;13;134;Depreciación y amortización;G
+2016;1;13;135;Previsiones y reservas técnicas;G
+2016;1;13;136;Variación de existencias;G
+2016;1;14;;Rentas de la propiedad;G
+2016;1;14;140;Rentas de la propiedad;G
+2016;1;14;141;Intereses;G
+2016;1;14;142;Arrendamientos de tierras y terrenos;G
+2016;1;14;143;Derechos sobre bienes intangibles;G
+2016;1;15;;Impuestos directos;G
+2016;1;15;150;Impuestos directos;G
+2016;1;16;;Otras pérdidas;G
+2016;1;16;160;Otras pérdidas;G
+2016;1;17;;Transferencias corrientes;G
+2016;1;17;170;Transferencias corrientes;G
+2016;1;17;171;Al sector privado;G
+2016;1;17;172;Al sector público;G
+2016;1;17;173;Al sector externo;G
+2016;1;18;;Gastos figurativos para transacciones corrientes;G
+2016;1;18;180;Gastos figurativos para transacciones corrientes;G
+2016;1;19;;Crédito adicional para gastos corrientes;G
+2016;1;19;190;Crédito adicional para gastos corrientes;G
+2016;2;;;Gastos de capital;G
+2016;2;20;;Gastos de capital;G
+2016;2;20;200;Gastos de capital;G
+2016;2;21;;Inversión real directa por terceros;G
+2016;2;21;210;Inversión real directa por terceros;G
+2016;2;21;211;Edificios e instalaciones;G
+2016;2;21;212;Construcciones del dominio privado;G
+2016;2;21;213;Construcciones del dominio público;G
+2016;2;21;214;Maquinaria y equipo;G
+2016;2;21;217;Incremento de existencias;G
+2016;2;21;218;Tierras y terrenos;G
+2016;2;21;219;Activos intangibles;G
+2016;2;22;;Inversión real directa por producción propia;G
+2016;2;22;220;Inversión real directa por producción propia;G
+2016;2;22;221;Remuneraciones;G
+2016;2;22;222;Bienes de Consumo;G
+2016;2;22;223;Servicios no personales;G
+2016;2;22;224;Bienes de Uso;G
+2016;2;22;225;Transferencias;G
+2016;2;22;226;Activos Financieros;G
+2016;2;22;228;Otros Gastos;G
+2016;2;23;;Transferencias de capital;G
+2016;2;23;230;Transferencias de capital;G
+2016;2;23;231;Al sector privado;G
+2016;2;23;232;Al sector público;G
+2016;2;23;233;Al sector externo;G
+2016;2;24;;Inversión financiera;G
+2016;2;24;240;Inversión financiera;G
+2016;2;24;241;Aportes de capital;G
+2016;2;24;242;Concesión de préstamos de corto plazo;G
+2016;2;24;243;Concesión de préstamos de largo plazo;G
+2016;2;24;244;Fondos Fiduciarios;G
+2016;2;25;;Gastos figurativos para transacciones de capital;G
+2016;2;25;250;Gastos figurativos para transacciones de capital;G
+2016;2;29;;Crédito adicional para gastos de capital;G
+2016;2;29;290;Crédito adicional para gastos de capital;G
+2016;3;;;Aplicaciones financieras;G
+2016;3;30;;Aplicaciones financieras;G
+2016;3;30;300;Aplicaciones financieras;G
+2016;3;31;;Inversión financiera;G
+2016;3;31;310;Inversión financiera;G
+2016;3;31;311;Incremento de disponibilidades Saldo Final;G
+2016;3;31;312;Adquisición de títulos y valores;G
+2016;3;31;313;Incremento de otros activos financieros;G
+2016;3;31;316;Aportes de capital;G
+2016;3;31;317;Concesión de préstamos de corto plazo;G
+2016;3;31;318;Concesión de préstamos de largo plazo;G
+2016;3;32;;Amortización de la deuda y disminución de otros pasivos;G
+2016;3;32;320;Amortización de la deuda y disminución de otros pasivos;G
+2016;3;32;321;Amortización deuda interna a corto plazo;G
+2016;3;32;322;Amortización deuda externa a corto plazo;G
+2016;3;32;323;Amortización de préstamos a corto plazo;G
+2016;3;32;325;Disminución de otros pasivos;G
+2016;3;32;326;Amortización deuda interna a largo plazo;G
+2016;3;32;327;Amortización deuda externa a largo plazo;G
+2016;3;32;328;Amortización de préstamos a largo plazo;G
+2016;3;32;329;Amortización de deuda no financiera;G
+2016;3;33;;Disminución del patrimonio;G
+2016;3;33;330;Disminución del patrimonio;G
+2016;3;33;331;Disminución de capital;G
+2016;3;33;332;Disminución de reservas;G
+2016;3;33;333;Disminución de resultados acumulados;G
+2016;3;34;;Conversión de la deuda a largo plazo en a corto plazo;G
+2016;3;34;340;Conversión de la deuda a largo plazo en a corto plazo;G
+2016;3;34;341;Conversión de la deuda interna;G
+2016;3;34;342;Conversión de la deuda externa;G
+2016;3;34;343;Otros gastos por deuda pública;G
+2016;3;35;;Gastos figurativos para aplicaciones financieras;G
+2016;3;35;350;Gastos figurativos para aplicaciones financieras;G
+2016;3;39;;Crédito adicional para aplicaciones financieras;G
+2016;3;39;390;Crédito adicional para aplicaciones financieras;G
+2016;1;;;Ingresos Corrientes;I
+2016;1;11;;Ingresos tributarios;I
+2016;1;11;110;Ingresos tributarios;I
+2016;1;11;111;Impuestos Directos;I
+2016;1;11;112;Impuestos Indirectos;I
+2016;1;11;113;Impuestos Nacionales;I
+2016;1;12;;Contribuciones a la seguridad social;I
+2016;1;12;120;Contribuciones a la seguridad social;I
+2016;1;13;;Ingresos no tributarios;I
+2016;1;13;130;Ingresos no tributarios;I
+2016;1;13;131;Tasas;I
+2016;1;13;132;Derechos;I
+2016;1;13;133;Otros no tributarios;I
+2016;1;14;;Venta de bienes y servicios de las administraciones públicas;I
+2016;1;14;140;Venta de bienes y servicios de las administraciones públicas;I
+2016;1;15;;Ingresos de operación de Empresas y Sociedades del Estado;I
+2016;1;15;150;Ingresos de operación de Empresas y Sociedades del Estado;I
+2016;1;15;151;Ventas brutas;I
+2016;1;15;152;Ingresos financieros de instituciones financieras;I
+2016;1;15;153;Otros ingresos de operación;I
+2016;1;16;;Rentas de la propiedad;I
+2016;1;16;160;Rentas de la propiedad;I
+2016;1;16;161;Intereses;I
+2016;1;16;162;Dividendos;I
+2016;1;16;163;Arrendamientos de tierras y terrenos;I
+2016;1;16;164;Derechos sobre bienes intangibles;I
+2016;1;17;;Transferencias corrientes;I
+2016;1;17;170;Transferencias corrientes;I
+2016;1;17;171;Del sector privado;I
+2016;1;17;172;Del sector público;I
+2016;1;17;173;Del sector externo;I
+2016;1;18;;Contribuciones figurativas para financiaciones corrientes;I
+2016;1;18;180;Contribuciones figurativas para financiaciones corrientes;I
+2016;2;;;Recursos de Capital;I
+2016;2;21;;Recursos propios de capital;I
+2016;2;21;210;Recursos propios de capital;I
+2016;2;21;211;Venta de activos;I
+2016;2;21;212;Disminución de existencias;I
+2016;2;21;213;Incremento de la depreciación y amortización acumulada;I
+2016;2;22;;Transferencias de capital;I
+2016;2;22;220;Transferencias de capital;I
+2016;2;22;221;Del sector privado;I
+2016;2;22;222;Del sector público;I
+2016;2;22;223;Del sector externo;I
+2016;2;23;;Disminución de la inversión financiera;I
+2016;2;23;230;Disminución de la inversión financiera;I
+2016;2;23;231;Venta de acciones y participaciones de capital;I
+2016;2;23;232;Recuperación de préstamos de corto plazo;I
+2016;2;23;236;Recuperación de préstamos de largo plazo;I
+2016;2;24;;Contribuciones figurativas para financiaciones de capital;I
+2016;2;24;240;Contribuciones figurativas para financiaciones de capital;I
+2016;3;;;Fuentes Financieras;I
+2016;3;31;;Disminución de la inversión financiera;I
+2016;3;31;310;Disminución de la inversión financiera;I
+2016;3;31;311;Venta de acciones y participaciones de capital;I
+2016;3;31;312;Recuperación de préstamos de corto plazo;I
+2016;3;31;313;Venta de títulos y valores;I
+2016;3;31;314;Disminución de otros activos financieros;I
+2016;3;31;316;Recuperación de préstamos de largo plazo;I
+2016;3;32;;Endeudamiento público e incremento de otros pasivos;I
+2016;3;32;320;Endeudamiento público e incremento de otros pasivos;I
+2016;3;32;321;Colocación de deuda interna a corto plazo;I
+2016;3;32;322;Colocación de deuda externa a corto plazo;I
+2016;3;32;323;Obtención de préstamos a corto plazo;I
+2016;3;32;325;Incremento de otros pasivos;I
+2016;3;32;326;Colocación de deuda interna a largo plazo;I
+2016;3;32;327;Colocación de deuda externa a largo plazo;I
+2016;3;32;328;Obtención de préstamos a largo plazo;I
+2016;3;32;329;Conversión de la deuda a corto plazo en a largo plazo por refinanciación;I
+2016;3;33;;Incremento del patrimonio;I
+2016;3;33;330;Incremento del patrimonio;I
+2016;3;33;331;Incremento de capital;I
+2016;3;33;332;Incremento de reservas;I
+2016;3;33;333;Incremento de resultados acumulados;I
+2016;3;34;;Contribuciones figurativas para aplicaciones financieras;I
+2016;3;34;340;Contribuciones figurativas para aplicaciones financieras;I

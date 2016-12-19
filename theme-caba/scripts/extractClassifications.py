@@ -33,10 +33,10 @@ import os
 from csvkit.py2 import CSVKitDictReader, CSVKitWriter
 from os import listdir
 from os.path import join
-from utils import classifications, map_financiacion
-from utils import map_finalidad, get_titles
-from utils import input_path, output_path
-from utils import format_zeroes
+from utils2 import classifications, map_financiacion
+from utils2 import map_finalidad, get_titles
+from utils2 import input_path, output_path
+from utils2 import format_zeroes
 
 structure = []
 
@@ -150,11 +150,11 @@ def fill_year(year, structure, classification, reader):
                     have to be mmaped manually, check utils.py for info.
                     If not a special case we take the id from the file. 
                     Starting point will point to the one we are just adding.'''
-                    if 'desc_fuente_fin' == entity['name_title']:
-                        name = map_financiacion(id)
-                    elif 'desc_finalidad' == entity['name_title']:
-                        name = map_finalidad(id)
-                    elif entity['name_title'] in row.keys():
+                    # if 'desc_fuente_fin' == entity['name_title']:
+                    #     name = map_financiacion(id)
+                    # elif 'desc_finalidad' == entity['name_title']:
+                    #     name = map_finalidad(id)
+                    if entity['name_title'] in row.keys():
                         name = row[entity['name_title']]
                     else:
                         name = ""
@@ -184,8 +184,11 @@ files = [f for f in listdir(input_path)]
 for fname in files:
         with open('%s/%s' % (input_path, fname), 'r') as f:
             reader = CSVKitDictReader(f,  delimiter=';')
-            year = fname.split("-")[2][0:4]
-            fill_year(year, structure, classifications, reader)
+            try:
+                year = fname.split("sancionado")[1][0:4]
+                fill_year(year, structure, classifications, reader)
+            except:
+                continue
 
 print "Entidades completadas", debug_list
 # print structure

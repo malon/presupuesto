@@ -9,8 +9,8 @@ classifications = [
     # JURISDICCION
     [{
         'entity_name': 'jurisdiccion',
-        'id_title': 'jurisdiccion',
-        'name_title': 'desc_juris',
+        'id_title': 'JUR',
+        'name_title': 'JUR_DESC',
         'length': '2'
     # }, {
     #     'entity_name': 'subjurisdiccion',
@@ -22,30 +22,30 @@ classifications = [
     #     'name_title': 'desc_entidad'
     }, {
         'entity_name': 'servicio',
-        'id_title': 'ogese',
-        'name_title': 'descn_servicio',
+        'id_title': 'OGESE',
+        'name_title': 'OGESE_DESC',
         'length': '3'
     }, {
         'entity_name': 'unidad_ejecutora',
-        'id_title': 'unidad_ejecutora',
-        'name_title': 'desc_ue',
+        'id_title': 'UE',
+        'name_title': 'UE_DESC',
         'length': '4'
     }],
     # PROGRAMA
     [{
         'entity_name': 'programa',
-        'id_title': 'programa',
-        'name_title': 'desc_programa',
+        'id_title': 'PROG',
+        'name_title': 'PROG_DESC',
         'length': '3'
     }, {
         'entity_name': 'subprograma',
-        'id_title': 'subprograma',
-        'name_title': 'desc_subprograma',
+        'id_title': 'SPROG',
+        'name_title': 'SPROG_DESC',
         'length': '2'
     }, {
         'entity_name': 'proyecto',
-        'id_title': 'proyecto',
-        'name_title': 'desc_proyecto',
+        'id_title': 'PROY',
+        'name_title': 'PROY_DESC',
         'length': '2'
     }],
     # INCISO
@@ -68,27 +68,27 @@ classifications = [
     # UBICACION GEOGRÁFICA
     [{
         'entity_name': 'ubicacion_geografica',
-        'id_title': 'ubicacion_geografica',
-        'name_title': 'desc_ubica_geo',
+        'id_title': 'GEO',
+        'name_title': 'GEO_DESC',
         'length': '2'
     }],
     # FINALIDAD
     [{
         'entity_name': 'finalidad',
-        'id_title': 'finalidad',
-        'name_title': 'desc_finalidad',
+        'id_title': 'FIN',
+        'name_title': 'FIN_DESC',
         'length': '1'
     }, {
         'entity_name': 'funcion',
-        'id_title': 'funcion',
-        'name_title': 'desc_fin_fun',
+        'id_title': 'FUN',
+        'name_title': 'FUN_DESC',
         'length': '1'
     }],
     # FINANCIACION
     [{
         'entity_name': 'fuente_fin',
-        'id_title': 'fuente_fin',
-        'name_title': 'desc_fuente_fin',
+        'id_title': 'FF',
+        'name_title': 'FF_DESC',
         'length': '2'
     }]
 ]

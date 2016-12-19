@@ -24,20 +24,20 @@ def create_csv_gastos(year, reader):
             line = {}
             # line.append(year)
             centro = format_zeroes(
-                    int(row['jurisdiccion']), 2)+format_zeroes(
-                    int(row['ogese']), 3)+format_zeroes(
-                    int(row['unidad_ejecutora']), 4)
+                    int(row['JUR']), 2)+format_zeroes(
+                    int(row['OGESE']), 3)+format_zeroes(
+                    int(row['UE']), 4)
 
 
             line = {
                 'EJERCICIO': year,
                 'CENTRO GESTOR': centro,
-                'FUNCIONAL': row['finalidad']+row['funcion'],
+                'FUNCIONAL': row['FIN']+row['FUN'],
                 # 'ECONOMICA': row['inciso']+row['principal']+row['parcial'],
-                'ECONOMICA': row['clas_economico'][1:4],
-                'FINANCIACION': row['fuente_fin'],
-                'DESCRIPCION': row['desc_parcial'],
-                'SANCIONADO': row['sancion']
+                'ECONOMICA': row['ECO'][1:4],
+                'FINANCIACION': row['FF'],
+                'DESCRIPCION': row['PARC_DESC'],
+                'SANCIONADO': row['SANCION'].replace(",",".")
             }
             wr.writerow(line)
 
@@ -47,5 +47,8 @@ files = [f for f in listdir(input_path)]
 for fname in files:
         with open('%s/%s' % (input_path, fname), 'r') as f:
             reader = CSVKitDictReader(f,  delimiter=';')
-            year = fname.split("-")[2][0:4]
-            create_csv_gastos(year, reader)
+            try:
+                year = fname.split("sancionado")[1][0:4]
+                create_csv_gastos(year, reader)
+            except:
+                continue

@@ -4,7 +4,9 @@ db
 /static
 local_settings*py
 presupuesto-*
+presupuestosancionado*
 *config.codekit
 project/cache/
+.venv
 
 budget_app/static/stylesheets/config.codekit
