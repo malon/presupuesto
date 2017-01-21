@@ -6,7 +6,7 @@ Los datos de entrada que maneja la aplicación ¿Dónde van mis impuestos? son u
     
     $ python manage.py load_budget 2014
 
-Para que estos comandos funcionen, los datos deben estar almacenados en la carpeta `theme-caba/data`. Existen una serie de datos comunes a la aplicación que denominamos **archivos de información extra** que se encontrarán en la raíz de la carpeta `data` y una serie de archivos con datos específicos para una entidad geográfica concreta (**archivos de clasificación** y **archivos de partidas presupuestarias**. La entidad en este caso es la provincia de CABA, pero podríamos tener más entidades a la vez representadas en la misma aplicación, Por tanto los datos específicos de CABA deberán estar dentro de una carpeta denominada en este caso `theme-caba/data/provincia`. Explicaremos por qué la palabra "provincia" más adelante.
+Para que estos comandos funcionen, los datos deben estar almacenados en la carpeta `theme-caba/data`. Existen una serie de datos comunes a la aplicación que denominamos **archivos de información extra** que se encontrarán en la raíz de la carpeta `data` y una serie de archivos con datos específicos para una entidad geográfica concreta (**archivos de clasificación** y **archivos de partidas presupuestarias**). La entidad en este caso es la provincia de CABA, pero podríamos tener más entidades a la vez representadas en la misma aplicación, Por tanto los datos específicos de CABA deberán estar dentro de una carpeta denominada en este caso `theme-caba/data/provincia`. Explicaremos por qué la palabra "provincia" más adelante.
 
 
 ###Archivos de información extra###
@@ -105,7 +105,7 @@ Contienen datos de cada categoría con la que representamos el presupuesto, los 
 > 2013;01;;;LEGISLATURA DE LA CIUDAD DE BUENOS AIRES  
 > ...  
 
-Ejemplo de identificador anidado (cotniene identificadores de sus niveles superiores):
+Ejemplo de identificador anidado (contiene identificadores de sus niveles superiores):
 
     unidad_ejecutora = SECRETARIA ADMINISTRATIVA 
     010010010  : 9 dígitos en total
@@ -129,7 +129,7 @@ La lista de archivos de clasificación se muestra a continuación, veremos como 
 * **ubicacion_geografica_clas.csv**: clasificación por ubicación geográfica (no se usa esta categoría de momento)
 
 ###Archivos de partidas presupuestarias###
-Al igual que los **archivos de clasificación** tienen un formato fijo que se debe respetar. Estos archivos muestran las diferentes partidas presupuestarias de gastos e ingresos categorizadas según los clasificadores cuyos archivos explicamos con anterioridad. Al igual que en el anterior caso, usamos ";" como separador, y la línea de títulos empezará por "EJERCICIO" (año de esa partida presupuestaria), y continuará por cada una de las clasificaciones que usaremos, utilizando el nivel inferior de la clasificación correspondiente. Por ejemplo para "jurisdicción", usaremos el identificador de la "unidad ejecutora", ya que este identificador, como vimos con anterioridad, lleva información también de a qué "servicio" y a que "jurisdicción" pertenece, por último se incluye una descripción de la partida (este campo no es importante ya las descripciones que se verán en la aplicación serán las de las clasificaciones presupuestarias) y la cantidad sancionada en el campo "SANCIONADO" o ejecutada en el campo "DEVENGADO". 
+Al igual que los **archivos de clasificación** tienen un formato fijo que se debe respetar. Estos archivos muestran las diferentes partidas presupuestarias de gastos e ingresos categorizadas según los clasificadores cuyos archivos explicamos con anterioridad. Al igual que en el anterior caso, usamos ";" como separador, y la línea de títulos empezará por "EJERCICIO" (año de esa partida presupuestaria), y continuará por cada una de las clasificaciones que usaremos, utilizando para cada clasificación el identificador del nivel inferior de la clasificación correspondiente. Por ejemplo para "jurisdicción", usaremos el identificador de la "unidad ejecutora", ya que este identificador, como vimos con anterioridad, lleva información también de a qué "servicio" y a que "jurisdicción" pertenece. Por último se incluye una descripción de la partida (este campo no es importante ya que las descripciones que se verán en la aplicación serán las de las clasificaciones presupuestarias) y la cantidad sancionada en el campo "SANCIONADO" o ejecutada en el campo "DEVENGADO". 
 
 Vemos, por ejemplo el contenido de `gastos.csv`:
 
@@ -149,7 +149,7 @@ Y un ejemplo de `ingresos.csv`:
 > 2013;;;111;;Impuestos Directos;5147268000
 > 2013;;;112;;Impuestos Indirectos;28059918400
 
-Estos son los tres archivos utilizados, el archivo de ejecución no es obligatorio, y esas cantidades no serán mostradas o serán mostradas en blanco en la aplicación.
+Estos son los tres archivos utilizados, el archivo de ejecución no es obligatorio, y esas cantidades no serán mostradas si no se dispone de ellas o serán mostradas en blanco en la aplicación.
 
 * **gastos.csv**: partidas de gasto presupuestado (sanción de ley)
 * **ejecucion_gastos.csv**: partidas de gasto ejecutado
