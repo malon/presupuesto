@@ -9,4 +9,6 @@ presupuestosancionado*
 project/cache/
 .venv
 
+load_app_data.bash
+
 budget_app/static/stylesheets/config.codekit

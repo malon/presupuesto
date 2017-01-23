@@ -1,0 +1,35 @@
+# activar el entorno
+years=(2013 2014 2015 2016)
+VENV="venv_presupuesto"
+
+SCRIPT=$(readlink -f $0)
+SCRIPTPATH=`dirname $SCRIPT`
+
+source "$SCRIPTPATH/../$VENV/bin/activate"
+
+#Cargar estadísticas
+python manage.py load_stats
+
+
+# Cargar presupuesto sancionado (repetir para 2013, 2014, 2015, 2016)
+for year in "${years[@]}"
+do
+    echo "Presupuesto sancionado $year"
+    python manage.py load_budget $year
+done
+
+
+# Cargar presupuesto ejecutado  (repetir para 2013, 2014, 2015, 2016)
+for year in "${years[@]}"
+do
+    echo "Presupuesto ejecutado $year"
+    python manage.py load_execution $year
+done
+
+
+# Borrar cache
+python manage.py remove_cache
+
+
+# cerrar el virtualenv
+deactivate
