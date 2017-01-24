@@ -22,7 +22,7 @@ done
 # Cargar presupuesto ejecutado  (repetir para 2013, 2014, 2015, 2016)
 for year in "${years[@]}"
 do
-    echo "\e[32mPresupuesto ejecutado $year\e[39m"
+    echo -e "\e[32mPresupuesto ejecutado $year\e[39m"
     python manage.py load_execution $year
 done
 
