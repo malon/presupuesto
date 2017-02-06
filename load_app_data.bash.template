@@ -1,5 +1,6 @@
 # activar el entorno
 years=(2013 2014 2015 2016)
+years_ejecutado=(2015)
 VENV="venv_presupuesto"
 
 SCRIPT=$(readlink -f $0)
@@ -20,7 +21,7 @@ done
 
 
 # Cargar presupuesto ejecutado  (repetir para 2013, 2014, 2015, 2016)
-for year in "${years[@]}"
+for year in "${years_ejecutado[@]}"
 do
     echo -e "\e[32mPresupuesto ejecutado $year\e[39m"
     python manage.py load_execution $year
